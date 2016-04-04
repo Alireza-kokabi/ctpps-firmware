@@ -39,7 +39,7 @@ module FIFO (
     );    
      
     // FIFO constants
-    parameter DATA_WIDTH            = 32;
+    parameter DATA_WIDTH            = 24;
     parameter ADDR_WIDTH            = 15;
     parameter RAM_DEPTH = (1 << ADDR_WIDTH);
     // Port Declarations
@@ -96,9 +96,9 @@ module FIFO (
             output_ready            = 0;
         end 
         else if (( hptdc_data_ready ) &&  ! ( old_write_enable ) 
-                   && (status_cnt  != RAM_DEPTH)) 
+                   && (status_cnt  != RAM_DEPTH) && (hptdc_data [31:29] == 3'b010)) 
         begin
-            fifo_ram[status_cnt]    = hptdc_data;
+            fifo_ram[status_cnt]    = hptdc_data [DATA_WIDTH-1:0];
             status_cnt              = status_cnt + 1;
             old_write_enable        = hptdc_data_ready;
             output_ready            = 0;

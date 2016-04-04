@@ -28,16 +28,17 @@
 
 
 
-module Adder( clk, rst, orbit_number, run_number, address_out, data_in, empty, 
+module Adder( clk, rst, event_number, bunch_number, run_number, address_out, data_in, empty, 
         input_ready, read_enable, data_out, transmit_request, transmit_complete, serial_transmit_complete,
         acquisition_counter, data_ready_for_transmit, threshold_voltage, bias_voltage);
 
     input                           clk;
     input                           rst;
-    input   [31:0]                  orbit_number;
+    input   [23:0]                  event_number;
+    input   [15:0]                  bunch_number;
     input   [23:0]                  run_number;
     output  [14:0]                  address_out;
-    input   [31:0]                  data_in;
+    input   [23:0]                  data_in;
     input                           empty;
     input                           input_ready;
     output                          read_enable;
