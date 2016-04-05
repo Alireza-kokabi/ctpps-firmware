@@ -45,6 +45,8 @@ set_option -part M2S150
 set_option -package FC1152
 set_option -speed_grade STD
 set_option -package FC1152
+set_option -package FC1152
+set_option -package FC1152
 set_option -package FCSBGA325
 set_option -package FCSBGA325
 set_option -package FCSBGA325
@@ -53,6 +55,8 @@ set_option -package FC1152
 set_option -part M2S150
 set_option -package FC1152
 set_option -speed_grade STD
+set_option -package FC1152
+set_option -package FC1152
 set_option -package FC1152
 set_option -package FCSBGA325
 set_option -package FCSBGA325

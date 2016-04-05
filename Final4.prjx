@@ -328,11 +328,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-HDL;hdl\BunchCounter.v;0
-HDL;hdl\Adder.v;0
-HDL;hdl\ControlDecoder.v;0
-HDL;hdl\FIFO.v;0
-ACTIVEVIEW;hdl\BunchCounter.v
+StartPage;StartPage;0
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "Adder::work","hdl\Adder.v","FALSE","FALSE"
