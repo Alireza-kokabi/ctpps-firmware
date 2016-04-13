@@ -1,38 +1,21 @@
 #--  Synopsys, Inc.
 #--  Version J-2015.03M-SP1-2
-#--  Project file D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\Final2\synthesis\scratchproject.prs
+#--  Project file D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\ctpps-firmware\synthesis\scratchproject.prs
 
 #project files
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/hdl/Adder.v"
-add_file -vhdl -lib work "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/hdl/BiasController.vhd"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/hdl/ControlDecoder.v"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/Actel/DirectCore/CoreResetP/7.0.104/rtl/vlog/core/coreresetp_pcie_hotreset.v"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/Actel/DirectCore/CoreResetP/7.0.104/rtl/vlog/core/coreresetp.v"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/work/Core_sb/CCC_0/Core_sb_CCC_0_FCCC.v"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/Actel/SgCore/OSC/2.0.101/osc_comps.v"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/work/Core_sb/FABOSC_0/Core_sb_FABOSC_0_OSC.v"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/work/Core_sb_MSS/Core_sb_MSS_syn.v"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/work/Core_sb_MSS/Core_sb_MSS.v"
-add_file -verilog -lib COREAHBLITE_LIB "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_addrdec.v"
-add_file -verilog -lib COREAHBLITE_LIB "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_defaultslavesm.v"
-add_file -verilog -lib COREAHBLITE_LIB "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_masterstage.v"
-add_file -verilog -lib COREAHBLITE_LIB "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_slavearbiter.v"
-add_file -verilog -lib COREAHBLITE_LIB "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_slavestage.v"
-add_file -verilog -lib COREAHBLITE_LIB "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite_matrix4x16.v"
-add_file -verilog -lib COREAHBLITE_LIB "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vlog/core/coreahblite.v"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/work/Core_sb/Core_sb.v"
-add_file -vhdl -lib work "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/hdl/DACController.vhd"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/hdl/FIFO.v"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/hdl/JTAG.v"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/hdl/ParallelPortHPTDC.v"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/hdl/SerialTransmitter.v"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/hdl/USB.v"
-add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/component/work/TDR/TDR.v"
+add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/ctpps-firmware/hdl/Adder.v"
+add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/ctpps-firmware/hdl/BunchCounter.v"
+add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/ctpps-firmware/hdl/ControlDecoder.v"
+add_file -vhdl -lib work "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/ctpps-firmware/hdl/DACController.vhd"
+add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/ctpps-firmware/hdl/FIFO.v"
+add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/ctpps-firmware/hdl/JTAG.v"
+add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/ctpps-firmware/hdl/SerialTransmitter.v"
+add_file -verilog "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/ctpps-firmware/component/work/TDR/TDR.v"
 
 
 
 #implementation: "synthesis"
-impl -add D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\Final2\synthesis -type fpga
+impl -add D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\ctpps-firmware\synthesis -type fpga
 
 #
 #implementation attributes
@@ -87,5 +70,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/Final2/synthesis/TDR.edn"
+project -result_file "D:/DropAli/Dropbox/Documents/Projects/Firmware/Source/ctpps-firmware/synthesis/TDR.edn"
 impl -active "synthesis"

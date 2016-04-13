@@ -1,8 +1,8 @@
 probe \
-    -desdir {D:\Dropbox\Documents\Projects\Firmware\Source\Final\designer\TDR} \
+    -desdir {D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\ctpps-firmware\designer\TDR} \
     -design TDR \
     -fam SmartFusion2 \
-    -die PA4M5000_N \
-    -pkg fg896 \
+    -die PA4M12000_N \
+    -pkg fc1152 \
     -use_mvn_pdc 0  \
     -use_last_placement 0 

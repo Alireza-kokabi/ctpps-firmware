@@ -3,32 +3,32 @@ Resource Usage Report for TDR
 Mapping to part: m2s150fc1152std
 Cell usage:
 CLKINT          1 use
-SYSRESET        1 use
-CFG1           8 uses
-CFG2           43 uses
-CFG3           35 uses
-CFG4           52 uses
+CFG1           18 uses
+CFG2           190 uses
+CFG3           257 uses
+CFG4           466 uses
 
 Carry primitives used for arithmetic functions:
-ARI1           32 uses
+ARI1           75 uses
 
 
 Sequential Cells: 
-SLE            119 uses
+SLE            539 uses
 
 DSP Blocks:    0
 
-I/O ports: 339
-I/O primitives: 147
-INBUF          11 uses
-OUTBUF         64 uses
-TRIBUFF        72 uses
+I/O ports: 260
+I/O primitives: 122
+BIBUF          32 uses
+INBUF          18 uses
+OUTBUF         40 uses
+TRIBUFF        32 uses
 
 
 Global Clock Buffers: 1
 
 
-Total LUTs:    170
+Total LUTs:    1006
 
 Extra resources required for RAM and MACC interface logic during P&R:
 
@@ -36,6 +36,6 @@ RAM64x18 Interface Logic : SLEs = 0; LUTs = 0;
 RAM1K18  Interface Logic : SLEs = 0; LUTs = 0;
 MACC     Interface Logic : SLEs = 0; LUTs = 0;
 
-Total number of SLEs after P&R:  119 + 0 + 0 + 0 = 119;
-Total number of LUTs after P&R:  170 + 0 + 0 + 0 = 170;
+Total number of SLEs after P&R:  539 + 0 + 0 + 0 = 539;
+Total number of LUTs after P&R:  1006 + 0 + 0 + 0 = 1006;
 

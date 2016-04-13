@@ -1,0 +1,13 @@
+Detailed Resource Usage
+Module Name,Fabric 4LUT,Fabric DFF,Single-Ended I/O,Chip Globals
+JTAG_3/Primitives,54,35,0,0
+Primitives/Primitives,1,0,122,1
+JTAG_1/Primitives,51,35,0,0
+ControlDecoder_3/Primitives,140,57,0,0
+ControlDecoder_1/Primitives,150,85,0,0
+ControlDecoder_0/Primitives,170,85,0,0
+JTAG_2/Primitives,53,35,0,0
+ControlDecoder_2/Primitives,158,57,0,0
+DACController_0/Primitives,84,57,0,0
+JTAG_0/Primitives,52,36,0,0
+DACController_1/Primitives,84,57,0,0

@@ -39,7 +39,7 @@ module FIFO (
     );    
      
     // FIFO constants
-    parameter DATA_WIDTH            = 24;
+    parameter DATA_WIDTH            = 32;
     parameter ADDR_WIDTH            = 15;
     parameter RAM_DEPTH = (1 << ADDR_WIDTH);
     // Port Declarations

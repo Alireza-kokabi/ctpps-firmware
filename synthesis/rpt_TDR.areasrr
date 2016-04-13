@@ -9,19 +9,19 @@ Part:			M2S150FC1152STD (Microsemi)
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      119                100 %                
+SLE      539                100 %                
 =================================================
-Total SEQUENTIAL ELEMENTS in the block TDR:	119 (26.10 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TDR:	539 (31.89 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           138                100 %                
-ARI1          32                 100 %                
-BLACK BOX     78                 100 %                
+CFG           931                100 %                
+ARI1          75                 100 %                
+BLACK BOX     3520               100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block TDR:	248 (54.39 % Utilization)
+Total COMBINATIONAL LOGIC in the block TDR:	4526 (267.81 % Utilization)
 
 
 GLOBAL BUFFERS
@@ -29,92 +29,142 @@ Name       Total elements     Utilization     Notes
 ---------------------------------------------------
 GLOBAL     1                  100 %                
 ===================================================
-Total GLOBAL BUFFERS in the block TDR:	1 (0.22 % Utilization)
+Total GLOBAL BUFFERS in the block TDR:	1 (0.06 % Utilization)
 
 
 IO PADS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-IO       147                100 %                
+IO       122                100 %                
 =================================================
-Total IO PADS in the block TDR:	147 (32.24 % Utilization)
+Total IO PADS in the block TDR:	122 (7.22 % Utilization)
+
+--------------------------------------------------------------------
+########   Utilization report for  cell:   ControlDecoder   ########
+Instance path:   TDR.ControlDecoder                                 
+====================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      85                 15.8 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block TDR.ControlDecoder:	85 (5.03 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           171                18.4 %               
+BLACK BOX     865                24.6 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block TDR.ControlDecoder:	1036 (61.30 % Utilization)
 
 ----------------------------------------------------------------------
-########   Utilization report for  cell:   BiasController_2   ########
-Instance path:   TDR.BiasController_2                                 
+########   Utilization report for  cell:   ControlDecoder_0   ########
+Instance path:   TDR.ControlDecoder_0                                 
 ======================================================================
 
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      18                 15.1 %               
+SLE      57                 10.6 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block TDR.BiasController_2:	18 (3.95 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TDR.ControlDecoder_0:	57 (3.37 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           10                 7.25 %               
-ARI1          16                 50. %                
-BLACK BOX     23                 29.5 %               
+CFG           159                17.1 %               
+BLACK BOX     893                25.4 %               
 ======================================================
-Total COMBINATIONAL LOGIC in the block TDR.BiasController_2:	49 (10.75 % Utilization)
-
--------------------------------------------------------------
-########   Utilization report for  cell:   Core_sb   ########
-Instance path:   TDR.Core_sb                                 
-=============================================================
-
-COMBINATIONAL LOGIC
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-CFG           1                  0.7250 %             
-BLACK BOX     1                  1.28 %               
-======================================================
-Total COMBINATIONAL LOGIC in the block TDR.Core_sb:	2 (0.44 % Utilization)
-
-
-IO PADS
-Name     Total elements     Utilization     Notes
--------------------------------------------------
-IO       1                  0.680 %              
-=================================================
-Total IO PADS in the block TDR.Core_sb:	1 (0.22 % Utilization)
+Total COMBINATIONAL LOGIC in the block TDR.ControlDecoder_0:	1052 (62.25 % Utilization)
 
 ------------------------------------------------------------------------
-########   Utilization report for  cell:   Core_sb_CCC_0_FCCC   ########
-Instance path:   Core_sb.Core_sb_CCC_0_FCCC                             
+########   Utilization report for  cell:   ControlDecoder_0_0   ########
+Instance path:   TDR.ControlDecoder_0_0                                 
 ========================================================================
 
-IO PADS
+SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-IO       1                  0.680 %              
+SLE      57                 10.6 %               
 =================================================
-Total IO PADS in the block Core_sb.Core_sb_CCC_0_FCCC:	1 (0.22 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TDR.ControlDecoder_0_0:	57 (3.37 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           141                15.1 %               
+BLACK BOX     893                25.4 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block TDR.ControlDecoder_0_0:	1034 (61.18 % Utilization)
+
+----------------------------------------------------------------------
+########   Utilization report for  cell:   ControlDecoder_1   ########
+Instance path:   TDR.ControlDecoder_1                                 
+======================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      85                 15.8 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block TDR.ControlDecoder_1:	85 (5.03 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+CFG           144                15.5 %               
+ARI1          7                  9.33 %               
+BLACK BOX     865                24.6 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block TDR.ControlDecoder_1:	1016 (60.12 % Utilization)
+
+-------------------------------------------------------------------
+########   Utilization report for  cell:   DACController   ########
+Instance path:   TDR.DACController                                 
+===================================================================
+
+SEQUENTIAL ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+SLE      57                 10.6 %               
+=================================================
+Total SEQUENTIAL ELEMENTS in the block TDR.DACController:	57 (3.37 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      50                 5.37 %               
+ARI1     34                 45.3 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block TDR.DACController:	84 (4.97 % Utilization)
 
 ---------------------------------------------------------------------
-########   Utilization report for  cell:   DACController_2   ########
-Instance path:   TDR.DACController_2                                 
+########   Utilization report for  cell:   DACController_0   ########
+Instance path:   TDR.DACController_0                                 
 =====================================================================
 
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      19                 16. %                
+SLE      57                 10.6 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block TDR.DACController_2:	19 (4.17 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TDR.DACController_0:	57 (3.37 % Utilization)
 
 
 COMBINATIONAL LOGIC
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-CFG           10                 7.25 %               
-ARI1          16                 50. %                
-BLACK BOX     25                 32.1 %               
-======================================================
-Total COMBINATIONAL LOGIC in the block TDR.DACController_2:	51 (11.18 % Utilization)
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+CFG      50                 5.37 %               
+ARI1     34                 45.3 %               
+=================================================
+Total COMBINATIONAL LOGIC in the block TDR.DACController_0:	84 (4.97 % Utilization)
 
 ----------------------------------------------------------
 ########   Utilization report for  cell:   JTAG   ########
@@ -124,18 +174,18 @@ Instance path:   TDR.JTAG
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      22                 18.5 %               
+SLE      36                 6.68 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block TDR.JTAG:	22 (4.82 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TDR.JTAG:	36 (2.13 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           29                 21. %                
-BLACK BOX     8                  10.3 %               
+CFG           53                 5.69 %               
+BLACK BOX     1                  2.84e-002 %          
 ======================================================
-Total COMBINATIONAL LOGIC in the block TDR.JTAG:	37 (8.11 % Utilization)
+Total COMBINATIONAL LOGIC in the block TDR.JTAG:	54 (3.20 % Utilization)
 
 ------------------------------------------------------------
 ########   Utilization report for  cell:   JTAG_0   ########
@@ -145,18 +195,18 @@ Instance path:   TDR.JTAG_0
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      20                 16.8 %               
+SLE      35                 6.49 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block TDR.JTAG_0:	20 (4.39 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TDR.JTAG_0:	35 (2.07 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           29                 21. %                
-BLACK BOX     7                  8.97 %               
+CFG           52                 5.59 %               
+BLACK BOX     1                  2.84e-002 %          
 ======================================================
-Total COMBINATIONAL LOGIC in the block TDR.JTAG_0:	36 (7.89 % Utilization)
+Total COMBINATIONAL LOGIC in the block TDR.JTAG_0:	53 (3.14 % Utilization)
 
 ------------------------------------------------------------
 ########   Utilization report for  cell:   JTAG_1   ########
@@ -166,18 +216,18 @@ Instance path:   TDR.JTAG_1
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      20                 16.8 %               
+SLE      35                 6.49 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block TDR.JTAG_1:	20 (4.39 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TDR.JTAG_1:	35 (2.07 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           29                 21. %                
-BLACK BOX     7                  8.97 %               
+CFG           54                 5.8 %                
+BLACK BOX     1                  2.84e-002 %          
 ======================================================
-Total COMBINATIONAL LOGIC in the block TDR.JTAG_1:	36 (7.89 % Utilization)
+Total COMBINATIONAL LOGIC in the block TDR.JTAG_1:	55 (3.25 % Utilization)
 
 ------------------------------------------------------------
 ########   Utilization report for  cell:   JTAG_2   ########
@@ -187,18 +237,18 @@ Instance path:   TDR.JTAG_2
 SEQUENTIAL ELEMENTS
 Name     Total elements     Utilization     Notes
 -------------------------------------------------
-SLE      20                 16.8 %               
+SLE      35                 6.49 %               
 =================================================
-Total SEQUENTIAL ELEMENTS in the block TDR.JTAG_2:	20 (4.39 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block TDR.JTAG_2:	35 (2.07 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-CFG           29                 21. %                
-BLACK BOX     7                  8.97 %               
+CFG           55                 5.91 %               
+BLACK BOX     1                  2.84e-002 %          
 ======================================================
-Total COMBINATIONAL LOGIC in the block TDR.JTAG_2:	36 (7.89 % Utilization)
+Total COMBINATIONAL LOGIC in the block TDR.JTAG_2:	56 (3.31 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

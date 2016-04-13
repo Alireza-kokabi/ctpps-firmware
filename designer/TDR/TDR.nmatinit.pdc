@@ -8,410 +8,1637 @@
 
 # Family: SmartFusion2 , Die: M2S150 , Package: 1152 FC , Speed grade: STD 
 
-# Date generated: Wed Mar 02 13:23:40 2016 
+# Date generated: Wed Apr 13 14:19:13 2016 
 
 
 #
 # I/O constraints
 #
 
-set_io CLK0_PAD -DIRECTION INPUT -pinname K33 -fixed no
-set_io DIN -DIRECTION OUTPUT -pinname AJ34 -fixed no
-set_io DIN_0 -DIRECTION OUTPUT -pinname P8 -fixed no
-set_io DIN_1 -DIRECTION OUTPUT -pinname H6 -fixed no
-set_io DIN_2 -DIRECTION OUTPUT -pinname AG18 -fixed no
-set_io DIN_3 -DIRECTION OUTPUT -pinname L2 -fixed no
-set_io DIN_4 -DIRECTION OUTPUT -pinname AD4 -fixed no
-set_io DIN_5 -DIRECTION OUTPUT -pinname AG27 -fixed no
-set_io DIN_6 -DIRECTION OUTPUT -pinname M26 -fixed no
-set_io LDAC_bar -DIRECTION OUTPUT -pinname AA2 -fixed no
-set_io LDAC_bar_0 -DIRECTION OUTPUT -pinname M2 -fixed no
-set_io LDAC_bar_1 -DIRECTION OUTPUT -pinname AA7 -fixed no
-set_io LDAC_bar_2 -DIRECTION OUTPUT -pinname AB1 -fixed no
-set_io LDAC_bar_3 -DIRECTION OUTPUT -pinname AA3 -fixed no
-set_io LDAC_bar_4 -DIRECTION OUTPUT -pinname M3 -fixed no
-set_io LDAC_bar_5 -DIRECTION OUTPUT -pinname N4 -fixed no
-set_io LDAC_bar_6 -DIRECTION OUTPUT -pinname P4 -fixed no
-set_io SClock -DIRECTION OUTPUT -pinname Y9 -fixed no
-set_io SClock_0 -DIRECTION OUTPUT -pinname R4 -fixed no
-set_io SClock_1 -DIRECTION OUTPUT -pinname N1 -fixed no
-set_io SClock_2 -DIRECTION OUTPUT -pinname W3 -fixed no
-set_io SClock_3 -DIRECTION OUTPUT -pinname W6 -fixed no
-set_io SClock_4 -DIRECTION OUTPUT -pinname T5 -fixed no
-set_io SClock_5 -DIRECTION OUTPUT -pinname T4 -fixed no
-set_io SClock_6 -DIRECTION OUTPUT -pinname W7 -fixed no
-set_io SYNC_bar -DIRECTION OUTPUT -pinname Y12 -fixed no
-set_io SYNC_bar_0 -DIRECTION OUTPUT -pinname P24 -fixed no
-set_io SYNC_bar_1 -DIRECTION OUTPUT -pinname J6 -fixed no
-set_io SYNC_bar_2 -DIRECTION OUTPUT -pinname W2 -fixed no
-set_io SYNC_bar_3 -DIRECTION OUTPUT -pinname N23 -fixed no
-set_io SYNC_bar_4 -DIRECTION OUTPUT -pinname Y1 -fixed no
-set_io SYNC_bar_5 -DIRECTION OUTPUT -pinname W1 -fixed no
-set_io SYNC_bar_6 -DIRECTION OUTPUT -pinname L30 -fixed no
-set_io ccu25_data_0\[0\] -DIRECTION OUTPUT -pinname H29 -fixed no
-set_io ccu25_data_0\[1\] -DIRECTION OUTPUT -pinname U29 -fixed no
-set_io ccu25_data_0\[2\] -DIRECTION OUTPUT -pinname U30 -fixed no
-set_io ccu25_data_0\[3\] -DIRECTION OUTPUT -pinname AD3 -fixed no
-set_io ccu25_data_0\[4\] -DIRECTION OUTPUT -pinname J30 -fixed no
-set_io ccu25_data_0\[5\] -DIRECTION OUTPUT -pinname AG7 -fixed no
-set_io ccu25_data_0\[6\] -DIRECTION OUTPUT -pinname AF17 -fixed no
-set_io ccu25_data_0\[7\] -DIRECTION OUTPUT -pinname J8 -fixed no
-set_io ccu25_data_1\[0\] -DIRECTION OUTPUT -pinname M24 -fixed no
-set_io ccu25_data_1\[1\] -DIRECTION OUTPUT -pinname AG4 -fixed no
-set_io ccu25_data_1\[2\] -DIRECTION OUTPUT -pinname E3 -fixed no
-set_io ccu25_data_1\[3\] -DIRECTION OUTPUT -pinname J7 -fixed no
-set_io ccu25_data_1\[4\] -DIRECTION OUTPUT -pinname L10 -fixed no
-set_io ccu25_data_1\[5\] -DIRECTION OUTPUT -pinname AH30 -fixed no
-set_io ccu25_data_1\[6\] -DIRECTION OUTPUT -pinname AB6 -fixed no
-set_io ccu25_data_1\[7\] -DIRECTION OUTPUT -pinname T2 -fixed no
-set_io ccu25_data_2\[0\] -DIRECTION OUTPUT -pinname AJ2 -fixed no
-set_io ccu25_data_2\[1\] -DIRECTION OUTPUT -pinname T9 -fixed no
-set_io ccu25_data_2\[2\] -DIRECTION OUTPUT -pinname AB7 -fixed no
-set_io ccu25_data_2\[3\] -DIRECTION OUTPUT -pinname AG6 -fixed no
-set_io ccu25_data_2\[4\] -DIRECTION OUTPUT -pinname AH32 -fixed no
-set_io ccu25_data_2\[5\] -DIRECTION OUTPUT -pinname M32 -fixed no
-set_io ccu25_data_2\[6\] -DIRECTION OUTPUT -pinname N34 -fixed no
-set_io ccu25_data_2\[7\] -DIRECTION OUTPUT -pinname M10 -fixed no
-set_io ccu25_data_3\[0\] -DIRECTION OUTPUT -pinname L29 -fixed no
-set_io ccu25_data_3\[1\] -DIRECTION OUTPUT -pinname Y4 -fixed no
-set_io ccu25_data_3\[2\] -DIRECTION OUTPUT -pinname L7 -fixed no
-set_io ccu25_data_3\[3\] -DIRECTION OUTPUT -pinname AA11 -fixed no
-set_io ccu25_data_3\[4\] -DIRECTION OUTPUT -pinname Y10 -fixed no
-set_io ccu25_data_3\[5\] -DIRECTION OUTPUT -pinname T11 -fixed no
-set_io ccu25_data_3\[6\] -DIRECTION OUTPUT -pinname R7 -fixed no
-set_io ccu25_data_3\[7\] -DIRECTION OUTPUT -pinname AJ29 -fixed no
-set_io ccu25_strobe_out2 -DIRECTION OUTPUT -pinname C34 -fixed no
-set_io ccu25_strobe_out_0 -DIRECTION OUTPUT -pinname N9 -fixed no
-set_io ccu25_strobe_out_2 -DIRECTION OUTPUT -pinname AD1 -fixed no
-set_io ccu25_strobe_out_3 -DIRECTION OUTPUT -pinname AB2 -fixed no
-set_io clk -DIRECTION INPUT -pinname AF18 -fixed no
-set_io data_out_0 -DIRECTION OUTPUT -pinname U1 -fixed no
-set_io data_out_1 -DIRECTION OUTPUT -pinname U25 -fixed no
-set_io data_out_2 -DIRECTION OUTPUT -pinname E2 -fixed no
-set_io data_out_3 -DIRECTION OUTPUT -pinname E1 -fixed no
-set_io hptdc_data_ready_0 -DIRECTION INPUT -pinname U12 -fixed no
-set_io hptdc_data_ready_1 -DIRECTION INPUT -pinname N29 -fixed no
-set_io hptdc_data_ready_2 -DIRECTION INPUT -pinname N33 -fixed no
-set_io hptdc_data_ready_3 -DIRECTION INPUT -pinname V9 -fixed no
-set_io hptdc_get_data_0 -DIRECTION OUTPUT -pinname T8 -fixed no
-set_io hptdc_get_data_1 -DIRECTION OUTPUT -pinname N28 -fixed no
-set_io hptdc_get_data_2 -DIRECTION OUTPUT -pinname P33 -fixed no
-set_io hptdc_get_data_3 -DIRECTION OUTPUT -pinname U6 -fixed no
-set_io hptdc_token_in_0 -DIRECTION OUTPUT -pinname H7 -fixed no
-set_io hptdc_token_in_1 -DIRECTION OUTPUT -pinname AC8 -fixed no
-set_io hptdc_token_in_2 -DIRECTION OUTPUT -pinname H33 -fixed no
-set_io hptdc_token_in_3 -DIRECTION OUTPUT -pinname E33 -fixed no
-set_io hptdc_token_out_0 -DIRECTION INPUT -pinname G5 -fixed no
-set_io hptdc_token_out_1 -DIRECTION INPUT -pinname AE4 -fixed no
-set_io hptdc_token_out_2 -DIRECTION INPUT -pinname M27 -fixed no
-set_io hptdc_token_out_3 -DIRECTION INPUT -pinname D33 -fixed no
-set_io pbpd\[0\] -DIRECTION OUTPUT -pinname P31 -fixed no
-set_io pbpd\[1\] -DIRECTION OUTPUT -pinname P30 -fixed no
-set_io pbpd\[2\] -DIRECTION OUTPUT -pinname R25 -fixed no
-set_io pbpd\[3\] -DIRECTION OUTPUT -pinname P29 -fixed no
-set_io pbpd\[4\] -DIRECTION OUTPUT -pinname N32 -fixed no
-set_io pbpd\[5\] -DIRECTION OUTPUT -pinname P28 -fixed no
-set_io pbpd\[6\] -DIRECTION OUTPUT -pinname R23 -fixed no
-set_io pbpd\[7\] -DIRECTION OUTPUT -pinname N31 -fixed no
-set_io ren -DIRECTION INPUT -pinname R24 -fixed no
-set_io serial_clk_0 -DIRECTION OUTPUT -pinname L3 -fixed no
-set_io serial_clk_1 -DIRECTION OUTPUT -pinname L27 -fixed no
-set_io serial_clk_2 -DIRECTION OUTPUT -pinname J3 -fixed no
-set_io serial_clk_3 -DIRECTION OUTPUT -pinname V10 -fixed no
-set_io tck_pad_o_0 -DIRECTION OUTPUT -pinname AG16 -fixed no
-set_io tck_pad_o_1 -DIRECTION OUTPUT -pinname AJ4 -fixed no
-set_io tck_pad_o_2 -DIRECTION OUTPUT -pinname AJ3 -fixed no
-set_io tck_pad_o_3 -DIRECTION OUTPUT -pinname AH6 -fixed no
-set_io tdo_pad_o_0 -DIRECTION OUTPUT -pinname V6 -fixed no
-set_io tdo_pad_o_1 -DIRECTION OUTPUT -pinname V3 -fixed no
-set_io tdo_pad_o_2 -DIRECTION OUTPUT -pinname U5 -fixed no
-set_io tdo_pad_o_3 -DIRECTION OUTPUT -pinname W8 -fixed no
-set_io tms_pad_o_0 -DIRECTION OUTPUT -pinname R1 -fixed no
-set_io tms_pad_o_1 -DIRECTION OUTPUT -pinname U2 -fixed no
-set_io tms_pad_o_2 -DIRECTION OUTPUT -pinname V4 -fixed no
-set_io tms_pad_o_3 -DIRECTION OUTPUT -pinname V12 -fixed no
-set_io trstn_pad_o_0 -DIRECTION OUTPUT -pinname T7 -fixed no
-set_io trstn_pad_o_1 -DIRECTION OUTPUT -pinname U7 -fixed no
-set_io trstn_pad_o_2 -DIRECTION OUTPUT -pinname M1 -fixed no
-set_io trstn_pad_o_3 -DIRECTION OUTPUT -pinname U10 -fixed no
+set_io ccu25_data_0\[0\] -DIRECTION INOUT -pinname D20 -fixed no
+set_io ccu25_data_0\[1\] -DIRECTION INOUT -pinname H23 -fixed no
+set_io ccu25_data_0\[2\] -DIRECTION INOUT -pinname B19 -fixed no
+set_io ccu25_data_0\[3\] -DIRECTION INOUT -pinname G27 -fixed no
+set_io ccu25_data_0\[4\] -DIRECTION INOUT -pinname A18 -fixed no
+set_io ccu25_data_0\[5\] -DIRECTION INOUT -pinname A29 -fixed no
+set_io ccu25_data_0\[6\] -DIRECTION INOUT -pinname B21 -fixed no
+set_io ccu25_data_0\[7\] -DIRECTION INOUT -pinname A21 -fixed no
+set_io ccu25_data_1\[0\] -DIRECTION INOUT -pinname A23 -fixed no
+set_io ccu25_data_1\[1\] -DIRECTION INOUT -pinname C25 -fixed no
+set_io ccu25_data_1\[2\] -DIRECTION INOUT -pinname D26 -fixed no
+set_io ccu25_data_1\[3\] -DIRECTION INOUT -pinname C27 -fixed no
+set_io ccu25_data_1\[4\] -DIRECTION INOUT -pinname A25 -fixed no
+set_io ccu25_data_1\[5\] -DIRECTION INOUT -pinname B23 -fixed no
+set_io ccu25_data_1\[6\] -DIRECTION INOUT -pinname C26 -fixed no
+set_io ccu25_data_1\[7\] -DIRECTION INOUT -pinname C28 -fixed no
+set_io ccu25_data_2\[0\] -DIRECTION INOUT -pinname C29 -fixed no
+set_io ccu25_data_2\[1\] -DIRECTION INOUT -pinname D28 -fixed no
+set_io ccu25_data_2\[2\] -DIRECTION INOUT -pinname B27 -fixed no
+set_io ccu25_data_2\[3\] -DIRECTION INOUT -pinname A27 -fixed no
+set_io ccu25_data_2\[4\] -DIRECTION INOUT -pinname E26 -fixed no
+set_io ccu25_data_2\[5\] -DIRECTION INOUT -pinname F29 -fixed no
+set_io ccu25_data_2\[6\] -DIRECTION INOUT -pinname E30 -fixed no
+set_io ccu25_data_2\[7\] -DIRECTION INOUT -pinname B29 -fixed no
+set_io ccu25_data_3\[0\] -DIRECTION INOUT -pinname B31 -fixed no
+set_io ccu25_data_3\[1\] -DIRECTION INOUT -pinname A33 -fixed no
+set_io ccu25_data_3\[2\] -DIRECTION INOUT -pinname D32 -fixed no
+set_io ccu25_data_3\[3\] -DIRECTION INOUT -pinname E31 -fixed no
+set_io ccu25_data_3\[4\] -DIRECTION INOUT -pinname C30 -fixed no
+set_io ccu25_data_3\[5\] -DIRECTION INOUT -pinname B33 -fixed no
+set_io ccu25_data_3\[6\] -DIRECTION INOUT -pinname C32 -fixed no
+set_io ccu25_data_3\[7\] -DIRECTION INOUT -pinname F30 -fixed no
+set_io ccu25_strobe_in_0 -DIRECTION OUTPUT -pinname B18 -fixed no
+set_io ccu25_strobe_in_1 -DIRECTION OUTPUT -pinname E28 -fixed no
+set_io ccu25_strobe_in_2 -DIRECTION OUTPUT -pinname A31 -fixed no
+set_io ccu25_strobe_in_3 -DIRECTION OUTPUT -pinname F31 -fixed no
+set_io ccu25_strobe_out_0 -DIRECTION INPUT -pinname A19 -fixed no
+set_io ccu25_strobe_out_1 -DIRECTION INPUT -pinname B25 -fixed no
+set_io ccu25_strobe_out_2 -DIRECTION INPUT -pinname C31 -fixed no
+set_io ccu25_strobe_out_3 -DIRECTION INPUT -pinname D30 -fixed no
+set_io clk -DIRECTION INPUT -pinname J29 -fixed no
+set_io dac_din_0 -DIRECTION OUTPUT -pinname J7 -fixed no
+set_io dac_din_1 -DIRECTION OUTPUT -pinname K9 -fixed no
+set_io dac_ldac_0 -DIRECTION OUTPUT -pinname G5 -fixed no
+set_io dac_ldac_1 -DIRECTION OUTPUT -pinname P33 -fixed no
+set_io dac_sclk_0 -DIRECTION OUTPUT -pinname F4 -fixed no
+set_io dac_sclk_1 -DIRECTION OUTPUT -pinname K10 -fixed no
+set_io dac_sync_0 -DIRECTION OUTPUT -pinname J6 -fixed no
+set_io dac_sync_1 -DIRECTION OUTPUT -pinname J8 -fixed no
+set_io hptdc_bunch_reset_0 -DIRECTION OUTPUT -pinname R11 -fixed no
+set_io hptdc_bunch_reset_1 -DIRECTION OUTPUT -pinname P9 -fixed no
+set_io hptdc_bunch_reset_2 -DIRECTION OUTPUT -pinname T11 -fixed no
+set_io hptdc_bunch_reset_3 -DIRECTION OUTPUT -pinname T12 -fixed no
+set_io hptdc_data_ready_0 -DIRECTION INPUT -pinname K4 -fixed no
+set_io hptdc_data_ready_1 -DIRECTION INPUT -pinname U10 -fixed no
+set_io hptdc_data_ready_2 -DIRECTION INPUT -pinname U6 -fixed no
+set_io hptdc_data_ready_3 -DIRECTION INPUT -pinname R23 -fixed no
+set_io hptdc_encode_control_0 -DIRECTION OUTPUT -pinname P12 -fixed no
+set_io hptdc_encode_control_1 -DIRECTION OUTPUT -pinname P6 -fixed no
+set_io hptdc_encode_control_2 -DIRECTION OUTPUT -pinname R2 -fixed no
+set_io hptdc_encode_control_3 -DIRECTION OUTPUT -pinname N31 -fixed no
+set_io hptdc_event_reset_0 -DIRECTION OUTPUT -pinname AA10 -fixed no
+set_io hptdc_event_reset_1 -DIRECTION OUTPUT -pinname AC9 -fixed no
+set_io hptdc_event_reset_2 -DIRECTION OUTPUT -pinname AB10 -fixed no
+set_io hptdc_event_reset_3 -DIRECTION OUTPUT -pinname AA11 -fixed no
+set_io hptdc_get_data_0 -DIRECTION OUTPUT -pinname J4 -fixed no
+set_io hptdc_get_data_1 -DIRECTION OUTPUT -pinname J2 -fixed no
+set_io hptdc_get_data_2 -DIRECTION OUTPUT -pinname U5 -fixed no
+set_io hptdc_get_data_3 -DIRECTION OUTPUT -pinname R24 -fixed no
+set_io hptdc_serial_bypass_in_0 -DIRECTION OUTPUT -pinname AA8 -fixed no
+set_io hptdc_serial_bypass_in_1 -DIRECTION OUTPUT -pinname AA12 -fixed no
+set_io hptdc_serial_bypass_in_2 -DIRECTION OUTPUT -pinname AB8 -fixed no
+set_io hptdc_serial_bypass_in_3 -DIRECTION OUTPUT -pinname AA9 -fixed no
+set_io hptdc_serial_in_0 -DIRECTION OUTPUT -pinname D1 -fixed no
+set_io hptdc_serial_in_1 -DIRECTION OUTPUT -pinname L5 -fixed no
+set_io hptdc_serial_in_2 -DIRECTION OUTPUT -pinname V11 -fixed no
+set_io hptdc_serial_in_3 -DIRECTION OUTPUT -pinname P28 -fixed no
+set_io hptdc_tck_0 -DIRECTION OUTPUT -pinname AB1 -fixed no
+set_io hptdc_tck_1 -DIRECTION OUTPUT -pinname AC5 -fixed no
+set_io hptdc_tck_2 -DIRECTION OUTPUT -pinname AJ2 -fixed no
+set_io hptdc_tck_3 -DIRECTION OUTPUT -pinname AJ3 -fixed no
+set_io hptdc_tdi_0 -DIRECTION INPUT -pinname AJ6 -fixed no
+set_io hptdc_tdi_1 -DIRECTION INPUT -pinname AJ4 -fixed no
+set_io hptdc_tdi_2 -DIRECTION INPUT -pinname AG5 -fixed no
+set_io hptdc_tdi_3 -DIRECTION INPUT -pinname AE7 -fixed no
+set_io hptdc_tdo_0 -DIRECTION OUTPUT -pinname AH6 -fixed no
+set_io hptdc_tdo_1 -DIRECTION OUTPUT -pinname AE6 -fixed no
+set_io hptdc_tdo_2 -DIRECTION OUTPUT -pinname AG6 -fixed no
+set_io hptdc_tdo_3 -DIRECTION OUTPUT -pinname AD7 -fixed no
+set_io hptdc_tms_0 -DIRECTION OUTPUT -pinname AJ5 -fixed no
+set_io hptdc_tms_1 -DIRECTION OUTPUT -pinname AH3 -fixed no
+set_io hptdc_tms_2 -DIRECTION OUTPUT -pinname AF5 -fixed no
+set_io hptdc_tms_3 -DIRECTION OUTPUT -pinname AF7 -fixed no
+set_io hptdc_token_bypass_in_0 -DIRECTION OUTPUT -pinname AD3 -fixed no
+set_io hptdc_token_bypass_in_1 -DIRECTION OUTPUT -pinname AD4 -fixed no
+set_io hptdc_token_bypass_in_2 -DIRECTION OUTPUT -pinname AC4 -fixed no
+set_io hptdc_token_bypass_in_3 -DIRECTION OUTPUT -pinname AC3 -fixed no
+set_io hptdc_token_in_0 -DIRECTION OUTPUT -pinname AB3 -fixed no
+set_io hptdc_token_in_1 -DIRECTION OUTPUT -pinname AA4 -fixed no
+set_io hptdc_token_in_2 -DIRECTION OUTPUT -pinname AA3 -fixed no
+set_io hptdc_token_in_3 -DIRECTION OUTPUT -pinname AA2 -fixed no
+set_io hptdc_token_out_0 -DIRECTION INPUT -pinname AC1 -fixed no
+set_io hptdc_token_out_1 -DIRECTION INPUT -pinname AD1 -fixed no
+set_io hptdc_token_out_2 -DIRECTION INPUT -pinname AD2 -fixed no
+set_io hptdc_token_out_3 -DIRECTION INPUT -pinname AE4 -fixed no
+set_io hptdc_trigger_0 -DIRECTION OUTPUT -pinname G2 -fixed no
+set_io hptdc_trigger_1 -DIRECTION OUTPUT -pinname M7 -fixed no
+set_io hptdc_trigger_2 -DIRECTION OUTPUT -pinname W11 -fixed no
+set_io hptdc_trigger_3 -DIRECTION OUTPUT -pinname P30 -fixed no
+set_io hptdc_trstn_0 -DIRECTION OUTPUT -pinname AH5 -fixed no
+set_io hptdc_trstn_1 -DIRECTION OUTPUT -pinname AG4 -fixed no
+set_io hptdc_trstn_2 -DIRECTION OUTPUT -pinname AG3 -fixed no
+set_io hptdc_trstn_3 -DIRECTION OUTPUT -pinname AG7 -fixed no
+set_io poh_clk_0 -DIRECTION OUTPUT -pinname Y2 -fixed no
+set_io poh_clk_1 -DIRECTION OUTPUT -pinname AB5 -fixed no
+set_io poh_clk_2 -DIRECTION OUTPUT -pinname E2 -fixed no
+set_io poh_clk_3 -DIRECTION OUTPUT -pinname U8 -fixed no
+set_io poh_data_0 -DIRECTION OUTPUT -pinname G3 -fixed no
+set_io poh_data_1 -DIRECTION OUTPUT -pinname N32 -fixed no
+set_io poh_data_2 -DIRECTION OUTPUT -pinname AB7 -fixed no
+set_io poh_data_3 -DIRECTION OUTPUT -pinname K5 -fixed no
+set_io rst -DIRECTION INPUT -pinname M34 -fixed no
 
 #
 # Core cell constraints
 #
 
-set_location JTAG_1/TAP_state\[3\] -fixed no 1400 85
-set_location BiasController_0/un2_sclock_counterlto14_0 -fixed no 1430 114
-set_location JTAG_3/un14_a2\[2\] -fixed no 1439 87
-set_location BiasController_0/sclock_counter\[28\] -fixed no 1407 115
+set_location JTAG_3/data_length_RNO -fixed no 222 294
+set_location JTAG_1/TAP_state\[3\] -fixed no 576 295
+set_location ControlDecoder_3/run_number\[4\] -fixed no 205 304
+set_location ControlDecoder_1/threshold_buffer\[11\] -fixed no 645 298
+set_location ControlDecoder_1/ccu25_data_temp_10_i_m4\[0\] -fixed no 586 303
+set_location ControlDecoder_0/threshold_buffer\[9\] -fixed no 776 289
+set_location ControlDecoder_3/run_number_1_sqmuxa_0_a3_0_o2_RNICB1T -fixed no 212 294
+set_location ControlDecoder_0/threshold_voltage\[10\] -fixed no 810 283
+set_location JTAG_3/loop_counter_0_0_0\[1\] -fixed no 219 294
+set_location ControlDecoder_1/send_data_to_hptdc_5_f0_0_a2 -fixed no 578 300
+set_location ControlDecoder_0/run_number\[3\] -fixed no 744 298
+set_location JTAG_3/loop_counter_0_0_0_0\[2\] -fixed no 221 294
+set_location JTAG_2/data_to\[1\] -fixed no 303 304
+set_location ControlDecoder_3/counter_19_1_0_0\[2\] -fixed no 170 300
+set_location ControlDecoder_1/counter_cnst_i_a2_sx\[5\] -fixed no 551 303
+set_location ControlDecoder_2/run_number_buffer\[6\] -fixed no 314 307
+set_location ControlDecoder_1/instruction_RNICLSP\[4\] -fixed no 580 303
+set_location ControlDecoder_1/counter_19_ns_1_N_2L1 -fixed no 550 303
 set_location ip_interface_inst_2 -fixed no 251 0
-set_location JTAG_0/TAP_state\[2\] -fixed no 1431 97
-set_location JTAG_0/TAP_state_RNO\[3\] -fixed no 1433 96
-set_location JTAG_0/tms_pad_o_6_i_a7_0 -fixed no 1418 93
-set_location JTAG_1/TAP_state\[0\] -fixed no 1401 85
-set_location JTAG_3/tms_pad_o_RNO -fixed no 1429 87
-set_location JTAG_3/un14_i_a2_1\[3\] -fixed no 1433 87
-set_location JTAG_3/TAP_state\[2\] -fixed no 1439 88
-set_location JTAG_3/next_TAP_state\[4\] -fixed no 1437 88
-set_location JTAG_1/next_TAP_state_RNO\[5\] -fixed no 1395 87
-set_location JTAG_2/next_TAP_state_i_RNO\[0\] -fixed no 1412 96
-set_location JTAG_1/next_TAP_state\[4\] -fixed no 1398 85
-set_location JTAG_0/loop_counter\[2\] -fixed no 1416 94
-set_location JTAG_3/next_TAP_state_srsts_0_a2\[9\] -fixed no 1432 90
-set_location DACController_0/un2_sclock_counter_1lto14 -fixed no 1449 81
-set_location JTAG_2/next_TAP_state_srsts_0\[7\] -fixed no 1392 96
-set_location JTAG_0/next_TAP_state_i_RNO\[0\] -fixed no 1430 96
-set_location JTAG_3/loop_counterc_1 -fixed no 1433 84
-set_location JTAG_0/TAP_state_RNO\[0\] -fixed no 1436 96
-set_location JTAG_1/next_TAP_state_srsts_0_a2\[4\] -fixed no 1398 84
-set_location JTAG_2/next_TAP_state_i\[0\] -fixed no 1412 97
-set_location JTAG_1/loop_counterc_1_RNO -fixed no 1384 84
-set_location JTAG_1/tdo_pad_o_1 -fixed no 1392 84
-set_location DACController_0/un2_sclock_counterlto14_RNILM26 -fixed no 1451 81
-set_location DACController_0/un2_sclock_counter_1lto8 -fixed no 1450 81
-set_location JTAG_2/TAP_state\[1\] -fixed no 1398 97
-set_location JTAG_0/tdo_pad_o -fixed no 1437 97
-set_location JTAG_2/next_TAP_state_RNO\[2\] -fixed no 1399 96
-set_location JTAG_3/next_TAP_state_srsts_0_a2\[10\] -fixed no 1432 87
-set_location JTAG_0/TAP_state\[0\] -fixed no 1436 97
-set_location DACController_0/sclock_counter\[27\] -fixed no 1432 82
-set_location DACController_0/un2_sclock_counter_1lto14_1 -fixed no 1448 81
-set_location JTAG_2/tms_pad_o_6_i_a7_0 -fixed no 1392 93
-set_location DACController_0/un1_sclock_counter15_5 -fixed no 1440 78
-set_location JTAG_0/next_TAP_state\[7\] -fixed no 1424 97
-set_location DACController_0/sclock_counter\[18\] -fixed no 1445 82
-set_location JTAG_2/tdo_pad_o10_1 -fixed no 1414 96
-set_location JTAG_2/next_TAP_state\[1\] -fixed no 1402 97
-set_location JTAG_3/loop_counterc_0 -fixed no 1429 84
-set_location JTAG_3/TAP_state_RNO\[3\] -fixed no 1431 87
-set_location JTAG_0/next_TAP_state\[5\] -fixed no 1432 97
-set_location JTAG_1/next_TAP_state_srsts_0_a2\[9\] -fixed no 1396 87
-set_location DACController_0/sclock_counter\[25\] -fixed no 1441 82
-set_location JTAG_1/loop_counter\[0\] -fixed no 1391 85
-set_location JTAG_3/ir_loop -fixed no 1433 88
-set_location JTAG_1/tms_pad_o_6_i_1 -fixed no 1397 84
-set_location DACController_0/sclock_counter\[21\] -fixed no 1438 82
-set_location JTAG_2/un14_o2\[2\] -fixed no 1397 96
-set_location JTAG_2/un14_i_a2_0\[0\] -fixed no 1411 96
+set_location DACController_0/cache1\[4\] -fixed no 818 283
+set_location JTAG_3/loop_counter_0_0_0_a2_1\[0\] -fixed no 227 291
+set_location JTAG_0/TAP_state\[2\] -fixed no 740 283
+set_location ControlDecoder_1/threshold_voltage\[5\] -fixed no 637 298
+set_location ControlDecoder_1/counter_3_sqmuxa -fixed no 525 297
+set_location ControlDecoder_0/counter_19_i_a2_6\[1\] -fixed no 731 306
+set_location ControlDecoder_2/data_to_hptdc\[1\] -fixed no 315 304
+set_location JTAG_0/TAP_state_RNO\[3\] -fixed no 738 282
+set_location ControlDecoder_0/counter_19_i_a2_3\[4\] -fixed no 726 300
+set_location ControlDecoder_2/ccu25_data_temp_10\[3\] -fixed no 322 312
+set_location JTAG_2/loop_counter_r\[0\] -fixed no 311 303
+set_location ControlDecoder_3/counter_RNO_1\[0\] -fixed no 188 306
+set_location ControlDecoder_3/instruction\[6\] -fixed no 209 298
+set_location JTAG_2/loop_counter_r_RNO\[1\] -fixed no 303 303
+set_location DACController_1/sclock_counter\[23\] -fixed no 764 295
+set_location JTAG_3/data_to\[0\] -fixed no 225 298
+set_location JTAG_1/TAP_state\[0\] -fixed no 584 295
+set_location DACController_1/sclock_counter\[22\] -fixed no 776 295
+set_location ControlDecoder_3/un1_instruction46_14_0_3_i_o2_1_RNICGC21 -fixed no 184 297
+set_location ControlDecoder_3/ccu25_strobe_in_5_iv_0_a3_i_o2_i_a2_RNI6HG01 -fixed no 205 300
+set_location ControlDecoder_2/counter_19_i_m2\[4\] -fixed no 287 309
+set_location ControlDecoder_3/un1_instruction46_14_0_a3_0_0_o2_RNI3KSQ -fixed no 199 297
+set_location DACController_0/cache1\[1\] -fixed no 827 283
+set_location JTAG_0/next_TAP_state_srsts_0_a2_0_a2\[3\] -fixed no 734 282
+set_location JTAG_2/un1_data_sent_to_hptdc_5 -fixed no 321 297
+set_location JTAG_1/next_TAP_state_srsts_0\[1\] -fixed no 564 300
+set_location ControlDecoder_0/instruction_RNI0VVA1\[2\] -fixed no 739 288
+set_location JTAG_3/tms_pad_o_RNO -fixed no 235 294
+set_location ControlDecoder_0/run_number\[1\] -fixed no 745 295
+set_location DACController_1/temp_14_i_m2\[13\] -fixed no 655 297
+set_location ControlDecoder_2/ccu25_data_temp_10\[2\] -fixed no 316 312
+set_location ControlDecoder_1/send_data_to_hptdc_5_f0_0_0 -fixed no 591 300
+set_location ControlDecoder_1/ccu25_data_temp_ldmx\[0\] -fixed no 591 303
+set_location JTAG_0/next_TAP_state_srsts_i_0_o2_0\[6\] -fixed no 749 285
+set_location JTAG_2/data_to\[6\] -fixed no 309 307
+set_location JTAG_3/TAP_state\[2\] -fixed no 230 292
+set_location ControlDecoder_1/counter_19_1\[1\] -fixed no 529 297
+set_location DACController_1/temp\[1\] -fixed no 664 298
+set_location JTAG_2/tdo_pad_o10_0_a3 -fixed no 322 300
+set_location ControlDecoder_2/jtag_instruction_1\[1\] -fixed no 320 304
+set_location JTAG_3/next_TAP_state\[4\] -fixed no 231 292
+set_location JTAG_0/data_to\[6\] -fixed no 759 286
+set_location ControlDecoder_2/counter_19_i_a3_4_0\[3\] -fixed no 282 303
+set_location JTAG_2/data_received_from_hptdc_0_sqmuxa -fixed no 317 303
+set_location JTAG_1/next_TAP_state_RNO\[5\] -fixed no 577 294
+set_location ControlDecoder_1/threshold_buffer\[7\] -fixed no 627 298
+set_location ControlDecoder_3/instruction45_RNIEL1I -fixed no 185 303
+set_location ControlDecoder_0/instruction45_RNIU0BO3 -fixed no 742 288
+set_location ControlDecoder_3/get_data_from_hptdc_2_i_0_o2 -fixed no 193 300
+set_location JTAG_1/tms_pad_o_6_i_2 -fixed no 569 294
+set_location ControlDecoder_1/threshold_buffer\[1\] -fixed no 625 298
+set_location ControlDecoder_0/counter_19_i_a2_3\[1\] -fixed no 727 306
+set_location JTAG_2/data_to\[3\] -fixed no 305 304
+set_location JTAG_1/next_TAP_state\[4\] -fixed no 570 295
+set_location JTAG_0/loop_counter\[2\] -fixed no 753 283
+set_location ControlDecoder_2/counter_19_i_0\[0\] -fixed no 275 300
+set_location ControlDecoder_1/counter_19_ns_1_N_3L4 -fixed no 540 303
+set_location ControlDecoder_3/run_number\[3\] -fixed no 207 304
+set_location JTAG_3/un1_data_sent_to_hptdc_i_a2_3_a2_3_a2_0\[0\] -fixed no 235 291
+set_location ControlDecoder_3/instruction\[5\] -fixed no 204 298
+set_location ControlDecoder_3/data_to_hptdc\[7\] -fixed no 217 301
+set_location ControlDecoder_3/counter_19_i_0_1_a0_1_0\[0\] -fixed no 183 306
+set_location ControlDecoder_3/counter_19_1_0_a2_0\[1\] -fixed no 182 303
+set_location ControlDecoder_0/m66_i_o2 -fixed no 741 306
+set_location JTAG_0/data_to\[3\] -fixed no 756 286
+set_location ControlDecoder_0/counter_19_i_o2\[3\] -fixed no 722 297
+set_location JTAG_1/data_from_hptdc_1_RNO\[0\] -fixed no 569 297
+set_location ControlDecoder_2/ccu25_data_temp_10\[5\] -fixed no 307 306
+set_location ControlDecoder_1/run_number\[2\] -fixed no 586 307
+set_location ControlDecoder_2/un1_instruction46_12_0_i_a3 -fixed no 301 306
+set_location ControlDecoder_0/run_number_buffer\[1\] -fixed no 737 289
+set_location DACController_1/temp_14\[15\] -fixed no 652 297
+set_location JTAG_1/data_to\[1\] -fixed no 605 298
+set_location DACController_0/index\[3\] -fixed no 836 289
+set_location ControlDecoder_3/ccu25_strobe_in_5_iv_0_0_a2_0_1 -fixed no 213 294
+set_location ControlDecoder_1/threshold_buffer\[5\] -fixed no 636 298
+set_location ControlDecoder_3/send_data_to_hptdc_5_f0_0_0_0_a2 -fixed no 214 291
+set_location JTAG_1/loop_counter_r_RNO\[2\] -fixed no 564 297
+set_location ControlDecoder_0/jtag_instruction_1_RNO\[1\] -fixed no 747 294
+set_location JTAG_2/next_TAP_state_srsts_0\[7\] -fixed no 322 297
+set_location ControlDecoder_0/instruction\[0\] -fixed no 736 292
+set_location ControlDecoder_1/instruction\[2\] -fixed no 576 298
+set_location ControlDecoder_1/ccu25_strobe_in_5_iv -fixed no 589 300
+set_location ControlDecoder_1/counter\[0\] -fixed no 536 298
+set_location ControlDecoder_3/instruction\[2\] -fixed no 210 298
+set_location JTAG_3/un1_data_sent_to_hptdc_a2_0_a2_1_a2\[2\] -fixed no 230 291
+set_location JTAG_0/TAP_state_RNO\[0\] -fixed no 741 282
+set_location ControlDecoder_0/run_number_buffer\[0\] -fixed no 755 289
+set_location ControlDecoder_0/instruction45_RNI058E4 -fixed no 778 285
+set_location ControlDecoder_2/jtag_instruction_1_RNO\[0\] -fixed no 310 309
+set_location JTAG_1/next_TAP_state_srsts_0_a2\[4\] -fixed no 570 294
+set_location ControlDecoder_2/instruction\[0\] -fixed no 293 310
+set_location ControlDecoder_3/run_number\[1\] -fixed no 206 295
+set_location ControlDecoder_2/counter_19_i_2_RNO\[5\] -fixed no 292 303
+set_location ControlDecoder_1/run_number\[6\] -fixed no 583 304
+set_location JTAG_2/next_TAP_state_i\[0\] -fixed no 316 298
+set_location ControlDecoder_0/jtag_instruction_1_RNO_0\[0\] -fixed no 751 291
+set_location DACController_0/temp_0_sqmuxa_i_0 -fixed no 838 276
+set_location JTAG_1/next_TAP_state_nss_i_0\[0\] -fixed no 566 294
+set_location ControlDecoder_1/un1_counter56_1_RNO -fixed no 560 297
+set_location JTAG_1/tdo_pad_o_1 -fixed no 587 294
+set_location ControlDecoder_3/un1_instruction46_12_0_i_a2_1 -fixed no 204 294
+set_location ControlDecoder_2/instruction_RNO\[6\] -fixed no 292 309
+set_location JTAG_3/data_from_hptdc_1ce\[1\] -fixed no 217 294
+set_location ControlDecoder_3/counter_RNO_2\[0\] -fixed no 184 303
+set_location ControlDecoder_1/get_data_from_hptdc_1_0_a3_0_0 -fixed no 531 306
+set_location JTAG_3/next_TAP_state_srsts_0_0_0\[1\] -fixed no 219 291
+set_location DACController_0/cache1\[7\] -fixed no 823 283
+set_location ControlDecoder_0/counter_19_i_o2_4\[0\] -fixed no 733 291
+set_location ControlDecoder_0/counter_RNIPR811\[2\] -fixed no 735 297
+set_location ControlDecoder_3/ccu25_strobe_in_5_iv_0_a3_i_o2_i_a2_RNIOFPG1 -fixed no 204 300
+set_location ControlDecoder_3/send_data_to_hptdc_5_f0_0_0_0 -fixed no 215 291
+set_location JTAG_3/loop_counter_0_0_0_a2_1_0\[2\] -fixed no 226 294
+set_location ControlDecoder_2/counter_19_i_a3\[3\] -fixed no 286 303
+set_location JTAG_1/data_to\[6\] -fixed no 607 298
+set_location DACController_0/un2_sclock_counter_1lto13 -fixed no 1083 282
+set_location ControlDecoder_0/counter_19_i_o2_3_c\[3\] -fixed no 725 303
+set_location ControlDecoder_0/counter_19_i_1_1\[2\] -fixed no 732 300
+set_location DACController_0/un1_sclock_counter15_3_0_a3 -fixed no 832 282
+set_location ControlDecoder_2/counter_19_i_5_1\[4\] -fixed no 286 309
+set_location ControlDecoder_1/threshold_voltage_1_sqmuxa_0_o2_RNI4DH22 -fixed no 626 297
+set_location ControlDecoder_2/lathed_data_from_hptdc\[0\] -fixed no 305 310
+set_location ControlDecoder_2/ccu25_data_temp_10\[6\] -fixed no 319 312
+set_location ControlDecoder_0/threshold_buffer\[11\] -fixed no 768 289
+set_location DACController_0/un2_sclock_counter_1lto8 -fixed no 1089 282
+set_location ControlDecoder_2/counter_19_i_a3_2_0\[1\] -fixed no 287 303
+set_location JTAG_2/next_TAP_state\[8\] -fixed no 319 304
+set_location DACController_0/temp\[14\] -fixed no 830 280
+set_location ControlDecoder_0/lathed_data_from_hptdc24 -fixed no 755 291
+set_location ControlDecoder_1/lathed_data_from_hptdc_RNO\[1\] -fixed no 588 303
+set_location ControlDecoder_1/data_to_hptdc\[6\] -fixed no 610 298
+set_location DACController_0/dataready_RNO -fixed no 835 288
+set_location ControlDecoder_3/ccu25_data_temp\[6\] -fixed no 191 304
+set_location JTAG_0/loop_counter_0_0_0\[0\] -fixed no 745 285
+set_location ControlDecoder_2/counter_19_i_a3_5_0\[2\] -fixed no 283 300
+set_location ControlDecoder_1/instruction\[1\] -fixed no 586 301
+set_location ControlDecoder_2/ccu25_data_temp\[5\] -fixed no 318 313
+set_location ControlDecoder_2/run_number_buffer\[3\] -fixed no 319 307
+set_location DACController_0/un1_index_1.SUM_0_x3\[1\] -fixed no 832 288
+set_location ControlDecoder_3/counter\[5\] -fixed no 185 301
+set_location ControlDecoder_2/un1_instruction46_15_i_0_i_o2 -fixed no 289 306
+set_location DACController_0/cache1\[12\] -fixed no 822 283
+set_location ControlDecoder_1/counter_2_sqmuxa_3 -fixed no 548 303
+set_location rst_ibuf_RNIUUM5 -fixed no 785 189
+set_location ControlDecoder_1/threshold_buffer\[2\] -fixed no 631 298
+set_location ControlDecoder_3/ccu25_data_temp\[5\] -fixed no 193 304
+set_location ControlDecoder_0/counter_2_0_a2_RNI4A2A2\[4\] -fixed no 728 297
+set_location JTAG_2/loop_counter_r\[2\] -fixed no 307 303
+set_location ControlDecoder_0/counter_m2_0_a2_1 -fixed no 734 306
+set_location ControlDecoder_2/instruction_RNIJR0K\[4\] -fixed no 297 309
+set_location ControlDecoder_2/ccu25_data_temp\[6\] -fixed no 319 313
+set_location JTAG_2/TAP_state\[1\] -fixed no 320 298
+set_location ControlDecoder_0/counter_19_i_a2\[6\] -fixed no 721 297
+set_location JTAG_2/un1_data_sent_to_hptdc_5_1 -fixed no 318 297
+set_location ControlDecoder_2/run_number_1_sqmuxa_0_a2_4_o2 -fixed no 290 306
+set_location ControlDecoder_2/instruction\[1\] -fixed no 294 310
+set_location ControlDecoder_2/data_to_hptdc\[0\] -fixed no 317 307
+set_location ControlDecoder_2/ccu25_data_temp\[1\] -fixed no 321 313
+set_location JTAG_3/data_from_hptdc_1_RNO\[0\] -fixed no 227 294
+set_location JTAG_0/tdo_pad_o -fixed no 750 283
+set_location ControlDecoder_1/lathed_data_from_hptdc_12_1003_i_i_a3 -fixed no 593 303
+set_location JTAG_2/data_to_1_sqmuxa_i_i_a2_0_a3 -fixed no 318 303
+set_location ControlDecoder_1/run_number_buffer\[4\] -fixed no 587 304
+set_location DACController_1/temp\[9\] -fixed no 662 298
+set_location DACController_0/temp_14\[11\] -fixed no 838 285
+set_location ControlDecoder_0/lathed_data_from_hptdc\[0\] -fixed no 748 292
+set_location ControlDecoder_1/data_to_hptdc\[1\] -fixed no 604 298
+set_location ControlDecoder_2/run_number_buffer\[2\] -fixed no 308 307
+set_location ControlDecoder_0/counter_19_i_a2_5_0\[0\] -fixed no 739 306
+set_location JTAG_3/tdo_pad_o_2_7_i_m2_i_m2_am_1_1 -fixed no 217 297
+set_location ControlDecoder_3/instruction_RNO\[6\] -fixed no 209 297
+set_location JTAG_2/next_TAP_state_RNO\[2\] -fixed no 319 297
+set_location DACController_1/un2_sclock_counterlto9 -fixed no 777 294
+set_location JTAG_1/data_from_hptdc_1\[1\] -fixed no 571 298
+set_location ControlDecoder_2/lathed_data_from_hptdc\[1\] -fixed no 301 310
+set_location ControlDecoder_0/counter_19_i_o2_2_0_sx\[0\] -fixed no 739 297
+set_location ControlDecoder_0/counter_19_i_2\[2\] -fixed no 738 306
+set_location JTAG_1/next_TAP_state_nss_i_0_a2\[0\] -fixed no 570 300
+set_location ControlDecoder_1/counter_19_ns_1\[0\] -fixed no 539 297
+set_location ControlDecoder_1/counter59_0 -fixed no 539 303
+set_location DACController_0/temp\[12\] -fixed no 829 280
+set_location ControlDecoder_3/counter_19_1_0_RNO\[3\] -fixed no 179 303
+set_location ControlDecoder_0/ccu25_data_temp\[6\] -fixed no 753 298
+set_location ControlDecoder_1/instruction_RNO\[4\] -fixed no 584 303
+set_location ControlDecoder_0/data_to_hptdc\[1\] -fixed no 760 289
+set_location ControlDecoder_3/lathed_data_from_hptdc24 -fixed no 218 291
+set_location JTAG_2/loop_counter_r_RNO\[2\] -fixed no 305 303
+set_location ControlDecoder_2/counter\[4\] -fixed no 282 307
+set_location ControlDecoder_1/counter_cnst_i_i_a3_1_sx\[4\] -fixed no 555 297
+set_location ControlDecoder_2/latched_data_received_from_hptdc_1_i_0_a3_1 -fixed no 304 306
+set_location ControlDecoder_0/counter_19_i_o2\[4\] -fixed no 745 294
+set_location ControlDecoder_0/un1_instruction46_15_0_o2_0 -fixed no 737 291
+set_location ControlDecoder_2/instruction\[4\] -fixed no 288 310
+set_location ControlDecoder_1/instruction_8\[2\] -fixed no 576 297
+set_location JTAG_0/TAP_state\[0\] -fixed no 741 283
+set_location ControlDecoder_1/run_number_buffer\[6\] -fixed no 579 304
+set_location ControlDecoder_0/send_data_to_hptdc_5_f0_0_o2_1_RNI871U3 -fixed no 749 294
+set_location DACController_0/sclock_counter\[27\] -fixed no 1108 283
+set_location ControlDecoder_1/run_number_buffer\[7\] -fixed no 580 304
+set_location ControlDecoder_3/counter\[0\] -fixed no 189 301
+set_location ControlDecoder_0/instruction_8_i_o2_0_RNIV1IA1\[0\] -fixed no 743 291
+set_location ControlDecoder_2/instruction_RNO\[2\] -fixed no 296 309
+set_location DACController_1/index\[3\] -fixed no 638 295
+set_location ControlDecoder_0/instruction_RNIP17T4\[2\] -fixed no 741 291
+set_location JTAG_0/jtag_bus_in_use_s -fixed no 735 282
+set_location JTAG_0/jtag_bus_in_use -fixed no 735 283
+set_location ControlDecoder_1/lathed_data_from_hptdc_0_sqmuxa_i_o2_RNI9M4K -fixed no 547 300
+set_location ControlDecoder_3/counter_19_1_0_a2_0_0_0\[2\] -fixed no 177 303
+set_location DACController_1/un2_sclock_counter_1lto13 -fixed no 774 294
+set_location ControlDecoder_2/run_number\[7\] -fixed no 290 313
+set_location ControlDecoder_1/run_number_buffer\[1\] -fixed no 587 301
+set_location ControlDecoder_0/data_to_hptdc\[6\] -fixed no 763 289
+set_location ControlDecoder_0/data_to_hptdc\[4\] -fixed no 761 289
+set_location ControlDecoder_2/instruction_8_0_a2_0_a3\[5\] -fixed no 290 312
+set_location JTAG_0/next_TAP_state\[7\] -fixed no 732 286
+set_location ControlDecoder_1/threshold_voltage\[1\] -fixed no 649 298
+set_location DACController_0/sclock_counter\[18\] -fixed no 1083 283
+set_location ControlDecoder_2/counter_19_i_1\[2\] -fixed no 277 300
+set_location JTAG_3/jtag_bus_in_use -fixed no 229 292
+set_location ControlDecoder_3/un1_instruction46_14_0_3_i_o2_1_RNIF31N -fixed no 185 306
+set_location JTAG_0/data_received_from_hptdc -fixed no 748 286
+set_location DACController_1/cache1\[11\] -fixed no 667 298
+set_location ControlDecoder_0/lathed_data_from_hptdc\[1\] -fixed no 747 292
+set_location ControlDecoder_0/instruction45_RNIMO7A -fixed no 747 297
+set_location DACController_1/temp_14\[12\] -fixed no 658 294
+set_location JTAG_3/tdo_pad_o_2_7_i_m2_i_m2_bm -fixed no 219 297
+set_location ControlDecoder_3/instruction45 -fixed no 197 303
+set_location JTAG_2/tdo_pad_o_2_7_bm -fixed no 310 306
+set_location ControlDecoder_2/counter_19_i_a3_1_0\[2\] -fixed no 282 300
+set_location ControlDecoder_1/threshold_buffer\[0\] -fixed no 629 298
+set_location ControlDecoder_1/instruction\[5\] -fixed no 578 301
+set_location ControlDecoder_3/lathed_data_from_hptdc\[7\] -fixed no 211 295
+set_location flash_freeze_inst/INST_FLASH_FREEZE_IP -fixed no 1452 8
+set_location DACController_0/temp\[3\] -fixed no 829 283
+set_location DACController_1/sclock_counter\[27\] -fixed no 760 295
+set_location ControlDecoder_0/counter_19_i_o2_1_0\[6\] -fixed no 729 303
+set_location DACController_1/un1_sclock_counter15_5_0_a3 -fixed no 651 294
+set_location ControlDecoder_0/counter_RNO\[0\] -fixed no 740 303
+set_location DACController_0/un1_sclock_counter15_1_i_a3 -fixed no 833 282
+set_location JTAG_0/next_TAP_state_srsts_0_0_a2\[7\] -fixed no 732 285
+set_location DACController_1/un1_index_1.N_39_i_i -fixed no 642 294
+set_location ControlDecoder_3/ccu25_data_temp_10\[4\] -fixed no 205 303
+set_location JTAG_3/next_TAP_state_srsts_0_0_0_a2\[1\] -fixed no 220 294
+set_location JTAG_2/next_TAP_state\[1\] -fixed no 313 304
+set_location ControlDecoder_3/un1_instruction46_14_0_3_i_1_2 -fixed no 188 303
+set_location ControlDecoder_2/counter_RNIQFCO1\[2\] -fixed no 281 309
+set_location ControlDecoder_3/ccu25_strobe_in_5_iv_0_a3_i_o2_2_i_a2 -fixed no 214 297
+set_location DACController_0/temp\[6\] -fixed no 837 286
+set_location ControlDecoder_3/counter_19_1_0_a2\[1\] -fixed no 182 300
+set_location JTAG_3/TAP_state_RNO\[3\] -fixed no 234 291
+set_location ControlDecoder_0/counter_19_i_a2\[0\] -fixed no 736 303
+set_location JTAG_0/next_TAP_state\[5\] -fixed no 732 283
+set_location ControlDecoder_3/instruction_RNO\[2\] -fixed no 210 297
+set_location JTAG_1/get_data -fixed no 569 301
+set_location ControlDecoder_2/instruction_8_i_o4\[2\] -fixed no 299 309
+set_location ControlDecoder_1/threshold_buffer\[9\] -fixed no 633 298
+set_location JTAG_0/next_TAP_state_srsts_0_a2_0_a2\[9\] -fixed no 736 282
+set_location ControlDecoder_2/data_to_hptdc\[6\] -fixed no 323 307
+set_location ControlDecoder_1/data_to_hptdc\[2\] -fixed no 621 298
+set_location ControlDecoder_0/instruction_8_i_o2\[2\] -fixed no 738 291
+set_location DACController_1/cache1\[9\] -fixed no 669 295
+set_location ControlDecoder_1/run_number_1_sqmuxa_0_o2 -fixed no 587 297
+set_location JTAG_2/tdo_pad_o_2_7_ns -fixed no 310 300
+set_location JTAG_1/next_TAP_state_srsts_0_a2\[9\] -fixed no 578 294
+set_location DACController_0/sclock_counter\[25\] -fixed no 1088 283
+set_location ControlDecoder_1/ccu25_data_temp\[2\] -fixed no 591 298
+set_location ControlDecoder_3/counter_19_1_0_o2_1\[5\] -fixed no 175 297
+set_location ControlDecoder_0/ccu25_strobe_in_RNO -fixed no 733 288
+set_location JTAG_1/loop_counter\[0\] -fixed no 567 298
+set_location JTAG_3/ir_loop -fixed no 238 292
+set_location DACController_1/index\[1\] -fixed no 637 295
+set_location ControlDecoder_0/instruction45_RNICP94_0 -fixed no 741 288
+set_location ControlDecoder_2/instruction_RNO\[0\] -fixed no 304 309
+set_location ControlDecoder_0/counter_19_i_0\[5\] -fixed no 726 294
+set_location JTAG_1/tms_pad_o_6_i_1 -fixed no 575 294
+set_location DACController_1/sclock_counter\[25\] -fixed no 773 295
+set_location ControlDecoder_2/counter_19_1_i_a4_0_0\[6\] -fixed no 273 300
+set_location ControlDecoder_2/run_number_buffer\[4\] -fixed no 313 307
+set_location DACController_1/sequence_RNO\[0\] -fixed no 651 297
+set_location ControlDecoder_2/counter\[2\] -fixed no 285 301
+set_location JTAG_3/loop_counter_0_0_0\[2\] -fixed no 224 294
+set_location ControlDecoder_0/data_to_hptdc\[2\] -fixed no 767 289
+set_location ControlDecoder_0/lathed_data_from_hptdc_RNO\[0\] -fixed no 748 291
+set_location DACController_0/sclock_counter\[21\] -fixed no 1087 283
+set_location ControlDecoder_2/latched_data_received_from_hptdc_RNO -fixed no 303 306
+set_location JTAG_2/data_to\[7\] -fixed no 310 307
+set_location ControlDecoder_1/send_data_to_hptdc_5_f0_0_o2_RNIVGUK2 -fixed no 584 297
+set_location ControlDecoder_3/instruction\[3\] -fixed no 212 298
+set_location ControlDecoder_3/counter_2_i_o2_i_o2_RNIVC7L\[3\] -fixed no 178 297
+set_location DACController_0/ldac_barv_RNO -fixed no 805 282
+set_location JTAG_3/data_to\[2\] -fixed no 223 298
+set_location ControlDecoder_2/counter_19_i_3\[0\] -fixed no 274 300
+set_location ControlDecoder_0/run_number_buffer\[4\] -fixed no 753 289
+set_location ControlDecoder_1/instruction\[4\] -fixed no 578 304
 set_location ip_interface_inst_3 -fixed no 587 0
-set_location JTAG_3/TAP_state\[3\] -fixed no 1431 88
-set_location DACController_0/sclockv -fixed no 1440 79
-set_location BiasController_0/sclock_counter15 -fixed no 1424 114
-set_location JTAG_3/loop_counterc -fixed no 1435 84
-set_location BiasController_0/sclock_counter_RNO\[31\] -fixed no 1435 114
-set_location JTAG_2/tms_pad_o -fixed no 1394 97
-set_location JTAG_2/next_TAP_state\[9\] -fixed no 1410 97
-set_location JTAG_1/tdo_pad_o10_1 -fixed no 1395 84
-set_location JTAG_1/next_TAP_state_srsts_0\[7\] -fixed no 1385 84
-set_location JTAG_0/tms_pad_o_6_i_1 -fixed no 1418 96
-set_location DACController_0/sclock_counter\[30\] -fixed no 1429 82
-set_location JTAG_2/loop_counterc -fixed no 1394 93
-set_location JTAG_2/next_TAP_state_RNO\[5\] -fixed no 1413 96
-set_location JTAG_0/next_TAP_state_RNO\[6\] -fixed no 1427 96
-set_location JTAG_1/loop_counter\[1\] -fixed no 1386 85
-set_location JTAG_1/next_TAP_state_srsts_0_a2\[3\] -fixed no 1394 87
-set_location JTAG_1/TAP_state_RNO\[1\] -fixed no 1402 84
-set_location DACController_0/sclock_counter\[23\] -fixed no 1447 82
-set_location BiasController_0/sclock_counter\[18\] -fixed no 1417 115
-set_location JTAG_3/next_TAP_state\[7\] -fixed no 1428 85
-set_location JTAG_1/un14_i_a2_1\[3\] -fixed no 1399 84
-set_location JTAG_2/loop_counter\[0\] -fixed no 1396 94
-set_location DACController_0/sclock_counter\[22\] -fixed no 1448 82
-set_location JTAG_0/next_TAP_state_srsts_i_o2\[6\] -fixed no 1419 93
-set_location JTAG_1/next_TAP_state\[7\] -fixed no 1385 85
-set_location DACController_0/sclock_counter15 -fixed no 1441 78
-set_location clk_ibuf_RNIVTI2 -fixed no 729 156
-set_location JTAG_3/next_TAP_state\[5\] -fixed no 1431 91
-set_location BiasController_0/un2_sclock_counter_1lto8 -fixed no 1423 114
-set_location JTAG_0/ir_loop -fixed no 1435 97
-set_location JTAG_1/next_TAP_state\[5\] -fixed no 1395 88
-set_location JTAG_3/next_TAP_state_i\[0\] -fixed no 1436 85
-set_location JTAG_0/next_TAP_state\[8\] -fixed no 1393 97
-set_location DACController_0/sclock_counter\[29\] -fixed no 1430 82
-set_location JTAG_2/un1_data_from_hptdc_1_sqmuxa_i_a2 -fixed no 1402 96
-set_location BiasController_0/sclock_counter\[29\] -fixed no 1406 115
-set_location JTAG_2/TAP_state_RNO\[1\] -fixed no 1398 96
-set_location JTAG_2/loop_counter\[1\] -fixed no 1394 94
-set_location JTAG_1/un14_o2\[2\] -fixed no 1380 84
-set_location JTAG_3/loop_counter\[2\] -fixed no 1433 85
-set_location JTAG_2/TAP_state_RNO\[3\] -fixed no 1404 96
-set_location BiasController_0/sclock_counter\[23\] -fixed no 1412 115
-set_location JTAG_0/un14_i_a2_0\[0\] -fixed no 1428 96
-set_location JTAG_1/un19 -fixed no 1389 84
-set_location JTAG_1/tdo_pad_o -fixed no 1392 85
-set_location JTAG_2/TAP_state\[3\] -fixed no 1404 97
-set_location JTAG_3/tms_pad_o -fixed no 1429 88
-set_location JTAG_2/tdo_pad_o_1 -fixed no 1405 96
-set_location JTAG_3/TAP_state_RNO\[0\] -fixed no 1438 87
-set_location JTAG_0/next_TAP_state\[1\] -fixed no 1421 97
-set_location JTAG_3/un19 -fixed no 1437 84
-set_location JTAG_0/next_TAP_state\[10\] -fixed no 1418 97
-set_location JTAG_1/un14_i_a2_0\[0\] -fixed no 1392 87
-set_location BiasController_0/sclock_counter\[27\] -fixed no 1408 115
-set_location BiasController_0/sclock_counter\[21\] -fixed no 1414 115
-set_location DACController_0/sclock_counter\[24\] -fixed no 1450 82
-set_location JTAG_0/next_TAP_state_srsts_0_a2\[4\] -fixed no 1426 96
-set_location JTAG_0/un14_o2\[2\] -fixed no 1420 96
-set_location JTAG_1/tms_pad_o_RNO -fixed no 1394 84
-set_location JTAG_3/un1_data_from_hptdc_1_sqmuxa_i_a2 -fixed no 1434 84
-set_location JTAG_2/next_TAP_state_srsts_0_a2\[10\] -fixed no 1396 96
-set_location JTAG_0/un19 -fixed no 1425 93
-set_location DACController_0/sclock_counter\[26\] -fixed no 1451 82
-set_location JTAG_3/next_TAP_state_srsts_i_o2\[6\] -fixed no 1431 84
-set_location JTAG_0/next_TAP_state\[9\] -fixed no 1429 97
-set_location DACController_0/sync_barv -fixed no 1447 79
-set_location JTAG_0/TAP_state_RNO\[1\] -fixed no 1425 96
-set_location JTAG_0/next_TAP_state_i\[0\] -fixed no 1430 97
-set_location JTAG_0/un14_i_a2_1\[3\] -fixed no 1417 96
+set_location JTAG_1/loop_counter_r\[1\] -fixed no 570 297
+set_location ControlDecoder_1/counter60_1 -fixed no 547 303
+set_location ControlDecoder_1/ccu25_data_temp_ldmx\[7\] -fixed no 587 306
+set_location ControlDecoder_3/counter_19_1_1_0_o2\[3\] -fixed no 172 303
+set_location DACController_1/dataready_RNO -fixed no 657 297
+set_location DACController_0/temp_14\[10\] -fixed no 835 279
+set_location ControlDecoder_0/jtag_instruction_1_RNO_0\[1\] -fixed no 749 291
+set_location JTAG_1/data_to\[0\] -fixed no 600 298
+set_location ControlDecoder_0/counter_19_i_o2_2_a1\[3\] -fixed no 728 303
+set_location JTAG_3/un1_data_sent_to_hptdc_i_a2_0_a2_0_a2_0\[3\] -fixed no 233 294
+set_location DACController_0/temp\[2\] -fixed no 829 286
+set_location ControlDecoder_1/counter_cnst_i_i_a2\[4\] -fixed no 546 303
+set_location ControlDecoder_1/ccu25_data_temp\[1\] -fixed no 595 298
+set_location JTAG_3/TAP_state\[3\] -fixed no 234 292
+set_location DACController_1/sclockv -fixed no 648 295
+set_location DACController_0/sclockv -fixed no 835 283
+set_location ControlDecoder_2/instruction_8_i_o2\[4\] -fixed no 298 309
+set_location ControlDecoder_2/send_data_to_hptdc -fixed no 322 307
+set_location ControlDecoder_3/send_data_to_hptdc -fixed no 215 292
+set_location ControlDecoder_1/send_data_to_hptdc_5_f0_0_o2_0_2_RNIDDP42 -fixed no 546 300
+set_location JTAG_2/tms_pad_o -fixed no 323 298
+set_location ControlDecoder_2/old_data_received_from_hptdc -fixed no 303 310
+set_location ControlDecoder_2/counter_RNIR56S\[1\] -fixed no 284 309
+set_location JTAG_2/next_TAP_state\[9\] -fixed no 314 301
+set_location ControlDecoder_0/threshold_voltage\[6\] -fixed no 818 286
+set_location ControlDecoder_3/counter_19_1_0_a2_0_1\[5\] -fixed no 191 297
+set_location ControlDecoder_1/counter_6_sqmuxa_d_1_RNIJC078 -fixed no 545 300
+set_location ControlDecoder_0/counter_19_i_o2_2_a0\[3\] -fixed no 730 303
+set_location JTAG_2/data_from_hptdc_1_RNO\[1\] -fixed no 304 303
+set_location JTAG_1/get_data_3_f0 -fixed no 569 300
+set_location ControlDecoder_2/ccu25_data_temp\[3\] -fixed no 322 313
+set_location ControlDecoder_0/counter_RNILO1F1\[2\] -fixed no 734 297
+set_location ControlDecoder_3/counter_RNO_0\[0\] -fixed no 183 303
+set_location ControlDecoder_2/counter_19_i_a3_3\[0\] -fixed no 272 300
+set_location ControlDecoder_0/instruction45_RNI5RG15 -fixed no 734 288
+set_location ControlDecoder_0/threshold_buffer\[3\] -fixed no 774 289
+set_location ControlDecoder_3/run_number_buffer\[6\] -fixed no 213 301
+set_location ControlDecoder_0/latched_data_received_from_hptdc_RNO_0 -fixed no 737 294
+set_location JTAG_3/data_to\[4\] -fixed no 222 298
+set_location JTAG_1/next_TAP_state_srsts_0\[7\] -fixed no 572 294
+set_location JTAG_0/data_from_hptdc_5_i_a2\[0\] -fixed no 745 282
+set_location ControlDecoder_2/send_data_to_hptdc_5_f0_0_0_a3_0_1 -fixed no 291 306
+set_location ControlDecoder_1/lathed_data_from_hptdc_0_sqmuxa_i_o2 -fixed no 541 300
+set_location ControlDecoder_2/data_to_hptdc\[5\] -fixed no 321 304
+set_location JTAG_2/data_from_hptdc_1ce\[0\] -fixed no 300 303
+set_location DACController_0/temp_14\[3\] -fixed no 829 285
+set_location DACController_1/sclock_counter\[28\] -fixed no 759 295
+set_location ControlDecoder_3/un1_instruction46_14_0_3_i_1_1 -fixed no 190 306
+set_location ControlDecoder_1/instruction_8\[0\] -fixed no 584 300
+set_location ControlDecoder_0/counter_RNO\[4\] -fixed no 728 300
+set_location ControlDecoder_1/counter_19_ns\[2\] -fixed no 528 297
+set_location JTAG_0/tms_pad_o_6_i_0_2 -fixed no 743 285
+set_location JTAG_0/data_to\[4\] -fixed no 764 286
+set_location ControlDecoder_1/counter_cnst_i_a2_sx_0\[5\] -fixed no 538 300
+set_location ControlDecoder_0/instruction45_RNI1UN8 -fixed no 725 294
+set_location DACController_0/sclock_counter\[30\] -fixed no 1105 283
+set_location ControlDecoder_0/counter_19_i_m2\[4\] -fixed no 727 300
+set_location DACController_0/index\[1\] -fixed no 829 289
+set_location ControlDecoder_3/ccu25_strobe_in_5_iv_0_0_0 -fixed no 199 303
+set_location ControlDecoder_1/ccu25_data_temp_ldmx\[6\] -fixed no 594 297
+set_location ControlDecoder_2/run_number_1_sqmuxa_0_a2_4_a3_0 -fixed no 308 306
+set_location ControlDecoder_2/ccu25_strobe_in_5_iv_0_0_0_o2_RNI0MBC2 -fixed no 271 300
+set_location ControlDecoder_2/counter_19_i_a3_0\[4\] -fixed no 283 309
+set_location ControlDecoder_1/ccu25_data_temp\[0\] -fixed no 592 298
+set_location ControlDecoder_3/instruction\[4\] -fixed no 205 298
+set_location ControlDecoder_3/counter_RNO\[0\] -fixed no 189 300
+set_location ControlDecoder_1/counter_19_1_1\[1\] -fixed no 535 297
+set_location ControlDecoder_0/send_data_to_hptdc_5_f0_0_0 -fixed no 732 288
+set_location JTAG_2/next_TAP_state_RNO\[5\] -fixed no 323 303
+set_location JTAG_0/next_TAP_state_RNO\[6\] -fixed no 751 282
+set_location ControlDecoder_2/un1_instruction46_12_0_i_a2 -fixed no 285 303
+set_location JTAG_1/loop_counter\[1\] -fixed no 570 298
+set_location JTAG_0/loop_counter_0_0_a2\[1\] -fixed no 744 282
+set_location JTAG_3/next_TAP_state_srsts_0_0_0_o2\[8\] -fixed no 225 291
+set_location JTAG_1/un1_data_sent_to_hptdc_i_a2_1\[3\] -fixed no 565 294
+set_location ControlDecoder_2/counter_19_1_i_o2_0_0\[6\] -fixed no 272 306
+set_location JTAG_1/next_TAP_state_srsts_0_a2\[3\] -fixed no 580 294
+set_location ControlDecoder_1/ccu25_data_temp_en_RNI3HKH3\[0\] -fixed no 602 297
+set_location ControlDecoder_0/m79_0_a2_0_1 -fixed no 752 291
+set_location JTAG_1/TAP_state_RNO\[1\] -fixed no 568 294
+set_location DACController_1/un1_sclock_counter15_3_0_o2 -fixed no 655 294
+set_location ControlDecoder_0/threshold_buffer\[13\] -fixed no 803 286
+set_location DACController_0/sclock_counter\[23\] -fixed no 1091 283
+set_location DACController_0/index_RNO\[4\] -fixed no 831 288
+set_location ControlDecoder_3/run_number_buffer\[2\] -fixed no 214 301
+set_location JTAG_0/data_lengthce -fixed no 737 285
+set_location ControlDecoder_0/counter_19_i_a2_8\[0\] -fixed no 733 297
+set_location ControlDecoder_0/instruction_RNO\[4\] -fixed no 735 294
+set_location ControlDecoder_0/instruction_RNO\[6\] -fixed no 741 294
+set_location ControlDecoder_0/counter_19_i_a2_8_RNIGLB01\[2\] -fixed no 739 300
+set_location ControlDecoder_3/instruction45_RNICJ1I -fixed no 186 303
+set_location ControlDecoder_2/counter_19_i_a3_5\[1\] -fixed no 272 303
+set_location DACController_1/cache1\[8\] -fixed no 664 295
+set_location ControlDecoder_2/run_number_buffer\[7\] -fixed no 299 313
+set_location JTAG_2/data_from_hptdc_1_RNI8LSL\[0\] -fixed no 302 309
+set_location JTAG_3/next_TAP_state\[7\] -fixed no 239 295
+set_location DACController_1/temp_14\[5\] -fixed no 653 297
+set_location ControlDecoder_3/counter_19_1_0_o2_0\[2\] -fixed no 177 300
+set_location ControlDecoder_2/counter_19_i_o2_0_0\[1\] -fixed no 298 303
+set_location ControlDecoder_2/ccu25_data_temp_10\[1\] -fixed no 321 312
+set_location DACController_0/cache1\[3\] -fixed no 830 289
+set_location ControlDecoder_3/counter_19_1_0_1_RNO\[1\] -fixed no 187 306
+set_location ControlDecoder_1/latched_data_received_from_hptdc_1_i_a3_1 -fixed no 588 300
+set_location JTAG_2/loop_counter\[0\] -fixed no 311 304
+set_location ControlDecoder_1/threshold_voltage_1_sqmuxa_0_o2 -fixed no 585 297
+set_location ControlDecoder_1/threshold_voltage\[11\] -fixed no 643 298
+set_location ControlDecoder_3/latched_data_received_from_hptdc_1_i_0_o2 -fixed no 169 297
+set_location ControlDecoder_0/send_data_to_hptdc_5_f0_0_o2_4_RNINO951 -fixed no 740 300
+set_location JTAG_0/data_from_hptdc_1\[1\] -fixed no 747 283
+set_location DACController_0/sclock_counter\[22\] -fixed no 1085 283
+set_location ControlDecoder_3/counter_19_1_0_N_4L5_RNO -fixed no 202 300
+set_location JTAG_0/next_TAP_state_srsts_0_0\[8\] -fixed no 736 285
+set_location ControlDecoder_3/data_to_hptdc\[0\] -fixed no 216 301
+set_location JTAG_0/data_from_hptdc_1_RNO\[1\] -fixed no 747 282
+set_location JTAG_1/next_TAP_state\[7\] -fixed no 572 295
+set_location ControlDecoder_1/ccu25_data_temp_1_sqmuxa_i_o3_0 -fixed no 592 297
+set_location DACController_1/cache1\[5\] -fixed no 663 298
+set_location ControlDecoder_3/counter_19_1_a2_0_i_a2\[6\] -fixed no 171 303
+set_location DACController_1/cache1\[6\] -fixed no 663 295
+set_location ControlDecoder_1/ccu25_data_temp\[5\] -fixed no 596 298
+set_location DACController_0/sclock_counter15 -fixed no 1081 282
+set_location ControlDecoder_2/instruction45_RNI9BP31 -fixed no 289 303
+set_location ControlDecoder_2/counter_RNIQ5B92\[4\] -fixed no 279 306
+set_location ControlDecoder_2/instruction\[2\] -fixed no 296 310
+set_location clk_ibuf_RNIVTI2 -fixed no 734 156
+set_location DACController_1/un1_index_1.SUM_0_o3\[3\] -fixed no 640 294
+set_location ControlDecoder_0/threshold_voltage\[5\] -fixed no 816 286
+set_location DACController_0/temp\[1\] -fixed no 834 283
+set_location ControlDecoder_1/threshold_voltage_1_sqmuxa_0_o2_RNIN3ME1 -fixed no 589 297
+set_location ControlDecoder_1/run_number\[0\] -fixed no 586 304
+set_location ControlDecoder_3/counter_19_1_0_1\[3\] -fixed no 180 300
+set_location ControlDecoder_0/counter\[5\] -fixed no 721 301
+set_location ControlDecoder_0/ccu25_strobe_in -fixed no 733 289
+set_location ControlDecoder_3/instruction\[1\] -fixed no 215 298
+set_location ControlDecoder_3/counter_19_i_0_o2\[0\] -fixed no 177 297
+set_location ControlDecoder_2/counter_RNITTIK2\[4\] -fixed no 285 306
+set_location ControlDecoder_1/old_ccu25_strobe_out_RNIEQO91 -fixed no 534 300
+set_location ControlDecoder_0/send_data_to_hptdc_5_f0_0_o2_1 -fixed no 733 300
+set_location JTAG_3/next_TAP_state\[5\] -fixed no 226 292
+set_location ControlDecoder_2/counter_19_1_i_m2_ns\[6\] -fixed no 271 306
+set_location ControlDecoder_1/run_number\[5\] -fixed no 580 301
+set_location ControlDecoder_2/counter_19_i_3\[3\] -fixed no 280 306
+set_location ControlDecoder_0/counter_19_i_0\[0\] -fixed no 738 297
+set_location JTAG_0/tdo_pad_o_2_7_i_m2_ns -fixed no 758 285
+set_location JTAG_2/jtag_bus_in_use_s -fixed no 320 300
+set_location ControlDecoder_0/counter_19_i_0_RNO\[1\] -fixed no 737 297
+set_location ControlDecoder_0/ccu25_strobe_in_RNO_0 -fixed no 735 288
+set_location JTAG_0/ir_loop -fixed no 737 283
+set_location JTAG_1/data_from_hptdc_1_RNO\[1\] -fixed no 571 297
+set_location ControlDecoder_1/run_number\[4\] -fixed no 582 304
+set_location JTAG_1/next_TAP_state\[5\] -fixed no 577 295
+set_location ControlDecoder_3/counter_19_1_0_1\[5\] -fixed no 180 297
+set_location ControlDecoder_0/ccu25_data_temp_10_i_m2\[0\] -fixed no 746 300
+set_location JTAG_0/tdo_pad_o_2_7_i_m2_am_1_1 -fixed no 760 285
+set_location ControlDecoder_3/counter_19_1_0_1\[2\] -fixed no 169 300
+set_location ControlDecoder_2/counter_RNO\[0\] -fixed no 279 300
+set_location JTAG_2/tdo_pad_o_2_7_am_1_1 -fixed no 311 306
+set_location ControlDecoder_0/counter_19_i_o2_0\[4\] -fixed no 723 300
+set_location ControlDecoder_2/run_number\[2\] -fixed no 306 307
+set_location ControlDecoder_1/threshold_buffer\[12\] -fixed no 647 298
+set_location ControlDecoder_1/run_number_buffer\[0\] -fixed no 579 301
+set_location ControlDecoder_1/instruction_8\[5\] -fixed no 585 300
+set_location ControlDecoder_0/ccu25_data_temp\[5\] -fixed no 748 298
+set_location ControlDecoder_1/ccu25_data_temp_en_RNID9RJ_0\[0\] -fixed no 598 297
+set_location DACController_1/temp\[5\] -fixed no 669 298
+set_location JTAG_3/next_TAP_state_i\[0\] -fixed no 228 292
+set_location ControlDecoder_0/counter\[2\] -fixed no 734 304
+set_location ControlDecoder_3/instruction_8_0_a4_0_a2\[3\] -fixed no 210 294
+set_location ControlDecoder_3/counter_19_1_0_a2_1\[2\] -fixed no 179 300
+set_location ControlDecoder_1/counter_19_ns_1\[3\] -fixed no 537 297
+set_location JTAG_0/next_TAP_state_srsts_0_0_a2\[1\] -fixed no 742 285
+set_location ControlDecoder_0/counter_19_i_a2_2\[4\] -fixed no 737 306
+set_location DACController_0/temp_14\[5\] -fixed no 831 285
+set_location ControlDecoder_0/counter_19_i_a2\[5\] -fixed no 721 303
+set_location DACController_1/sclock_counter\[29\] -fixed no 758 295
+set_location ControlDecoder_1/send_data_to_hptdc_5_f0_0_o2 -fixed no 550 297
+set_location ControlDecoder_3/counter_19_1_0_3\[5\] -fixed no 189 297
+set_location ControlDecoder_1/lathed_data_from_hptdc24 -fixed no 594 300
+set_location ControlDecoder_0/instruction_RNIBBPO1\[4\] -fixed no 734 294
+set_location JTAG_3/next_TAP_state_srsts_i_i_a2_0_a2\[2\] -fixed no 229 294
+set_location JTAG_0/next_TAP_state\[8\] -fixed no 736 286
+set_location DACController_1/dataready_2_sqmuxa_0_a3 -fixed no 671 297
+set_location DACController_0/sclock_counter\[29\] -fixed no 1106 283
+set_location ControlDecoder_3/old_ccu25_strobe_out -fixed no 197 304
+set_location JTAG_3/loop_counter_0_0_0_a2\[0\] -fixed no 232 294
+set_location DACController_1/un1_sclock_counter15_4_0 -fixed no 648 294
+set_location ControlDecoder_1/counter_19_ns\[4\] -fixed no 542 300
+set_location ControlDecoder_2/run_number\[6\] -fixed no 307 307
+set_location ControlDecoder_1/ccu25_data_temp_1_sqmuxa_i_o3 -fixed no 553 300
+set_location ControlDecoder_0/counter_19_i_o2\[2\] -fixed no 729 306
+set_location JTAG_2/un1_data_from_hptdc_1_sqmuxa_i_a2 -fixed no 321 303
+set_location ControlDecoder_3/ccu25_data_temp\[7\] -fixed no 190 304
+set_location DACController_0/dinv_6_iv_i_o3 -fixed no 838 282
+set_location ControlDecoder_1/run_number_1_sqmuxa_0_o2_0 -fixed no 586 297
+set_location JTAG_2/TAP_state_RNO\[1\] -fixed no 320 297
+set_location JTAG_3/tms_pad_o_6_i_0_a2 -fixed no 236 294
+set_location ControlDecoder_0/ccu25_data_temp_10\[3\] -fixed no 748 300
+set_location ControlDecoder_1/instruction_RNO\[6\] -fixed no 577 303
+set_location JTAG_1/data_length -fixed no 575 301
+set_location DACController_1/sequence\[1\] -fixed no 653 298
+set_location JTAG_2/loop_counter\[1\] -fixed no 309 304
+set_location ControlDecoder_1/counter_cnst_i_a2\[5\] -fixed no 534 297
+set_location ControlDecoder_3/instruction\[0\] -fixed no 206 298
+set_location DACController_1/temp\[4\] -fixed no 641 295
+set_location ControlDecoder_0/jtag_instruction_1_RNO_1\[1\] -fixed no 753 291
+set_location ControlDecoder_0/counter_19_i_o2_4_0\[0\] -fixed no 735 291
+set_location ControlDecoder_0/counter_19_i_a2_0\[2\] -fixed no 736 306
+set_location JTAG_1/jtag_bus_in_use_s -fixed no 582 294
+set_location ControlDecoder_0/counter_19_i_a2_8_RNIKBU94\[2\] -fixed no 737 300
+set_location ControlDecoder_2/counter_19_i_5\[2\] -fixed no 276 300
+set_location JTAG_1/tdo_pad_o_2_7_bm_1_1 -fixed no 607 297
+set_location JTAG_3/loop_counter\[2\] -fixed no 224 295
+set_location JTAG_3/data_received_from_hptdc_RNO -fixed no 224 291
+set_location ControlDecoder_3/counter\[3\] -fixed no 181 301
+set_location ControlDecoder_0/counter_RNIINH22\[3\] -fixed no 724 297
+set_location ControlDecoder_1/ccu25_data_temp_ldmx\[5\] -fixed no 596 297
+set_location ControlDecoder_1/instruction_RNI8E8H\[4\] -fixed no 583 297
+set_location JTAG_2/TAP_state_RNO\[3\] -fixed no 315 300
+set_location JTAG_0/loop_counter_0_0\[2\] -fixed no 753 282
+set_location DACController_1/sequence_9_0_x2_0_x3\[1\] -fixed no 654 297
+set_location ControlDecoder_0/counter_19_i_0\[3\] -fixed no 723 294
+set_location ControlDecoder_0/ccu25_data_temp_10\[2\] -fixed no 744 300
+set_location ControlDecoder_1/un1_ccu25_data_2_4_0 -fixed no 554 297
+set_location ControlDecoder_2/counter_19_i_a3_0_0\[5\] -fixed no 284 303
+set_location ControlDecoder_1/run_number_buffer\[3\] -fixed no 583 301
+set_location ControlDecoder_2/latched_data_received_from_hptdc -fixed no 303 307
+set_location DACController_1/dinv -fixed no 650 295
+set_location DACController_0/un1_index_1.N_8304_i -fixed no 837 288
+set_location ControlDecoder_1/threshold_voltage\[0\] -fixed no 656 298
+set_location ControlDecoder_2/ccu25_data_temp_10\[7\] -fixed no 323 312
+set_location ControlDecoder_0/data_to_hptdc\[7\] -fixed no 766 289
+set_location JTAG_3/data_to\[1\] -fixed no 217 298
+set_location JTAG_2/get_data -fixed no 322 304
+set_location JTAG_0/data_to_1_sqmuxa_i_i_a2 -fixed no 755 285
+set_location ControlDecoder_1/run_number_1_sqmuxa_0_a2 -fixed no 579 297
+set_location ControlDecoder_1/run_number\[3\] -fixed no 582 301
+set_location ControlDecoder_1/instruction_RNI6GD71\[2\] -fixed no 577 300
+set_location DACController_0/cache1\[2\] -fixed no 817 283
+set_location ControlDecoder_1/lathed_data_from_hptdc\[7\] -fixed no 593 304
+set_location JTAG_1/jtag_bus_in_use -fixed no 579 298
+set_location ControlDecoder_1/threshold_voltage\[3\] -fixed no 641 298
+set_location JTAG_2/un1_data_sent_to_hptdc_i_a2_1\[3\] -fixed no 316 303
+set_location ControlDecoder_2/counter_19_i_o2\[5\] -fixed no 282 309
+set_location ControlDecoder_3/counter_19_1_0_a2_0\[2\] -fixed no 176 303
+set_location ControlDecoder_2/counter_19_i_a2_2\[0\] -fixed no 298 306
+set_location ControlDecoder_1/run_number_1_sqmuxa_0_a3 -fixed no 581 297
+set_location JTAG_3/next_TAP_state_srsts_i_0_0_o2_0\[6\] -fixed no 234 294
+set_location DACController_1/sclock_counter\[21\] -fixed no 765 295
+set_location ControlDecoder_0/ccu25_data_temp\[3\] -fixed no 745 301
+set_location JTAG_1/tdo_pad_o -fixed no 587 295
+set_location JTAG_2/TAP_state\[3\] -fixed no 315 301
+set_location ControlDecoder_1/counter_19\[1\] -fixed no 530 297
+set_location ControlDecoder_3/old_data_received_from_hptdc -fixed no 218 292
+set_location JTAG_3/data_to\[6\] -fixed no 216 298
+set_location ControlDecoder_2/get_data_from_hptdc_1_0_0 -fixed no 295 312
+set_location DACController_0/temp\[9\] -fixed no 836 283
+set_location ControlDecoder_2/instruction\[6\] -fixed no 292 310
+set_location JTAG_0/data_length_RNO -fixed no 748 294
+set_location ControlDecoder_0/ccu25_data_temp_10\[5\] -fixed no 752 297
+set_location ControlDecoder_3/instruction45_RNIG8JT1 -fixed no 213 300
+set_location DACController_1/un2_sclock_counter_1lto8 -fixed no 773 294
+set_location DACController_1/sequence\[0\] -fixed no 651 298
+set_location ControlDecoder_3/latched_data_received_from_hptdc_1_i_0_a2 -fixed no 207 291
+set_location ControlDecoder_1/run_number\[1\] -fixed no 581 307
+set_location ControlDecoder_2/counter_19_i_3\[1\] -fixed no 274 303
+set_location ControlDecoder_1/counter_RNI34HD\[3\] -fixed no 543 300
+set_location ControlDecoder_0/counter_19_i_m2_RNO_0\[6\] -fixed no 727 297
+set_location ControlDecoder_1/counter_1_sqmuxa_2 -fixed no 525 300
+set_location DACController_1/temp\[13\] -fixed no 655 295
+set_location ControlDecoder_0/data_to_hptdc\[5\] -fixed no 759 289
+set_location JTAG_0/data_from_hptdc_1ce\[0\] -fixed no 755 282
+set_location ControlDecoder_0/counter_19_i_o2_3_0\[6\] -fixed no 741 297
+set_location ControlDecoder_0/counter_19_i_a2_0_0\[3\] -fixed no 722 303
+set_location JTAG_3/tms_pad_o -fixed no 235 295
+set_location ControlDecoder_3/counter_19_1_0\[5\] -fixed no 186 297
+set_location ControlDecoder_3/ccu25_data_temp\[1\] -fixed no 180 304
+set_location ControlDecoder_2/counter_19_i_2\[5\] -fixed no 288 303
+set_location DACController_1/index\[2\] -fixed no 644 295
+set_location ControlDecoder_3/get_data_from_hptdc_RNO -fixed no 203 300
+set_location JTAG_2/tdo_pad_o_1 -fixed no 318 300
+set_location JTAG_1/tdo_pad_o_2_7_ns -fixed no 601 297
+set_location JTAG_0/data_received_from_hptdc_RNO -fixed no 748 285
+set_location ControlDecoder_0/ccu25_data_temp\[1\] -fixed no 746 292
+set_location DACController_1/dinv_6_iv_i_m2 -fixed no 649 294
+set_location ControlDecoder_0/counter_19_i_o2_2_a1_0\[3\] -fixed no 736 291
+set_location DACController_0/temp_14_i_m2\[14\] -fixed no 839 279
+set_location DACController_0/sequence_RNO\[0\] -fixed no 828 288
+set_location ControlDecoder_0/counter_19_i_0_RNO_0\[0\] -fixed no 735 303
+set_location JTAG_3/TAP_state_RNO\[0\] -fixed no 236 291
+set_location ControlDecoder_3/ccu25_data_temp\[0\] -fixed no 187 304
+set_location JTAG_1/data_to\[7\] -fixed no 606 298
+set_location JTAG_0/next_TAP_state\[1\] -fixed no 742 286
+set_location ControlDecoder_1/un1_ccu25_data_1 -fixed no 556 297
+set_location ControlDecoder_0/counter_RNO_0\[4\] -fixed no 741 303
+set_location ControlDecoder_0/counter_19_i_1\[2\] -fixed no 732 303
+set_location DACController_1/temp\[7\] -fixed no 661 298
+set_location DACController_1/index\[0\] -fixed no 645 295
+set_location ControlDecoder_3/counter_19_1_0_o2_0\[5\] -fixed no 190 300
+set_location ControlDecoder_2/old_ccu25_strobe_out -fixed no 305 307
+set_location ControlDecoder_2/instruction45_RNIG79C -fixed no 316 306
+set_location ControlDecoder_2/counter_19_i_a3_4_1\[0\] -fixed no 270 300
+set_location ControlDecoder_0/send_data_to_hptdc_5_f0_0_o2_1_RNI871U3_0 -fixed no 751 294
+set_location DACController_0/un1_index_1.N_8305_i -fixed no 836 288
+set_location ControlDecoder_0/data_to_hptdc\[0\] -fixed no 756 289
+set_location JTAG_0/next_TAP_state\[10\] -fixed no 740 286
+set_location ControlDecoder_1/threshold_buffer\[3\] -fixed no 628 298
+set_location ControlDecoder_1/old_ccu25_strobe_out -fixed no 537 304
+set_location ControlDecoder_0/ccu25_data_temp_10\[6\] -fixed no 749 300
+set_location DACController_0/cache1\[0\] -fixed no 824 283
+set_location ControlDecoder_3/get_data_from_hptdc_2_i_0_m2 -fixed no 200 300
+set_location ControlDecoder_3/un1_instruction46_14_0_3_i_o2_1 -fixed no 182 306
+set_location JTAG_0/data_from_hptdc_1_sqmuxa_1_i_0 -fixed no 754 282
+set_location ControlDecoder_0/instruction45_RNIAQKS3 -fixed no 756 288
+set_location ControlDecoder_0/latched_data_received_from_hptdc_1_i_o2 -fixed no 737 288
+set_location ControlDecoder_0/counter_19_i_x2\[1\] -fixed no 735 306
+set_location ControlDecoder_0/instruction_RNIUHAP1\[2\] -fixed no 742 291
+set_location ControlDecoder_0/ccu25_data_temp\[0\] -fixed no 746 301
+set_location DACController_0/sclock_counter\[24\] -fixed no 1089 283
+set_location ControlDecoder_3/counter_19_1_0_N_5L7 -fixed no 172 300
+set_location ControlDecoder_3/counter\[6\] -fixed no 175 301
+set_location ControlDecoder_3/latched_data_received_from_hptdc_RNO -fixed no 206 291
+set_location JTAG_3/tdo_pad_o_2_7_i_m2_i_m2_bm_1_1 -fixed no 216 297
+set_location ControlDecoder_2/counter_19_1_i_a3_0\[6\] -fixed no 295 303
+set_location DACController_1/index_RNO\[4\] -fixed no 638 294
+set_location JTAG_1/tms_pad_o_RNO -fixed no 571 294
+set_location ControlDecoder_1/counter_3_sqmuxa_3 -fixed no 562 300
+set_location JTAG_3/data_length -fixed no 222 295
+set_location JTAG_1/data_from_hptdc_1ce\[1\] -fixed no 573 297
+set_location ControlDecoder_3/un1_instruction46_14_0_3_i_a2_1_0 -fixed no 187 297
+set_location ControlDecoder_2/un1_instruction46_12_0_i_o2_0 -fixed no 295 309
+set_location ControlDecoder_1/threshold_voltage\[8\] -fixed no 655 298
+set_location JTAG_1/un1_data_sent_to_hptdc_5 -fixed no 564 294
+set_location ControlDecoder_0/counter_19_i_a2_6_0\[2\] -fixed no 743 306
+set_location ControlDecoder_1/jtag_instruction_1_RNO_0\[0\] -fixed no 557 297
+set_location ControlDecoder_0/counter_19_i_a2_4\[2\] -fixed no 738 300
+set_location JTAG_3/next_TAP_state_srsts_0_a2_0_a2_0_a2\[4\] -fixed no 238 291
+set_location ControlDecoder_2/counter_19_i_o4\[2\] -fixed no 280 300
+set_location ControlDecoder_0/counter_RNO_0\[2\] -fixed no 737 303
+set_location JTAG_0/data_to\[1\] -fixed no 762 286
+set_location DACController_1/cache1\[4\] -fixed no 662 295
+set_location ControlDecoder_2/run_number_1_sqmuxa_0_a2_4_o2_0_RNI40O22 -fixed no 295 306
+set_location ControlDecoder_2/counter_19_i_a3\[5\] -fixed no 287 306
+set_location JTAG_3/next_TAP_state\[8\] -fixed no 221 292
+set_location DACController_0/temp\[13\] -fixed no 839 280
+set_location ControlDecoder_3/un1_instruction46_14_0_a3_0_0_o2 -fixed no 212 297
+set_location ControlDecoder_3/counter_RNI22M7\[5\] -fixed no 176 300
+set_location DACController_0/sclock_counter\[26\] -fixed no 1086 283
+set_location JTAG_0/data_from_hptdc_1_RNO\[0\] -fixed no 746 282
+set_location JTAG_0/data_to\[0\] -fixed no 760 286
+set_location ControlDecoder_3/counter_19_1_0_N_4L5 -fixed no 178 300
+set_location DACController_1/cache1\[13\] -fixed no 667 295
+set_location JTAG_0/next_TAP_state\[9\] -fixed no 736 283
+set_location ControlDecoder_2/send_data_to_hptdc_5_f0_0_0_0 -fixed no 322 306
+set_location DACController_0/sync_barv -fixed no 838 277
+set_location JTAG_3/jtag_bus_in_use_s -fixed no 229 291
+set_location JTAG_0/TAP_state_RNO\[1\] -fixed no 733 282
+set_location DACController_1/sclock_counter\[20\] -fixed no 768 295
+set_location ControlDecoder_2/counter\[0\] -fixed no 279 301
+set_location ControlDecoder_1/counter_cnst_i_a2_sx_0_sx\[5\] -fixed no 536 303
+set_location ControlDecoder_1/threshold_voltage\[13\] -fixed no 639 298
+set_location ControlDecoder_1/threshold_buffer\[13\] -fixed no 640 298
+set_location ControlDecoder_1/ccu25_data_temp_0_sqmuxa_i_o3_0 -fixed no 597 300
+set_location JTAG_1/next_TAP_state\[8\] -fixed no 574 301
+set_location ControlDecoder_1/threshold_voltage\[12\] -fixed no 642 298
+set_location JTAG_3/data_lengthce -fixed no 220 291
+set_location DACController_0/dataready_2_sqmuxa_0_a3 -fixed no 830 282
+set_location ControlDecoder_1/threshold_voltage\[7\] -fixed no 648 298
+set_location ControlDecoder_0/counter_19_i_1\[1\] -fixed no 736 297
+set_location JTAG_0/next_TAP_state_i\[0\] -fixed no 741 286
+set_location DACController_1/cache1\[1\] -fixed no 671 295
+set_location ControlDecoder_3/counter_19_1_0_1\[4\] -fixed no 187 300
+set_location ControlDecoder_2/run_number_1_sqmuxa_0_a2_4_o2_2 -fixed no 276 309
+set_location DACController_1/un2_sclock_counterlto15 -fixed no 778 294
+set_location ControlDecoder_3/un1_instruction46_14_0_3_i_a2_0_0 -fixed no 196 300
+set_location ControlDecoder_2/counter_19_i_a3\[1\] -fixed no 266 306
+set_location JTAG_3/data_from_hptdc_1\[0\] -fixed no 227 295
+set_location DACController_1/temp_14_i_m2\[14\] -fixed no 658 297
+set_location JTAG_2/data_from_hptdc_1\[1\] -fixed no 300 310
+set_location ControlDecoder_0/send_data_to_hptdc_5_f0_0_o2_0 -fixed no 732 291
+set_location JTAG_0/data_to\[5\] -fixed no 758 286
+set_location DACController_0/cache1\[10\] -fixed no 821 283
+set_location ControlDecoder_2/ccu25_strobe_in_5_iv_0_0_a3_1_0 -fixed no 320 312
+set_location ControlDecoder_2/counter_m1_e_0 -fixed no 264 300
+set_location DACController_1/un2_sclock_counterlto12 -fixed no 779 294
+set_location DACController_0/un1_sclock_counter15_4_0_a3_0_4 -fixed no 833 288
+set_location ControlDecoder_1/latched_data_received_from_hptdc_RNIF32T -fixed no 586 300
 set_location ip_interface_inst -fixed no 983 0
-set_location JTAG_1/TAP_state\[1\] -fixed no 1402 85
-set_location JTAG_0/loop_counter\[0\] -fixed no 1421 94
-set_location JTAG_2/TAP_state\[0\] -fixed no 1415 97
-set_location JTAG_1/next_TAP_state_i_RNO\[0\] -fixed no 1388 84
-set_location BiasController_0/sclock_counter\[30\] -fixed no 1405 115
-set_location JTAG_0/next_TAP_state_srsts_0\[7\] -fixed no 1424 96
-set_location JTAG_3/TAP_state_RNO\[1\] -fixed no 1428 87
-set_location JTAG_2/next_TAP_state_srsts_0_a2\[9\] -fixed no 1410 96
-set_location JTAG_2/next_TAP_state\[3\] -fixed no 1407 97
-set_location JTAG_1/ir_loop -fixed no 1397 85
-set_location JTAG_2/next_TAP_state\[6\] -fixed no 1400 97
-set_location JTAG_0/next_TAP_state_RNO\[2\] -fixed no 1419 96
-set_location JTAG_0/ir_loop_RNO -fixed no 1435 96
-set_location JTAG_3/next_TAP_state_RNO\[6\] -fixed no 1438 84
-set_location JTAG_0/tdo_pad_o_1 -fixed no 1437 96
-set_location JTAG_3/next_TAP_state\[1\] -fixed no 1434 85
-set_location JTAG_1/loop_counterc_0 -fixed no 1386 84
-set_location JTAG_1/next_TAP_state_i\[0\] -fixed no 1388 85
-set_location JTAG_1/next_TAP_state\[1\] -fixed no 1382 85
-set_location JTAG_0/loop_counter\[1\] -fixed no 1420 94
-set_location BiasController_0/sclock_counter\[24\] -fixed no 1421 115
-set_location JTAG_2/TAP_state\[2\] -fixed no 1408 97
-set_location DACController_0/sclock_counter\[31\] -fixed no 1444 82
-set_location JTAG_0/tdo_pad_o4_1 -fixed no 1434 96
-set_location JTAG_2/next_TAP_state\[2\] -fixed no 1399 97
-set_location DACController_0/sclock_counter\[17\] -fixed no 1442 82
-set_location JTAG_3/next_TAP_state_i_RNO\[0\] -fixed no 1436 84
-set_location JTAG_0/TAP_state\[3\] -fixed no 1433 97
-set_location JTAG_2/un14_a2\[2\] -fixed no 1408 96
-set_location JTAG_3/next_TAP_state\[9\] -fixed no 1432 91
-set_location JTAG_0/un1_data_from_hptdc_1_sqmuxa_i_a2 -fixed no 1421 96
-set_location JTAG_0/tms_pad_o -fixed no 1422 97
-set_location JTAG_1/tms_pad_o -fixed no 1394 85
-set_location JTAG_1/next_TAP_state\[9\] -fixed no 1396 88
-set_location JTAG_3/next_TAP_state\[10\] -fixed no 1432 88
-set_location JTAG_2/ir_loop_RNO -fixed no 1409 96
-set_location JTAG_0/next_TAP_state_srsts_0_a2\[3\] -fixed no 1438 96
-set_location BiasController_0/sclock_counter\[19\] -fixed no 1420 115
-set_location DACController_0/sclock_counter_RNO\[31\] -fixed no 1444 81
-set_location Core_sb_0/SYSRESET_POR_RNICC94 -fixed no 1406 96
-set_location JTAG_3/next_TAP_state_srsts_0_a2\[3\] -fixed no 1430 90
-set_location BiasController_0/ldac_barv -fixed no 1425 115
-set_location JTAG_0/next_TAP_state_RNO\[5\] -fixed no 1432 96
-set_location JTAG_3/un14_o2\[2\] -fixed no 1430 84
-set_location BiasController_0/un2_sclock_counterlto9 -fixed no 1421 114
-set_location BiasController_0/sclock_counter\[26\] -fixed no 1423 115
-set_location BiasController_0/un2_sclock_counter_1lto11 -fixed no 1422 114
-set_location JTAG_0/loop_counterc_0 -fixed no 1420 93
-set_location JTAG_0/loop_counterc_1 -fixed no 1416 93
-set_location JTAG_3/tdo_pad_o -fixed no 1430 88
-set_location JTAG_1/next_TAP_state_RNO\[6\] -fixed no 1387 84
-set_location JTAG_2/tms_pad_o_6_i_1 -fixed no 1393 96
-set_location BiasController_0/sclock_counter\[22\] -fixed no 1422 115
+set_location DACController_1/temp\[12\] -fixed no 658 295
+set_location ControlDecoder_2/un1_instruction46_12_0_i_a3_1 -fixed no 299 306
+set_location ControlDecoder_1/counter_cnst_i_i_o2\[4\] -fixed no 529 300
+set_location DACController_0/un1_sclock_counter15_4_0_a3_0_4_3 -fixed no 834 288
+set_location JTAG_1/TAP_state\[1\] -fixed no 568 295
+set_location JTAG_0/loop_counter\[0\] -fixed no 751 286
+set_location ControlDecoder_0/ccu25_strobe_in_RNO_2 -fixed no 745 303
+set_location JTAG_2/TAP_state\[0\] -fixed no 312 301
+set_location ControlDecoder_3/un1_instruction46_14_0_3_i_a2_0 -fixed no 181 297
+set_location JTAG_3/tms_pad_o_6_i_0_2 -fixed no 223 291
+set_location DACController_1/un1_sclock_counter15_4_0_a3_0_4 -fixed no 646 294
+set_location ControlDecoder_2/counter_19_i_m2\[5\] -fixed no 286 306
+set_location ControlDecoder_0/threshold_buffer\[6\] -fixed no 769 289
+set_location ControlDecoder_3/instruction45_RNIIU8G -fixed no 209 300
+set_location DACController_1/sclock_counter\[24\] -fixed no 777 295
+set_location DACController_0/dinv_RNO -fixed no 834 285
+set_location ControlDecoder_3/counter_19_1_0_o2_1_0\[1\] -fixed no 185 297
+set_location ControlDecoder_3/data_to_hptdc\[1\] -fixed no 211 301
+set_location ControlDecoder_1/jtag_instruction_1_RNO\[0\] -fixed no 553 297
+set_location JTAG_3/TAP_state_RNO\[1\] -fixed no 237 291
+set_location JTAG_2/next_TAP_state_srsts_0_a2\[9\] -fixed no 314 300
+set_location ControlDecoder_0/counter_RNO_0\[6\] -fixed no 728 306
+set_location ControlDecoder_1/jtag_instruction_1\[0\] -fixed no 553 298
+set_location ControlDecoder_0/counter\[3\] -fixed no 725 298
+set_location ControlDecoder_2/counter_19_i_o2_0_0_RNIQJT91\[1\] -fixed no 307 309
+set_location ControlDecoder_3/counter_19_1_0_m2\[2\] -fixed no 188 300
+set_location JTAG_2/next_TAP_state\[3\] -fixed no 313 301
+set_location JTAG_0/next_TAP_state_RNI8L8G\[3\] -fixed no 739 282
+set_location ControlDecoder_3/counter_2_0_a2_0_a2\[1\] -fixed no 189 303
+set_location JTAG_1/ir_loop -fixed no 585 295
+set_location ControlDecoder_2/counter_19_i_a3_5_d\[4\] -fixed no 283 306
+set_location DACController_0/un2_sclock_counterlto12 -fixed no 1084 282
+set_location JTAG_2/next_TAP_state\[6\] -fixed no 312 298
+set_location ControlDecoder_1/un1_instruction39_4 -fixed no 592 300
+set_location ControlDecoder_0/threshold_buffer\[8\] -fixed no 770 289
+set_location ControlDecoder_3/jtag_instruction_1_RNO\[0\] -fixed no 195 300
+set_location ControlDecoder_3/counter_19_1_0_a2_0_0_a1\[4\] -fixed no 176 297
+set_location ControlDecoder_1/instruction_RNIE3DS1\[4\] -fixed no 580 297
+set_location ControlDecoder_0/latched_data_received_from_hptdc_1_i_o2_RNI9ANA1 -fixed no 740 294
+set_location JTAG_3/data_from_hptdc_1_RNIB4S3\[1\] -fixed no 209 294
+set_location ControlDecoder_1/counter_19_ns_1_1\[0\] -fixed no 538 297
+set_location JTAG_2/next_TAP_state_nss_i_0\[0\] -fixed no 316 297
+set_location JTAG_0/ir_loop_RNO -fixed no 737 282
+set_location DACController_1/sequence_RNO\[1\] -fixed no 652 294
+set_location ControlDecoder_0/counter_19_i_o2_3_0_0\[3\] -fixed no 731 303
+set_location JTAG_2/data_to\[4\] -fixed no 302 304
+set_location ControlDecoder_2/jtag_instruction_1_RNO\[1\] -fixed no 320 303
+set_location ControlDecoder_0/threshold_voltage\[7\] -fixed no 806 286
+set_location DACController_0/temp_14\[6\] -fixed no 837 285
+set_location ControlDecoder_0/ccu25_data_temp\[7\] -fixed no 745 292
+set_location ControlDecoder_3/run_number_buffer\[5\] -fixed no 211 298
+set_location ControlDecoder_3/un1_instruction46_12_0_i -fixed no 173 303
+set_location ControlDecoder_2/counter_19_1_i_o3\[6\] -fixed no 267 300
+set_location ControlDecoder_0/old_data_received_from_hptdc -fixed no 746 295
+set_location ControlDecoder_1/counter_19_ns_1_1_RNO_0\[0\] -fixed no 536 300
+set_location ControlDecoder_0/counter_19_i_a2\[3\] -fixed no 723 303
+set_location ControlDecoder_2/counter_19_i_5_4_1\[4\] -fixed no 273 303
+set_location JTAG_3/next_TAP_state_RNO\[6\] -fixed no 231 294
+set_location DACController_1/temp_14\[6\] -fixed no 648 297
+set_location ControlDecoder_2/counter_19_i_o4_1\[2\] -fixed no 281 300
+set_location ControlDecoder_2/counter\[3\] -fixed no 276 307
+set_location DACController_0/sequence_9_0_x2_0_x3\[1\] -fixed no 836 279
+set_location ControlDecoder_2/data_to_hptdc\[7\] -fixed no 316 307
+set_location ControlDecoder_1/counter_19_ns\[3\] -fixed no 540 300
+set_location JTAG_2/data_from_hptdc_1_sqmuxa_1 -fixed no 321 300
+set_location ControlDecoder_3/counter_19_1_0_1\[1\] -fixed no 181 303
+set_location ControlDecoder_3/run_number_buffer\[4\] -fixed no 204 301
+set_location JTAG_0/tms_pad_o_6_i_0_a2 -fixed no 747 285
+set_location JTAG_3/get_data -fixed no 217 292
+set_location DACController_1/dinv_6_iv_i_o3 -fixed no 668 294
+set_location JTAG_2/data_from_hptdc_1\[0\] -fixed no 302 310
+set_location JTAG_0/tdo_pad_o_1 -fixed no 750 282
+set_location ControlDecoder_2/instruction_RNO\[4\] -fixed no 288 309
+set_location ControlDecoder_2/counter_19_1_i_2\[6\] -fixed no 279 303
+set_location JTAG_1/tdo_pad_o_2_7_am_1_1 -fixed no 600 297
+set_location ControlDecoder_1/old_data_received_from_hptdc -fixed no 594 301
+set_location JTAG_3/data_to\[5\] -fixed no 219 298
+set_location ControlDecoder_0/counter_19_i_0\[6\] -fixed no 727 294
+set_location ControlDecoder_0/run_number\[7\] -fixed no 751 295
+set_location ControlDecoder_3/get_data_from_hptdc_2_i_o2_i_a2_0_o2 -fixed no 201 300
+set_location DACController_1/temp\[11\] -fixed no 659 295
+set_location ControlDecoder_3/lathed_data_from_hptdc\[0\] -fixed no 210 295
+set_location ControlDecoder_0/counter_19_i_a2_5\[0\] -fixed no 733 306
+set_location JTAG_2/data_to\[2\] -fixed no 310 304
+set_location ControlDecoder_2/lathed_data_from_hptdc_0_sqmuxa_i_0 -fixed no 301 309
+set_location ControlDecoder_2/counter_19_i_o2_0\[1\] -fixed no 293 312
+set_location ControlDecoder_3/instruction45_RNIT65H -fixed no 184 306
+set_location ControlDecoder_0/counter_RNO\[3\] -fixed no 725 297
+set_location DACController_1/temp_14\[3\] -fixed no 647 294
+set_location DACController_1/sync_barv -fixed no 654 295
+set_location ControlDecoder_2/counter_19_1_i_m2_am\[6\] -fixed no 275 306
+set_location DACController_1/cache1\[7\] -fixed no 665 298
+set_location DACController_1/temp\[10\] -fixed no 652 295
+set_location JTAG_1/data_received_from_hptdc -fixed no 568 301
+set_location JTAG_3/next_TAP_state\[1\] -fixed no 219 292
+set_location JTAG_0/loop_counter_0_0_a2\[0\] -fixed no 744 285
+set_location DACController_0/temp_14\[4\] -fixed no 839 282
+set_location ControlDecoder_0/lathed_data_from_hptdc_RNO\[1\] -fixed no 747 291
+set_location ControlDecoder_1/data_to_hptdc\[3\] -fixed no 601 298
+set_location ControlDecoder_1/counter_19_ns_1\[6\] -fixed no 551 297
+set_location ControlDecoder_2/counter_RNO\[4\] -fixed no 282 306
+set_location JTAG_1/next_TAP_state_i\[0\] -fixed no 566 295
+set_location DACController_1/temp_14\[8\] -fixed no 671 294
+set_location ControlDecoder_1/ccu25_data_temp_ldmx\[3\] -fixed no 593 297
+set_location ControlDecoder_0/threshold_voltage\[2\] -fixed no 817 286
+set_location JTAG_3/data_to\[7\] -fixed no 224 298
+set_location DACController_1/un2_sclock_counter_1lto11_1 -fixed no 776 294
+set_location DACController_1/cache1\[12\] -fixed no 666 295
+set_location ControlDecoder_1/counter_19_ns_1_N_4L6 -fixed no 535 300
+set_location ControlDecoder_0/counter_19_i_1_1_RNO\[2\] -fixed no 736 300
+set_location ControlDecoder_3/run_number_buffer\[1\] -fixed no 207 301
+set_location JTAG_1/next_TAP_state\[1\] -fixed no 564 301
+set_location DACController_1/temp\[8\] -fixed no 660 298
+set_location ControlDecoder_3/run_number_1_sqmuxa_0_a3_0_o2 -fixed no 215 294
+set_location JTAG_0/loop_counter\[1\] -fixed no 749 283
+set_location DACController_0/temp_14\[9\] -fixed no 836 282
+set_location ControlDecoder_0/counter\[0\] -fixed no 740 304
+set_location ControlDecoder_2/ccu25_data_temp_10_i_m2_i_m4\[0\] -fixed no 317 312
+set_location DACController_1/sclock_counter\[26\] -fixed no 761 295
+set_location ControlDecoder_2/send_data_to_hptdc_5_f0_0_0_0_o4_1 -fixed no 297 306
+set_location ControlDecoder_2/counter_19_i_o2_1\[3\] -fixed no 294 306
+set_location ControlDecoder_2/ccu25_data_temp\[4\] -fixed no 314 313
+set_location JTAG_0/data_from_hptdc_1ce\[1\] -fixed no 752 282
+set_location ControlDecoder_1/counter_8_sqmuxa -fixed no 532 303
+set_location JTAG_2/TAP_state\[2\] -fixed no 323 301
+set_location DACController_0/sclock_counter\[31\] -fixed no 1090 283
+set_location JTAG_3/next_TAP_state_srsts_0_0_0\[8\] -fixed no 221 291
+set_location ControlDecoder_2/run_number\[0\] -fixed no 289 313
+set_location ControlDecoder_2/ccu25_data_temp\[2\] -fixed no 316 313
+set_location ControlDecoder_0/counter_19_i_a2_1_0\[3\] -fixed no 728 294
+set_location JTAG_2/next_TAP_state\[2\] -fixed no 319 298
+set_location JTAG_0/tdo_pad_o_2_7_i_m2_am -fixed no 756 285
+set_location ControlDecoder_3/ccu25_data_temp\[2\] -fixed no 189 304
+set_location ControlDecoder_3/counter_19_1_0_o2_1_0\[5\] -fixed no 184 300
+set_location ControlDecoder_1/data_to_hptdc\[0\] -fixed no 609 298
+set_location DACController_0/un2_sclock_counterlto15 -fixed no 1082 282
+set_location ControlDecoder_0/counter_19_i_3\[3\] -fixed no 724 294
+set_location ControlDecoder_3/counter_19_1_0_a2_1_2_0\[5\] -fixed no 191 303
+set_location ControlDecoder_2/counter_19_i_0\[1\] -fixed no 267 303
+set_location ControlDecoder_2/ccu25_strobe_in_5_iv_0_0_0_o2_RNINNJ02 -fixed no 309 309
+set_location DACController_0/sclock_counter\[17\] -fixed no 1082 283
+set_location ControlDecoder_3/lathed_data_from_hptdc\[1\] -fixed no 209 295
+set_location ControlDecoder_2/instruction\[3\] -fixed no 291 310
+set_location ControlDecoder_2/run_number\[5\] -fixed no 300 307
+set_location ControlDecoder_0/instruction\[1\] -fixed no 732 292
+set_location ControlDecoder_3/instruction_RNO\[1\] -fixed no 215 297
+set_location ControlDecoder_1/g0_4_i_a5_0_0 -fixed no 528 300
+set_location JTAG_1/data_to\[5\] -fixed no 612 298
+set_location ControlDecoder_2/counter_19_i_a3_3_0_RNO\[2\] -fixed no 286 300
+set_location ControlDecoder_1/threshold_voltage\[10\] -fixed no 652 298
+set_location ControlDecoder_3/instruction_RNO\[0\] -fixed no 208 297
+set_location ControlDecoder_1/get_data_from_hptdc_1_0 -fixed no 532 300
+set_location ControlDecoder_2/data_to_hptdc\[2\] -fixed no 318 304
+set_location ControlDecoder_0/threshold_voltage\[9\] -fixed no 810 286
+set_location ControlDecoder_2/counter\[1\] -fixed no 273 307
+set_location ControlDecoder_1/threshold_voltage\[4\] -fixed no 654 298
+set_location ControlDecoder_1/data_to_hptdc\[5\] -fixed no 623 298
+set_location JTAG_2/get_data_RNO -fixed no 322 303
+set_location ControlDecoder_3/data_to_hptdc\[4\] -fixed no 227 301
+set_location JTAG_1/un1_send_data_to_hptdc_1_i_a2 -fixed no 567 300
+set_location ControlDecoder_1/instruction\[6\] -fixed no 577 304
+set_location ControlDecoder_2/run_number\[4\] -fixed no 315 313
+set_location JTAG_0/TAP_state\[3\] -fixed no 738 283
+set_location ControlDecoder_0/counter_19_i_2\[4\] -fixed no 730 300
+set_location JTAG_2/data_from_hptdc_1_RNO\[0\] -fixed no 302 303
+set_location DACController_0/index\[2\] -fixed no 834 289
+set_location ControlDecoder_3/run_number\[7\] -fixed no 213 295
+set_location DACController_0/temp_14\[1\] -fixed no 834 282
+set_location ControlDecoder_2/get_data_from_hptdc -fixed no 295 313
+set_location ControlDecoder_0/threshold_buffer\[4\] -fixed no 775 289
+set_location ControlDecoder_1/counter_5_sqmuxa_0_a3_sx -fixed no 530 300
+set_location JTAG_3/next_TAP_state\[9\] -fixed no 238 295
+set_location ControlDecoder_0/m58_0_a2 -fixed no 726 291
+set_location ControlDecoder_3/jtag_instruction_1_1_i_0_o2\[0\] -fixed no 199 300
+set_location ControlDecoder_3/counter_19_i_0_o2_RNIU84O\[0\] -fixed no 172 297
+set_location JTAG_0/TAP_state_RNIJNFK\[0\] -fixed no 743 282
+set_location ControlDecoder_0/counter_19_i_a2_3_0\[0\] -fixed no 735 300
+set_location ControlDecoder_3/ccu25_data_temp_10\[3\] -fixed no 207 303
+set_location DACController_0/temp\[5\] -fixed no 831 286
+set_location ControlDecoder_0/send_data_to_hptdc_5_f0_0_a2_0_1 -fixed no 736 294
+set_location JTAG_0/tms_pad_o -fixed no 734 286
+set_location ControlDecoder_2/counter_19_i_a3_0_0\[3\] -fixed no 281 303
+set_location JTAG_1/tms_pad_o -fixed no 571 295
+set_location JTAG_1/next_TAP_state\[9\] -fixed no 578 295
+set_location JTAG_3/next_TAP_state\[10\] -fixed no 230 295
+set_location DACController_1/temp_14\[11\] -fixed no 659 294
+set_location DACController_1/sclock_counter\[17\] -fixed no 770 295
+set_location ControlDecoder_1/counter\[6\] -fixed no 549 298
+set_location ControlDecoder_3/counter59_0_a2_0_a2_0_0_o2 -fixed no 190 303
+set_location JTAG_1/loop_counter_r\[0\] -fixed no 567 297
+set_location DACController_0/temp_14\[15\] -fixed no 830 279
+set_location ControlDecoder_2/counter_19_1_i_m2_bm\[6\] -fixed no 268 306
+set_location ControlDecoder_0/instruction\[4\] -fixed no 734 295
+set_location DACController_0/index_1_sqmuxa_1_0_o3 -fixed no 829 282
+set_location ControlDecoder_2/counter_19_i_0_RNO\[1\] -fixed no 264 306
+set_location ControlDecoder_3/counter_19_i_0_1_a1_1\[0\] -fixed no 189 306
+set_location ControlDecoder_1/ccu25_data_temp_en\[0\] -fixed no 537 303
+set_location JTAG_2/ir_loop_RNO -fixed no 316 300
+set_location ControlDecoder_0/counter_19_i_a2_3\[3\] -fixed no 722 294
+set_location ControlDecoder_2/ccu25_data_temp_10\[4\] -fixed no 315 312
+set_location ControlDecoder_1/threshold_voltage\[2\] -fixed no 658 298
+set_location JTAG_2/next_TAP_state_nss_i_0_a2\[0\] -fixed no 306 303
+set_location ControlDecoder_2/lathed_data_from_hptdc24 -fixed no 303 309
+set_location ControlDecoder_3/ccu25_data_temp\[4\] -fixed no 181 304
+set_location JTAG_1/un1_data_sent_to_hptdc_i_a2_0\[0\] -fixed no 586 294
+set_location ControlDecoder_0/counter_19_i_a2_4_0\[0\] -fixed no 725 306
+set_location ControlDecoder_3/ccu25_data_temp_10\[2\] -fixed no 204 303
+set_location ControlDecoder_0/latched_data_received_from_hptdc_RNO -fixed no 734 291
+set_location ControlDecoder_1/lathed_data_from_hptdc_0_sqmuxa_i_o2_RNIQS4M -fixed no 595 300
+set_location DACController_0/sclock_counter_RNO\[31\] -fixed no 1090 282
+set_location ControlDecoder_1/ccu25_data_temp_en_RNIMSQP4\[0\] -fixed no 544 300
+set_location JTAG_2/tms_pad_o_6_i_0_a3_0_0_a3 -fixed no 315 303
+set_location DACController_0/un1_sclock_counter15_5_0_a3 -fixed no 835 282
+set_location ControlDecoder_0/ccu25_data_temp_10\[1\] -fixed no 746 291
+set_location ControlDecoder_1/threshold_voltage_1_sqmuxa_0_a3 -fixed no 638 297
+set_location JTAG_3/get_data_RNO -fixed no 217 291
+set_location JTAG_3/tms_pad_o_6_i_0_0 -fixed no 237 294
+set_location ControlDecoder_3/jtag_instruction_1_RNO_0\[1\] -fixed no 198 300
+set_location JTAG_3/data_from_hptdc_1_RNO\[1\] -fixed no 223 294
+set_location JTAG_0/loop_counter_0_0\[0\] -fixed no 751 285
+set_location DACController_0/temp\[4\] -fixed no 839 283
+set_location ControlDecoder_3/ccu25_data_temp_10_i_m2_i_m2\[0\] -fixed no 208 303
+set_location ControlDecoder_3/run_number_buffer\[3\] -fixed no 208 301
+set_location ControlDecoder_3/latched_data_received_from_hptdc_1_i_0_a2_1 -fixed no 213 291
+set_location ControlDecoder_1/counter54_2_i_o3 -fixed no 545 303
+set_location JTAG_0/get_data_RNO -fixed no 746 285
+set_location ControlDecoder_1/un1_ccu25_data_2_0_a3 -fixed no 530 303
+set_location ControlDecoder_1/counter58_2_0_0 -fixed no 535 303
+set_location ControlDecoder_1/ccu25_data_temp\[4\] -fixed no 588 298
+set_location ControlDecoder_1/instruction_RNI2EG21\[2\] -fixed no 578 297
+set_location DACController_1/un1_sclock_counter15_4_0_a3_0_4_3 -fixed no 644 294
+set_location ControlDecoder_0/run_number_buffer\[6\] -fixed no 748 289
+set_location ControlDecoder_0/counter_m3_0_a2_1 -fixed no 749 297
+set_location ControlDecoder_2/run_number\[3\] -fixed no 320 313
+set_location ControlDecoder_0/counter_RNO\[6\] -fixed no 731 297
+set_location ControlDecoder_1/counter_19_ns_1_N_3L3 -fixed no 544 303
+set_location JTAG_1/data_length_1_sqmuxa -fixed no 572 300
+set_location JTAG_2/loop_counter_r\[1\] -fixed no 309 303
+set_location JTAG_2/data_length_4_iv_i -fixed no 312 303
+set_location ControlDecoder_3/instruction_RNO\[4\] -fixed no 205 297
+set_location DACController_0/index_1_sqmuxa_1_0_a3 -fixed no 837 282
+set_location ControlDecoder_0/jtag_instruction_1_RNO\[0\] -fixed no 750 291
+set_location JTAG_0/next_TAP_state_RNO\[5\] -fixed no 732 282
+set_location JTAG_2/data_received_from_hptdc -fixed no 317 304
+set_location DACController_1/un1_index_1.SUM_0_x3\[1\] -fixed no 643 294
+set_location ControlDecoder_2/counter_19_i_a3_4\[0\] -fixed no 265 300
+set_location ControlDecoder_1/run_number_buffer\[5\] -fixed no 585 301
+set_location JTAG_3/loop_counter_0_0_0\[0\] -fixed no 216 294
+set_location ControlDecoder_3/send_data_to_hptdc_5_f0_0_0_a2_1 -fixed no 212 291
+set_location ControlDecoder_3/ccu25_data_temp_10\[5\] -fixed no 193 303
+set_location ControlDecoder_2/counter_19_i_a3_1\[5\] -fixed no 284 306
+set_location ControlDecoder_2/instruction\[5\] -fixed no 289 310
+set_location ControlDecoder_2/counter_RNO\[2\] -fixed no 285 300
+set_location ControlDecoder_1/send_data_to_hptdc -fixed no 591 301
+set_location ControlDecoder_1/counter_19_ns_1\[4\] -fixed no 549 300
+set_location ControlDecoder_3/ccu25_strobe_in_5_iv_0_a3_i_o2_i_a2 -fixed no 205 291
+set_location ControlDecoder_1/instruction_8_1\[0\] -fixed no 576 300
+set_location ControlDecoder_0/counter_19_i_2\[1\] -fixed no 726 306
+set_location DACController_1/cache1\[10\] -fixed no 665 295
+set_location ControlDecoder_2/counter_19_i_2_RNO_0\[5\] -fixed no 294 303
+set_location ControlDecoder_3/un1_instruction46_14_0_3_i_a2_0_0_RNIECLI -fixed no 187 303
+set_location JTAG_1/tdo_pad_o4 -fixed no 583 294
+set_location ControlDecoder_0/old_ccu25_strobe_out -fixed no 733 295
+set_location ControlDecoder_1/instruction_RNIF1PJ1\[5\] -fixed no 577 297
+set_location ControlDecoder_0/instruction_RNO\[2\] -fixed no 740 291
+set_location ControlDecoder_0/counter_19_i_a2_3_0\[6\] -fixed no 723 306
+set_location ControlDecoder_3/ccu25_strobe_in_5_iv_0_0_a2_0_3 -fixed no 204 291
+set_location ControlDecoder_2/run_number\[1\] -fixed no 312 313
+set_location ControlDecoder_2/counter_19_i_a3_4\[1\] -fixed no 297 303
+set_location ControlDecoder_3/counter_19_1_0_a2_3\[2\] -fixed no 170 297
+set_location JTAG_3/TAP_state_RNISCHO\[0\] -fixed no 232 291
+set_location JTAG_3/data_from_hptdc_1\[1\] -fixed no 220 295
+set_location JTAG_1/next_TAP_state_RNI1CNV\[8\] -fixed no 595 297
+set_location ControlDecoder_1/instruction_RNI7EVM\[5\] -fixed no 578 303
+set_location DACController_1/un1_sclock_counter15_3_0_a3 -fixed no 656 294
+set_location ControlDecoder_2/counter_19_i_4\[3\] -fixed no 280 303
+set_location ControlDecoder_1/instruction\[0\] -fixed no 584 301
+set_location ControlDecoder_0/counter_19_i_a2_8\[2\] -fixed no 741 300
+set_location JTAG_1/data_length_4_iv_i -fixed no 575 300
+set_location JTAG_2/un1_data_sent_to_hptdc_o2\[2\] -fixed no 313 297
+set_location JTAG_1/data_to\[2\] -fixed no 613 298
+set_location ControlDecoder_0/counter_19_i_o2\[6\] -fixed no 724 306
+set_location ControlDecoder_1/latched_data_received_from_hptdc -fixed no 590 301
+set_location JTAG_3/tdo_pad_o -fixed no 228 295
+set_location ControlDecoder_1/ccu25_data_temp\[6\] -fixed no 594 298
+set_location JTAG_1/data_from_hptdc_1_sqmuxa_1 -fixed no 573 300
+set_location DACController_1/sclock_counter\[18\] -fixed no 769 295
+set_location ControlDecoder_1/counter59_0_RNINQU31 -fixed no 538 303
+set_location ControlDecoder_0/send_data_to_hptdc_5_f0_0_a2 -fixed no 738 288
+set_location JTAG_1/next_TAP_state_RNO\[6\] -fixed no 567 294
+set_location ControlDecoder_3/jtag_instruction_1\[0\] -fixed no 195 301
+set_location ControlDecoder_2/un1_instruction46_12_0_i_a3_0_1 -fixed no 308 309
+set_location ControlDecoder_2/latched_data_received_from_hptdc_1_i_0_a3 -fixed no 302 306
+set_location JTAG_2/data_to\[5\] -fixed no 308 304
+set_location ControlDecoder_1/counter\[3\] -fixed no 541 301
+set_location JTAG_0/loop_counter_0_0_0\[2\] -fixed no 748 282
+set_location ControlDecoder_1/counter_19_ns\[0\] -fixed no 536 297
+set_location ControlDecoder_2/counter_m2_0_a2_1 -fixed no 299 303
+set_location ControlDecoder_2/counter_RNI1NUG\[5\] -fixed no 277 303
+set_location ControlDecoder_2/counter_19_i_a2_0\[0\] -fixed no 274 306
+set_location ControlDecoder_2/ccu25_data_temp\[0\] -fixed no 317 313
+set_location ControlDecoder_3/ccu25_data_temp_10\[6\] -fixed no 215 303
+set_location ControlDecoder_3/counter_RNITRK9\[0\] -fixed no 171 297
+set_location ControlDecoder_1/threshold_buffer\[6\] -fixed no 646 298
+set_location ControlDecoder_3/un1_instruction46_14_0_o2_1 -fixed no 211 297
+set_location ControlDecoder_0/counter_RNO\[2\] -fixed no 734 303
+set_location ControlDecoder_0/counter_19_i_0_RNO\[0\] -fixed no 740 297
 set_location ip_interface_inst_1 -fixed no 1319 0
-set_location JTAG_2/next_TAP_state\[4\] -fixed no 1395 97
-set_location JTAG_1/loop_counterc -fixed no 1391 84
-set_location BiasController_0/sclock_counter\[25\] -fixed no 1427 115
-set_location BiasController_0/sclock_counter\[17\] -fixed no 1418 115
-set_location JTAG_2/tdo_pad_o -fixed no 1405 97
-set_location JTAG_2/tms_pad_o_RNO -fixed no 1394 96
-set_location JTAG_0/loop_counterc -fixed no 1421 93
-set_location JTAG_2/ir_loop -fixed no 1409 97
-set_location JTAG_1/loop_counterc_1 -fixed no 1390 84
-set_location JTAG_1/un14_a2\[2\] -fixed no 1403 84
-set_location BiasController_0/un1_sclock_counter15_3 -fixed no 1425 114
-set_location JTAG_0/next_TAP_state\[3\] -fixed no 1438 97
-set_location JTAG_3/TAP_state\[1\] -fixed no 1428 88
-set_location JTAG_0/next_TAP_state\[6\] -fixed no 1427 97
-set_location BiasController_0/un2_sclock_counterlto12 -fixed no 1420 114
-set_location DACController_0/sclock_counter\[28\] -fixed no 1431 82
-set_location JTAG_1/un1_data_from_hptdc_1_sqmuxa_i_a2 -fixed no 1382 84
-set_location JTAG_3/tms_pad_o_6_i_a7_0 -fixed no 1432 84
-set_location DACController_0/sclock_counter\[19\] -fixed no 1440 82
-set_location JTAG_0/tms_pad_o_RNO -fixed no 1422 96
-set_location JTAG_2/next_TAP_state_srsts_0_a2\[4\] -fixed no 1395 96
-set_location JTAG_3/next_TAP_state_RNO\[2\] -fixed no 1434 87
-set_location JTAG_1/loop_counter\[2\] -fixed no 1390 85
-set_location JTAG_1/ir_loop_RNO -fixed no 1393 87
-set_location JTAG_2/loop_counterc_0_RNO -fixed no 1395 93
-set_location clk_ibuf_RNIVTI2/U0_RGB1 -fixed no 1094 114
-set_location JTAG_1/TAP_state_RNO\[3\] -fixed no 1400 84
-set_location JTAG_1/next_TAP_state_srsts_0_a2\[10\] -fixed no 1396 84
-set_location JTAG_1/next_TAP_state_srsts_0_a2\[2\] -fixed no 1393 84
-set_location JTAG_1/TAP_state\[2\] -fixed no 1403 85
-set_location JTAG_3/loop_counter\[0\] -fixed no 1435 85
-set_location DACController_0/un2_sclock_counterlto14 -fixed no 1445 81
-set_location JTAG_0/next_TAP_state\[2\] -fixed no 1419 97
-set_location JTAG_2/next_TAP_state_srsts_i_o2\[6\] -fixed no 1396 93
-set_location DACController_0/un2_sclock_counterlto9 -fixed no 1447 81
-set_location JTAG_0/un14_a2\[2\] -fixed no 1431 96
-set_location JTAG_1/TAP_state_RNO\[0\] -fixed no 1401 84
-set_location JTAG_2/next_TAP_state\[10\] -fixed no 1396 97
-set_location JTAG_2/un14_i_a2_1\[3\] -fixed no 1403 96
-set_location JTAG_2/loop_counter\[2\] -fixed no 1392 94
-set_location JTAG_3/next_TAP_state\[3\] -fixed no 1430 91
-set_location JTAG_3/loop_counter\[1\] -fixed no 1429 85
-set_location JTAG_2/un19 -fixed no 1397 93
-set_location JTAG_3/next_TAP_state\[6\] -fixed no 1438 85
-set_location JTAG_1/next_TAP_state\[3\] -fixed no 1394 88
-set_location JTAG_3/tms_pad_o_6_i_1 -fixed no 1435 87
-set_location BiasController_0/un2_sclock_counter_1lto14 -fixed no 1426 114
-set_location JTAG_1/next_TAP_state\[6\] -fixed no 1387 85
-set_location DACController_0/sclock_counter\[16\] -fixed no 1443 82
-set_location JTAG_3/un14_i_a2_0\[0\] -fixed no 1428 90
-set_location JTAG_0/TAP_state\[1\] -fixed no 1425 97
-set_location JTAG_3/tdo_pad_o_1 -fixed no 1430 87
-set_location JTAG_1/next_TAP_state\[10\] -fixed no 1396 85
-set_location JTAG_2/next_TAP_state_RNO\[6\] -fixed no 1400 96
-set_location JTAG_3/next_TAP_state_RNO\[5\] -fixed no 1431 90
-set_location JTAG_3/loop_counterc_1_RNO -fixed no 1439 84
-set_location JTAG_3/TAP_state\[0\] -fixed no 1438 88
-set_location DACController_0/sclock_counter\[20\] -fixed no 1446 82
-set_location JTAG_3/next_TAP_state_srsts_0\[7\] -fixed no 1428 84
-set_location BiasController_0/sclock_counter\[16\] -fixed no 1419 115
-set_location JTAG_0/loop_counterc_1_RNO -fixed no 1417 93
-set_location JTAG_3/next_TAP_state\[2\] -fixed no 1434 88
-set_location JTAG_0/next_TAP_state\[4\] -fixed no 1426 97
-set_location JTAG_2/next_TAP_state\[7\] -fixed no 1397 97
-set_location JTAG_1/next_TAP_state\[2\] -fixed no 1393 85
-set_location BiasController_0/sclockv -fixed no 1424 115
-set_location JTAG_0/next_TAP_state_srsts_0_a2\[10\] -fixed no 1416 96
-set_location DACController_0/ldac_barv -fixed no 1441 79
-set_location JTAG_1/next_TAP_state_srsts_i_o2\[6\] -fixed no 1381 84
-set_location JTAG_0/trstn_pad_o -fixed no 1406 97
-set_location BiasController_0/sclock_counter\[31\] -fixed no 1435 115
-set_location JTAG_2/next_TAP_state\[5\] -fixed no 1413 97
-set_location JTAG_2/loop_counterc_0 -fixed no 1393 93
-set_location JTAG_1/tms_pad_o_6_i_a7_0 -fixed no 1383 84
-set_location JTAG_3/tdo_pad_o4_1 -fixed no 1436 87
-set_location DACController_0/un2_sclock_counterlto12_1 -fixed no 1446 81
-set_location JTAG_0/next_TAP_state_srsts_0_a2\[9\] -fixed no 1429 96
-set_location BiasController_0/sclock_counter\[20\] -fixed no 1416 115
-set_location JTAG_2/next_TAP_state_srsts_0_a2\[3\] -fixed no 1407 96
-set_location JTAG_2/loop_counterc_1 -fixed no 1399 93
-set_location BiasController_0/un2_sclock_counterlto14_0_RNIMUUD -fixed no 1427 114
-set_location JTAG_3/next_TAP_state_srsts_0_a2\[4\] -fixed no 1437 87
-set_location JTAG_3/ir_loop_RNO -fixed no 1429 90
-set_location JTAG_2/TAP_state_RNO\[0\] -fixed no 1415 96
-set_location Core_sb_0/SYSRESET_POR -fixed no 1452 8
-set_location DACController_0/sclock_counter_s_801 -fixed no 1428 81
-set_location BiasController_0/sclock_counter_s_800 -fixed no 1404 114
-set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB0 -fixed no 1094 96
-set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB1 -fixed no 1094 93
-set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB2 -fixed no 1094 90
-set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB3 -fixed no 1094 87
-set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB4 -fixed no 1094 84
-set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB5 -fixed no 1094 81
-set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB6 -fixed no 1094 78
-set_location BiasController_0/sclock_counter_s_800_CC_0 -fixed no 1404 116
-set_location BiasController_0/sclock_counter_s_800_CC_1 -fixed no 1416 116
-set_location DACController_0/sclock_counter_s_801_CC_0 -fixed no 1428 83
-set_location DACController_0/sclock_counter_s_801_CC_1 -fixed no 1440 83
+set_location JTAG_2/next_TAP_state\[4\] -fixed no 315 298
+set_location ControlDecoder_0/counter_2_i_0_a2\[3\] -fixed no 723 297
+set_location ControlDecoder_0/counter_19_i_m2_RNO\[6\] -fixed no 720 297
+set_location DACController_0/temp\[7\] -fixed no 828 286
+set_location DACController_1/temp_14\[10\] -fixed no 649 297
+set_location ControlDecoder_1/counter_19_ns_1\[2\] -fixed no 532 297
+set_location JTAG_2/data_length -fixed no 312 304
+set_location ControlDecoder_1/counter_RNI2O09\[3\] -fixed no 548 300
+set_location ControlDecoder_3/run_number_1_sqmuxa_0_a3_0_a2 -fixed no 209 291
+set_location ControlDecoder_1/counter_cnst_i_a2_x\[5\] -fixed no 531 297
+set_location ControlDecoder_1/counter\[2\] -fixed no 528 298
+set_location JTAG_1/un1_data_sent_to_hptdc_o2\[2\] -fixed no 573 294
+set_location ControlDecoder_1/counter_3_sqmuxa_1 -fixed no 519 300
+set_location ControlDecoder_0/counter_19_i_o2_1\[5\] -fixed no 729 300
+set_location ControlDecoder_2/counter_19_1_i_o4_1\[6\] -fixed no 270 306
+set_location ControlDecoder_1/ccu25_data_temp_1_sqmuxa_i -fixed no 590 297
+set_location ControlDecoder_1/ccu25_data_temp\[3\] -fixed no 593 298
+set_location ControlDecoder_0/instruction_RNO\[1\] -fixed no 736 288
+set_location ControlDecoder_1/ccu25_data_temp_10\[1\] -fixed no 581 306
+set_location DACController_1/un1_index_1.N_40_i_i -fixed no 640 297
+set_location ControlDecoder_1/threshold_buffer\[8\] -fixed no 626 298
+set_location ControlDecoder_1/un1_ccu25_data_2_0_a3_RNI5KCQ1 -fixed no 533 303
+set_location ControlDecoder_0/run_number\[2\] -fixed no 744 301
+set_location JTAG_1/loop_counter_r\[2\] -fixed no 574 297
+set_location DACController_0/temp_14\[12\] -fixed no 829 279
+set_location ControlDecoder_0/threshold_voltage\[1\] -fixed no 811 286
+set_location JTAG_3/data_from_hptdc_1_sqmuxa_1_i_0_0_a2 -fixed no 222 291
+set_location ControlDecoder_3/jtag_instruction_1_1_i_0_a2_1\[0\] -fixed no 194 300
+set_location ControlDecoder_0/ccu25_data_temp_10\[7\] -fixed no 745 291
+set_location ControlDecoder_3/counter_19_1_1_a2_0_0\[3\] -fixed no 169 303
+set_location ControlDecoder_2/counter_RNO_0\[4\] -fixed no 279 309
+set_location JTAG_3/next_TAP_state_srsts_0_a2_0_a2\[10\] -fixed no 230 294
+set_location ControlDecoder_1/counter_5_sqmuxa_0_a2 -fixed no 579 300
+set_location ControlDecoder_0/instruction_8_i_o2_0\[0\] -fixed no 739 294
+set_location ControlDecoder_2/send_data_to_hptdc_5_f0_0_0_0_o4_1_RNIO4R61 -fixed no 320 306
+set_location JTAG_2/tdo_pad_o -fixed no 318 301
+set_location DACController_1/dinv_RNO -fixed no 650 294
+set_location ControlDecoder_2/counter_19_i_1\[3\] -fixed no 278 303
+set_location ControlDecoder_3/lathed_data_from_hptdc_12_1022_i_i_a3_0_a2 -fixed no 211 294
+set_location JTAG_0/tdo_pad_o_2_7_i_m2_bm_1_1 -fixed no 759 285
+set_location ControlDecoder_0/un1_instruction46_15_0_o2_0_RNIDANG2 -fixed no 743 294
+set_location JTAG_2/tms_pad_o_RNO -fixed no 323 297
+set_location ControlDecoder_1/run_number_buffer\[2\] -fixed no 585 304
+set_location JTAG_2/ir_loop -fixed no 316 301
+set_location DACController_1/temp_14\[9\] -fixed no 659 297
+set_location ControlDecoder_1/counter_cnst_i_a2_sx_RNO\[5\] -fixed no 543 303
+set_location ControlDecoder_0/run_number\[6\] -fixed no 752 301
+set_location JTAG_0/data_from_hptdc_1\[0\] -fixed no 746 283
+set_location ControlDecoder_0/jtag_instruction_1\[0\] -fixed no 750 292
+set_location JTAG_0/get_data -fixed no 746 286
+set_location DACController_0/sequence_RNO\[1\] -fixed no 831 282
+set_location ControlDecoder_3/data_to_hptdc\[5\] -fixed no 209 301
+set_location ControlDecoder_0/instruction\[3\] -fixed no 737 292
+set_location ControlDecoder_3/counter_19_1_0\[3\] -fixed no 181 300
+set_location ControlDecoder_2/counter_19_i_o4_1_0\[0\] -fixed no 267 306
+set_location ControlDecoder_1/counter_5_sqmuxa_0_a2_RNITV8F1 -fixed no 539 300
+set_location ControlDecoder_0/threshold_voltage\[11\] -fixed no 807 286
+set_location ControlDecoder_3/counter_19_1_0_a2_0_RNO\[3\] -fixed no 168 297
+set_location ControlDecoder_0/counter_2_0_a2\[4\] -fixed no 729 294
+set_location ControlDecoder_0/counter_19_i_a2_0\[3\] -fixed no 724 303
+set_location JTAG_2/data_from_hptdc_1ce\[1\] -fixed no 301 303
+set_location ControlDecoder_2/send_data_to_hptdc_5_f0_0_0_0_o2 -fixed no 291 309
+set_location ControlDecoder_0/threshold_voltage\[3\] -fixed no 802 286
+set_location JTAG_2/tdo_pad_o_2_7_am -fixed no 310 303
+set_location ControlDecoder_0/send_data_to_hptdc_5_f0_0_o2_4 -fixed no 743 300
+set_location ControlDecoder_1/ccu25_strobe_in -fixed no 589 301
+set_location ControlDecoder_3/counter_19_1_0_o2_0\[4\] -fixed no 182 297
+set_location ControlDecoder_1/lathed_data_from_hptdc\[0\] -fixed no 594 304
+set_location DACController_1/cache1\[3\] -fixed no 668 295
+set_location JTAG_3/data_from_hptdc_1_sqmuxa_1_i_0_0 -fixed no 231 291
+set_location ControlDecoder_2/counter_19_i_a3_5_0\[1\] -fixed no 264 303
+set_location ControlDecoder_0/counter_19_i_a2_3_1\[4\] -fixed no 731 300
+set_location DACController_1/temp\[15\] -fixed no 653 295
+set_location ControlDecoder_0/send_data_to_hptdc_5_f0_0_o2_0_RNI7S7R1 -fixed no 740 288
+set_location JTAG_0/next_TAP_state\[3\] -fixed no 734 283
+set_location DACController_1/sclock_counter\[31\] -fixed no 772 295
+set_location ControlDecoder_1/instruction_RNO\[1\] -fixed no 582 300
+set_location JTAG_3/next_TAP_state_nss_i_0_0_0\[0\] -fixed no 228 291
+set_location ControlDecoder_3/data_to_hptdc\[2\] -fixed no 215 301
+set_location ControlDecoder_2/counter_19_i_a3_4\[2\] -fixed no 277 309
+set_location ControlDecoder_0/ccu25_strobe_in_RNO_1 -fixed no 742 306
+set_location ControlDecoder_1/counter_cnst_i_i_a3_1\[4\] -fixed no 552 297
+set_location ControlDecoder_1/ccu25_data_temp_ldmx\[1\] -fixed no 584 306
+set_location JTAG_3/TAP_state\[1\] -fixed no 237 292
+set_location ControlDecoder_2/jtag_instruction_1_RNO_0\[1\] -fixed no 305 309
+set_location ControlDecoder_2/counter\[6\] -fixed no 265 307
+set_location DACController_1/dataready -fixed no 657 298
+set_location ControlDecoder_0/run_number_buffer\[2\] -fixed no 739 289
+set_location ControlDecoder_0/instruction45_RNIDAO8 -fixed no 745 297
+set_location JTAG_0/next_TAP_state\[6\] -fixed no 751 283
+set_location ControlDecoder_0/counter\[1\] -fixed no 743 301
+set_location ControlDecoder_2/un1_instruction46_15_i_0_i_o2_RNI0PPS1 -fixed no 293 306
+set_location ControlDecoder_2/counter_19_i_o2_0_0\[0\] -fixed no 292 306
+set_location ControlDecoder_0/instruction45_RNICP94 -fixed no 742 297
+set_location ControlDecoder_3/counter_19_1_0_a2_0\[3\] -fixed no 188 297
+set_location DACController_1/un1_sclock_counter15_1_i_a3 -fixed no 636 294
+set_location ControlDecoder_3/ccu25_data_temp\[3\] -fixed no 182 304
+set_location JTAG_0/un1_data_sent_to_hptdc_a2_0_a2\[2\] -fixed no 740 282
+set_location ControlDecoder_2/lathed_data_from_hptdc\[7\] -fixed no 311 310
+set_location DACController_0/sclock_counter\[28\] -fixed no 1107 283
+set_location ControlDecoder_3/run_number_buffer\[7\] -fixed no 206 301
+set_location ControlDecoder_2/ccu25_strobe_in_5_iv_0_0_0_0 -fixed no 312 306
+set_location ControlDecoder_0/ccu25_data_temp\[2\] -fixed no 753 301
+set_location JTAG_2/next_TAP_state_srsts_0_a2_0_a3\[10\] -fixed no 317 297
+set_location ControlDecoder_2/counter_19_1_i_a3_3_0\[6\] -fixed no 266 300
+set_location JTAG_2/data_from_hptdc_1_RNI9MSL\[1\] -fixed no 300 309
+set_location DACController_0/cache1\[9\] -fixed no 821 286
+set_location ControlDecoder_3/run_number\[2\] -fixed no 213 304
+set_location JTAG_1/un1_data_from_hptdc_1_sqmuxa_i_a2 -fixed no 571 300
+set_location DACController_0/index\[4\] -fixed no 831 289
+set_location DACController_1/sclock_counter\[19\] -fixed no 779 295
+set_location ControlDecoder_3/counter_19_1_0_RNO\[2\] -fixed no 174 300
+set_location JTAG_3/tdo_pad_o_2_7_i_m2_i_m2_am -fixed no 218 297
+set_location ControlDecoder_2/lathed_data_from_hptdc_12_984_i_i_a2_0_a3 -fixed no 311 309
+set_location JTAG_3/next_TAP_state_srsts_0_a2_0_a2_0_a2\[3\] -fixed no 233 291
+set_location ControlDecoder_1/lathed_data_from_hptdc_0_sqmuxa_i_a3_1 -fixed no 598 300
+set_location JTAG_3/next_TAP_state_nss_i_0_0_0_a2\[0\] -fixed no 218 294
+set_location DACController_0/sclock_counter\[19\] -fixed no 1084 283
+set_location JTAG_1/tdo_pad_o_2_7_am -fixed no 603 297
+set_location ControlDecoder_2/instruction45 -fixed no 300 306
+set_location JTAG_1/data_from_hptdc_1ce\[0\] -fixed no 572 297
+set_location JTAG_0/tms_pad_o_RNO -fixed no 734 285
+set_location ControlDecoder_2/counter_RNO\[6\] -fixed no 265 306
+set_location JTAG_2/next_TAP_state_srsts_0_a2\[4\] -fixed no 315 297
+set_location ControlDecoder_2/jtag_instruction_1\[0\] -fixed no 310 310
+set_location ControlDecoder_3/counter\[1\] -fixed no 183 301
+set_location ControlDecoder_2/send_data_to_hptdc_5_f0_0_0_0_a3 -fixed no 321 306
+set_location ControlDecoder_3/run_number\[6\] -fixed no 215 304
+set_location JTAG_1/loop_counter\[2\] -fixed no 574 298
+set_location ControlDecoder_1/lathed_data_from_hptdc\[1\] -fixed no 588 304
+set_location ControlDecoder_2/counter_19_i_a3\[0\] -fixed no 278 300
+set_location JTAG_1/ir_loop_RNO -fixed no 585 294
+set_location DACController_0/dinv_6_iv_i_m2 -fixed no 833 285
+set_location ControlDecoder_2/counter_19_i_a3_3_0\[2\] -fixed no 284 300
+set_location ControlDecoder_2/counter_19_i_a2_1_0\[3\] -fixed no 293 309
+set_location ControlDecoder_0/counter_2_i_0_o2\[5\] -fixed no 726 303
+set_location ControlDecoder_2/instruction45_RNI33A01 -fixed no 306 306
+set_location DACController_0/temp\[10\] -fixed no 835 280
+set_location ControlDecoder_1/lathed_data_from_hptdc_RNO\[0\] -fixed no 594 303
+set_location ControlDecoder_0/lathed_data_from_hptdc\[7\] -fixed no 744 292
+set_location ControlDecoder_1/threshold_buffer\[4\] -fixed no 635 298
+set_location ControlDecoder_1/counter_19_ns_1_1\[6\] -fixed no 547 297
+set_location ControlDecoder_0/counter_RNO_0\[5\] -fixed no 730 294
+set_location JTAG_1/data_from_hptdc_1\[0\] -fixed no 569 298
+set_location DACController_1/index\[4\] -fixed no 639 295
+set_location clk_ibuf_RNIVTI2/U0_RGB1 -fixed no 362 312
+set_location JTAG_1/TAP_state_RNO\[3\] -fixed no 576 294
+set_location ControlDecoder_2/instruction_8_i_o2\[0\] -fixed no 290 309
+set_location ControlDecoder_2/counter_19_i_a3_1_0\[3\] -fixed no 278 306
+set_location ControlDecoder_1/jtag_instruction_1\[1\] -fixed no 562 301
+set_location ControlDecoder_3/ccu25_strobe_in -fixed no 199 304
+set_location ControlDecoder_0/counter_19_i_m2\[6\] -fixed no 726 297
+set_location ControlDecoder_2/counter_19_i_o2_a0\[3\] -fixed no 293 303
+set_location ControlDecoder_1/ccu25_data_temp_10\[7\] -fixed no 583 306
+set_location JTAG_3/data_from_hptdc_1_RNIA3S3\[0\] -fixed no 208 294
+set_location ControlDecoder_1/data_to_hptdc\[7\] -fixed no 602 298
+set_location ControlDecoder_3/instruction_8_0_a4_0_a2\[5\] -fixed no 204 297
+set_location ControlDecoder_3/counter_19_1_a2_i_m2\[6\] -fixed no 185 300
+set_location JTAG_3/next_TAP_state_srsts_0_a2_0_a2_0_a2\[9\] -fixed no 238 294
+set_location ControlDecoder_2/counter_19_i_a3_0\[3\] -fixed no 281 306
+set_location JTAG_2/data_to\[0\] -fixed no 311 307
+set_location ControlDecoder_2/counter_RNO_1\[4\] -fixed no 268 303
+set_location ControlDecoder_1/instruction_RNI178H\[2\] -fixed no 580 300
+set_location JTAG_1/next_TAP_state_srsts_0_a2\[10\] -fixed no 566 300
+set_location ControlDecoder_2/counter_19_i_0_1_0\[0\] -fixed no 268 300
+set_location JTAG_1/next_TAP_state_srsts_0_a2\[2\] -fixed no 574 294
+set_location JTAG_1/TAP_state\[2\] -fixed no 579 295
+set_location DACController_0/un1_sclock_counter15_3_0_o2 -fixed no 839 285
+set_location ControlDecoder_0/instruction_RNO\[0\] -fixed no 739 291
+set_location JTAG_3/loop_counter\[0\] -fixed no 218 295
+set_location ControlDecoder_1/counter_19_ns_1_1_RNO_1\[0\] -fixed no 531 300
+set_location ControlDecoder_0/counter_19_i_a2\[2\] -fixed no 730 306
+set_location ControlDecoder_0/counter_19_i_2_1\[4\] -fixed no 724 300
+set_location JTAG_0/un1_data_sent_to_hptdc_i_a2_0_a2_1\[3\] -fixed no 742 282
+set_location ControlDecoder_1/instruction_RNIS5612\[4\] -fixed no 576 303
+set_location DACController_1/temp\[14\] -fixed no 670 298
+set_location ControlDecoder_0/data_to_hptdc\[3\] -fixed no 757 289
+set_location JTAG_0/next_TAP_state\[2\] -fixed no 738 286
+set_location ControlDecoder_1/threshold_voltage\[6\] -fixed no 659 298
+set_location ControlDecoder_0/instruction_RNO\[5\] -fixed no 742 294
+set_location JTAG_2/next_TAP_state_srsts_i_o2\[6\] -fixed no 308 303
+set_location JTAG_0/next_TAP_state_srsts_0_a2_0_a2\[10\] -fixed no 740 285
+set_location DACController_0/un2_sclock_counterlto9 -fixed no 1085 282
+set_location JTAG_3/data_to_1_sqmuxa_i_i_a2_0_a2 -fixed no 216 291
+set_location ControlDecoder_1/counter_5_sqmuxa_0_a3 -fixed no 533 300
+set_location ControlDecoder_3/ccu25_strobe_in_5_iv_0_a3_i_o2_1_i_a2 -fixed no 210 291
+set_location ControlDecoder_1/counter_19_1_1_N_2L1 -fixed no 534 303
+set_location JTAG_3/next_TAP_state_srsts_0_0_0_a2\[7\] -fixed no 239 294
+set_location JTAG_3/data_received_from_hptdc -fixed no 224 292
+set_location DACController_0/temp_14\[8\] -fixed no 835 285
+set_location DACController_1/sclock_counter\[30\] -fixed no 757 295
+set_location DACController_0/temp\[8\] -fixed no 831 283
+set_location JTAG_1/data_to\[3\] -fixed no 603 298
+set_location ControlDecoder_2/counter_19_1_i_o4_0\[6\] -fixed no 290 303
+set_location ControlDecoder_0/threshold_voltage\[8\] -fixed no 827 286
+set_location ControlDecoder_0/counter_19_i_a2_1_sx\[2\] -fixed no 742 303
+set_location DACController_1/cache1\[2\] -fixed no 661 295
+set_location ControlDecoder_3/counter_19_1_0_1_0\[3\] -fixed no 181 306
+set_location ControlDecoder_2/run_number_1_sqmuxa_0_a2_4_a3 -fixed no 318 306
+set_location ControlDecoder_0/counter_19_i_0\[1\] -fixed no 732 297
+set_location ControlDecoder_0/instruction\[5\] -fixed no 742 295
+set_location JTAG_1/data_received_from_hptdc_0_sqmuxa -fixed no 568 300
+set_location ControlDecoder_1/counter_6_sqmuxa_d_1 -fixed no 542 303
+set_location ControlDecoder_0/run_number_buffer\[7\] -fixed no 750 289
+set_location ControlDecoder_0/latched_data_received_from_hptdc -fixed no 733 292
+set_location ControlDecoder_2/counter_RNO\[3\] -fixed no 276 306
+set_location ControlDecoder_2/ccu25_strobe_in_5_iv_0_0_0 -fixed no 317 306
+set_location ControlDecoder_0/counter\[4\] -fixed no 729 301
+set_location ControlDecoder_2/old_ccu25_strobe_out_RNI766R -fixed no 289 309
+set_location ControlDecoder_2/counter_19_i_0_RNO_0\[1\] -fixed no 265 303
+set_location DACController_0/sequence\[1\] -fixed no 836 280
+set_location ControlDecoder_0/threshold_buffer\[12\] -fixed no 773 289
+set_location ControlDecoder_2/counter_19_i_x2\[1\] -fixed no 266 303
+set_location ControlDecoder_1/instruction_8\[3\] -fixed no 583 300
+set_location DACController_0/cache1\[8\] -fixed no 820 283
+set_location ControlDecoder_3/counter_19_1_a2_0_i_a2_0\[6\] -fixed no 168 303
+set_location ControlDecoder_2/counter_19_i_1_1_0\[3\] -fixed no 280 309
+set_location ControlDecoder_1/ccu25_data_temp_en_RNIM7PT2\[0\] -fixed no 599 297
+set_location JTAG_1/TAP_state_RNO\[0\] -fixed no 584 294
+set_location DACController_0/un2_sclock_counter_1lto11_1 -fixed no 1080 282
+set_location JTAG_2/next_TAP_state_srsts_i_0_o4_i\[5\] -fixed no 314 303
+set_location JTAG_2/next_TAP_state\[10\] -fixed no 317 298
+set_location ControlDecoder_0/counter_19_i_a2_5_0\[1\] -fixed no 720 306
+set_location JTAG_2/un1_data_sent_to_hptdc_a2\[2\] -fixed no 323 300
+set_location ControlDecoder_2/data_to_hptdc\[3\] -fixed no 316 304
+set_location JTAG_0/data_length -fixed no 754 286
+set_location JTAG_0/un1_data_sent_to_hptdc_i_a2_0_a2_0\[1\] -fixed no 735 285
+set_location ControlDecoder_3/lathed_data_from_hptdc_0_sqmuxa_i_0_0 -fixed no 206 294
+set_location ControlDecoder_1/lathed_data_from_hptdc_0_sqmuxa_i_0 -fixed no 596 300
+set_location ControlDecoder_3/counter_19_1_0_a2_7_0_a2_0\[2\] -fixed no 193 297
+set_location ControlDecoder_1/send_data_to_hptdc_5_f0_0_a3_0_0 -fixed no 593 300
+set_location ControlDecoder_2/counter_RNIRQD71\[2\] -fixed no 285 309
+set_location DACController_0/cache1\[5\] -fixed no 825 283
+set_location ControlDecoder_1/instruction_cnst_6__instruction_cnst_4__instruction_cnst_2_0_.m3_0_o3 -fixed no 581 300
+set_location ControlDecoder_1/counter\[4\] -fixed no 542 301
+set_location DACController_0/index\[0\] -fixed no 839 289
+set_location ControlDecoder_1/counter60 -fixed no 541 303
+set_location DACController_0/cache1\[6\] -fixed no 819 283
+set_location JTAG_0/next_TAP_state_nss_i_0_0_a2\[0\] -fixed no 753 285
+set_location ControlDecoder_3/counter_19_1_0\[1\] -fixed no 183 300
+set_location ControlDecoder_3/old_ccu25_strobe_out_RNIA97J -fixed no 197 300
+set_location ControlDecoder_1/send_data_to_hptdc_5_f0_0_o2_0 -fixed no 548 297
+set_location JTAG_2/next_TAP_state_srsts_0\[1\] -fixed no 313 303
+set_location JTAG_1/tdo_pad_o_2_7_bm -fixed no 606 297
+set_location JTAG_1/tdo_pad_o10 -fixed no 581 294
+set_location JTAG_2/loop_counter\[2\] -fixed no 307 304
+set_location ControlDecoder_0/counter_RNO\[1\] -fixed no 743 303
+set_location JTAG_3/next_TAP_state\[3\] -fixed no 233 292
+set_location ControlDecoder_0/threshold_buffer\[7\] -fixed no 778 289
+set_location ControlDecoder_0/counter\[6\] -fixed no 731 298
+set_location DACController_1/sclock_counter15 -fixed no 775 294
+set_location ControlDecoder_3/counter_19_1_0_N_3L3 -fixed no 173 300
+set_location ControlDecoder_1/threshold_buffer\[10\] -fixed no 644 298
+set_location JTAG_3/loop_counter\[1\] -fixed no 219 295
+set_location JTAG_2/tdo_pad_o_2_7_bm_1_1 -fixed no 309 306
+set_location JTAG_0/next_TAP_state_srsts_0_a2_0_a2\[4\] -fixed no 739 285
+set_location ControlDecoder_2/counter\[5\] -fixed no 283 307
+set_location ControlDecoder_0/run_number_buffer\[5\] -fixed no 735 289
+set_location ControlDecoder_1/counter_19_ns\[5\] -fixed no 550 300
+set_location JTAG_3/next_TAP_state\[6\] -fixed no 231 295
+set_location ControlDecoder_3/get_data_from_hptdc -fixed no 203 301
+set_location ControlDecoder_3/ccu25_data_temp_10\[1\] -fixed no 202 294
+set_location ControlDecoder_1/counter\[1\] -fixed no 530 298
+set_location ControlDecoder_0/threshold_buffer\[1\] -fixed no 772 289
+set_location DACController_0/cache1\[11\] -fixed no 826 283
+set_location ControlDecoder_1/ccu25_data_temp\[7\] -fixed no 597 298
+set_location DACController_0/un1_index_1.SUM_0_o3\[3\] -fixed no 838 288
+set_location ControlDecoder_2/instruction_8_0_a2_0_a4\[3\] -fixed no 291 303
+set_location ControlDecoder_0/instruction\[2\] -fixed no 735 292
+set_location JTAG_1/next_TAP_state\[3\] -fixed no 580 295
+set_location ControlDecoder_3/ccu25_strobe_in_5_iv_0_0_0_o2 -fixed no 207 294
+set_location JTAG_1/un1_data_sent_to_hptdc_a2\[2\] -fixed no 579 294
+set_location ControlDecoder_2/run_number_buffer\[5\] -fixed no 297 313
+set_location ControlDecoder_0/counter_19_i_a2_1_1\[5\] -fixed no 729 297
+set_location JTAG_1/next_TAP_state\[6\] -fixed no 567 295
+set_location DACController_0/cache1\[13\] -fixed no 814 283
+set_location JTAG_3/data_from_hptdc_1ce\[0\] -fixed no 225 294
+set_location ControlDecoder_0/counter_19_i_o2_0\[0\] -fixed no 725 300
+set_location JTAG_0/data_to\[7\] -fixed no 757 286
+set_location ControlDecoder_0/threshold_buffer\[5\] -fixed no 777 289
+set_location JTAG_3/tdo_pad_o_2_7_i_m2_i_m2_ns -fixed no 222 297
+set_location DACController_1/ldac_barv_RNO -fixed no 657 294
+set_location DACController_0/sequence\[0\] -fixed no 828 289
+set_location DACController_0/sclock_counter\[16\] -fixed no 1081 283
+set_location ControlDecoder_2/counter_19_i_o2_0\[0\] -fixed no 296 306
+set_location JTAG_0/next_TAP_state_srsts_0_0_o2\[8\] -fixed no 750 285
+set_location DACController_1/cache1\[0\] -fixed no 660 295
+set_location ControlDecoder_1/un1_ccu25_data_2_0_a3_sx -fixed no 529 303
+set_location ControlDecoder_2/counter_19_i_2\[2\] -fixed no 287 300
+set_location ControlDecoder_1/latched_data_received_from_hptdc_RNO -fixed no 590 300
+set_location JTAG_0/TAP_state\[1\] -fixed no 733 283
+set_location ControlDecoder_3/counter_2_i_o2_i_o2\[3\] -fixed no 174 297
+set_location JTAG_3/tdo_pad_o_1 -fixed no 228 294
+set_location ControlDecoder_0/get_data_from_hptdc -fixed no 744 295
+set_location JTAG_1/next_TAP_state\[10\] -fixed no 566 301
+set_location JTAG_0/tdo_pad_o_2_7_i_m2_bm -fixed no 757 285
+set_location ControlDecoder_0/latched_data_received_from_hptdc_1_i_o2_RNIBCGM3 -fixed no 753 294
+set_location DACController_0/index_7_0_a3\[0\] -fixed no 839 288
+set_location ControlDecoder_1/instruction\[3\] -fixed no 577 301
+set_location JTAG_2/next_TAP_state_RNO\[6\] -fixed no 312 297
+set_location ControlDecoder_0/counter_19_i_a2_4\[0\] -fixed no 722 306
+set_location JTAG_3/next_TAP_state_RNO\[5\] -fixed no 226 291
+set_location ControlDecoder_2/counter_RNO\[1\] -fixed no 269 306
+set_location JTAG_1/data_to\[4\] -fixed no 608 298
+set_location ControlDecoder_0/instruction45_RNIN43T1_0 -fixed no 733 294
+set_location ControlDecoder_3/data_to_hptdc\[3\] -fixed no 212 301
+set_location ControlDecoder_1/run_number\[7\] -fixed no 581 304
+set_location JTAG_2/jtag_bus_in_use -fixed no 320 301
+set_location DACController_1/ldac_barv -fixed no 657 295
+set_location ControlDecoder_3/run_number_buffer\[0\] -fixed no 207 298
+set_location ControlDecoder_0/threshold_buffer\[10\] -fixed no 795 286
+set_location ControlDecoder_0/threshold_voltage\[13\] -fixed no 804 283
+set_location ControlDecoder_0/counter_19_i_o2_2\[0\] -fixed no 738 303
+set_location DACController_0/dinv -fixed no 834 286
+set_location ControlDecoder_3/counter_19_1_0_o2_3\[4\] -fixed no 183 297
+set_location ControlDecoder_2/un1_instruction46_12_0_i_o2 -fixed no 278 309
+set_location JTAG_3/TAP_state\[0\] -fixed no 236 292
+set_location ControlDecoder_0/threshold_voltage\[12\] -fixed no 813 283
+set_location DACController_0/sclock_counter\[20\] -fixed no 1080 283
+set_location ControlDecoder_2/ccu25_strobe_in_5_iv_0_0_0_o2 -fixed no 296 303
+set_location ControlDecoder_1/ccu25_data_temp_en_RNID9RJ\[0\] -fixed no 531 303
+set_location ControlDecoder_1/counter58_1 -fixed no 528 303
+set_location ControlDecoder_1/counter_1_sqmuxa -fixed no 523 297
+set_location ControlDecoder_2/ccu25_strobe_in -fixed no 312 307
+set_location ControlDecoder_1/data_to_hptdc\[4\] -fixed no 611 298
+set_location ControlDecoder_3/counter_19_1_0\[4\] -fixed no 186 300
+set_location DACController_1/temp_14\[7\] -fixed no 650 297
+set_location DACController_1/temp\[3\] -fixed no 647 295
+set_location ControlDecoder_0/counter_19_i_o2_1\[3\] -fixed no 731 294
+set_location JTAG_3/data_to\[3\] -fixed no 218 298
+set_location ControlDecoder_1/send_data_to_hptdc_5_f0_0_o2_0_2 -fixed no 533 297
+set_location DACController_0/dataready -fixed no 835 289
+set_location ControlDecoder_1/ccu25_data_temp_ldmx\[2\] -fixed no 591 297
+set_location ControlDecoder_0/get_data_from_hptdc_RNO -fixed no 744 294
+set_location JTAG_0/next_TAP_state_nss_i_0_0\[0\] -fixed no 741 285
+set_location DACController_1/temp\[6\] -fixed no 668 298
+set_location ControlDecoder_2/instruction_RNO\[1\] -fixed no 294 309
+set_location ControlDecoder_1/counter_19_ns\[6\] -fixed no 549 297
+set_location ControlDecoder_0/counter_RNO_0\[1\] -fixed no 739 303
+set_location JTAG_3/next_TAP_state\[2\] -fixed no 229 295
+set_location ControlDecoder_3/counter_19_1_0_1_0_RNO\[3\] -fixed no 180 306
+set_location JTAG_0/next_TAP_state\[4\] -fixed no 739 286
+set_location DACController_1/temp_0_sqmuxa_i_0 -fixed no 654 294
+set_location JTAG_1/next_TAP_state_srsts_0\[8\] -fixed no 574 300
+set_location ControlDecoder_1/jtag_instruction_1_RNO\[1\] -fixed no 558 297
+set_location ControlDecoder_0/threshold_buffer\[2\] -fixed no 779 289
+set_location ControlDecoder_3/ccu25_strobe_in_5_iv_0_0_a2_0 -fixed no 211 291
+set_location JTAG_0/loop_counter_0_0\[1\] -fixed no 749 282
+set_location JTAG_2/next_TAP_state\[7\] -fixed no 322 298
+set_location DACController_1/temp_14\[1\] -fixed no 656 297
+set_location ControlDecoder_2/un1_instruction46_12_0_i -fixed no 313 312
+set_location ControlDecoder_1/counter_19_ns_1_1_RNO\[0\] -fixed no 537 300
+set_location ControlDecoder_2/run_number_1_sqmuxa_0_a2_4_o2_0_RNIK71F2 -fixed no 305 306
+set_location JTAG_1/next_TAP_state\[2\] -fixed no 574 295
+set_location ControlDecoder_3/counter_19_1_0\[6\] -fixed no 175 300
+set_location ControlDecoder_2/counter_19_i_3_1\[2\] -fixed no 271 303
+set_location JTAG_0/data_to\[2\] -fixed no 767 286
+set_location ControlDecoder_2/ccu25_strobe_in_5_iv_0_0_a3_1_1 -fixed no 319 306
+set_location JTAG_0/next_TAP_state_srsts_i_i_a2\[2\] -fixed no 738 285
+set_location ControlDecoder_3/latched_data_received_from_hptdc -fixed no 206 292
+set_location ControlDecoder_0/run_number\[0\] -fixed no 751 301
+set_location DACController_0/ldac_barv -fixed no 805 283
+set_location ControlDecoder_3/data_to_hptdc\[6\] -fixed no 210 301
+set_location ControlDecoder_0/counter_19_i_x2\[4\] -fixed no 732 306
+set_location ControlDecoder_0/ccu25_data_temp_10\[4\] -fixed no 750 300
+set_location ControlDecoder_3/jtag_instruction_1_RNO\[1\] -fixed no 214 300
+set_location ControlDecoder_3/counter_19_1_0_a2_1_2\[5\] -fixed no 190 297
+set_location ControlDecoder_0/instruction45 -fixed no 738 294
+set_location JTAG_1/next_TAP_state_srsts_i_o2\[6\] -fixed no 566 297
+set_location ControlDecoder_0/counter_19_i_2\[0\] -fixed no 733 303
+set_location ControlDecoder_3/instruction_8_i_0_o2\[1\] -fixed no 213 297
+set_location ControlDecoder_0/run_number\[5\] -fixed no 752 295
+set_location DACController_1/sclock_counter_RNO\[31\] -fixed no 772 294
+set_location ControlDecoder_2/counter_RNO\[5\] -fixed no 277 306
+set_location ControlDecoder_3/counter_19_1_0_RNO\[1\] -fixed no 192 300
+set_location DACController_1/dataready_2_sqmuxa_0_a3_0 -fixed no 637 294
+set_location DACController_0/temp_14\[2\] -fixed no 830 285
+set_location ControlDecoder_0/counter_19_i_o2_2_0\[0\] -fixed no 743 297
+set_location ControlDecoder_3/ccu25_data_temp_10\[7\] -fixed no 214 294
+set_location ControlDecoder_2/data_to_hptdc\[4\] -fixed no 314 304
+set_location JTAG_1/loop_counter_r_RNO\[1\] -fixed no 565 297
+set_location JTAG_0/trstn_pad_o -fixed no 849 169
+set_location ControlDecoder_3/counter_19_1_0_a2_1\[4\] -fixed no 191 300
+set_location ControlDecoder_2/counter_19_i_0\[5\] -fixed no 276 303
+set_location ControlDecoder_3/counter\[2\] -fixed no 171 301
+set_location ControlDecoder_0/counter_RNO\[5\] -fixed no 721 300
+set_location ControlDecoder_2/counter_19_1_i_a3_1\[6\] -fixed no 283 303
+set_location DACController_0/dataready_2_sqmuxa_0_a3_0 -fixed no 829 288
+set_location ControlDecoder_3/instruction45_RNIU9AD1 -fixed no 215 300
+set_location ControlDecoder_0/run_number\[4\] -fixed no 747 301
+set_location DACController_1/index_1_sqmuxa_1_0_o3 -fixed no 653 294
+set_location ControlDecoder_2/counter_19_i_a3_2\[1\] -fixed no 275 303
+set_location ControlDecoder_1/counter_cnst_i_a2_sx_sx\[5\] -fixed no 549 303
+set_location ControlDecoder_3/run_number_1_sqmuxa_0_a3_0_o2_1 -fixed no 205 294
+set_location ControlDecoder_3/jtag_instruction_1\[1\] -fixed no 221 301
+set_location ControlDecoder_2/send_data_to_hptdc_5_f0_0_0_0_o4_1_RNI8C4J1 -fixed no 323 306
+set_location ControlDecoder_1/run_number_1_sqmuxa_0_o2_RNI58HL1 -fixed no 587 303
+set_location JTAG_2/next_TAP_state\[5\] -fixed no 323 304
+set_location DACController_1/temp_14\[4\] -fixed no 641 294
+set_location DACController_1/temp\[2\] -fixed no 666 298
+set_location ControlDecoder_1/get_data_from_hptdc -fixed no 532 301
+set_location ControlDecoder_1/un1_counter56_1 -fixed no 588 297
+set_location ControlDecoder_3/un1_instruction46_14_0_a3_0_a2_0 -fixed no 206 297
+set_location DACController_0/temp\[11\] -fixed no 838 283
+set_location ControlDecoder_2/ccu25_data_temp\[7\] -fixed no 323 313
+set_location ControlDecoder_2/run_number_1_sqmuxa_0_a2_4_o2_0 -fixed no 288 306
+set_location ControlDecoder_0/threshold_voltage\[0\] -fixed no 816 283
+set_location ControlDecoder_0/counter_19_i_1\[3\] -fixed no 721 294
+set_location ControlDecoder_0/counter_19_i_a2_0_0\[5\] -fixed no 720 294
+set_location JTAG_0/tms_pad_o_6_i_0_0 -fixed no 733 285
+set_location ControlDecoder_3/counter_19_1_0\[2\] -fixed no 171 300
+set_location ControlDecoder_3/ccu25_strobe_in_5_iv_0_a3_i_o2_3 -fixed no 207 297
+set_location ControlDecoder_2/run_number_buffer\[0\] -fixed no 291 313
+set_location DACController_1/temp_14\[2\] -fixed no 669 294
+set_location DACController_0/temp_14\[7\] -fixed no 828 285
+set_location ControlDecoder_3/counter_19_1_0_3_RNO\[5\] -fixed no 179 297
+set_location ControlDecoder_0/counter_19_i_a2_2\[5\] -fixed no 721 306
+set_location ControlDecoder_1/counter\[5\] -fixed no 550 301
+set_location JTAG_2/tdo_pad_o4 -fixed no 317 300
+set_location DACController_0/temp\[15\] -fixed no 828 280
+set_location ControlDecoder_3/counter_19_1_0_N_2L1 -fixed no 168 300
+set_location ControlDecoder_0/instruction45_RNIN43T1 -fixed no 732 294
+set_location JTAG_2/next_TAP_state_srsts_0_0\[8\] -fixed no 319 303
+set_location DACController_1/sclock_counter\[16\] -fixed no 771 295
+set_location ControlDecoder_0/threshold_voltage\[4\] -fixed no 819 286
+set_location ControlDecoder_1/run_number_1_sqmuxa_0_o2_RNIOUL11 -fixed no 555 300
+set_location ControlDecoder_0/lathed_data_from_hptdc_12_965_i_i_a2 -fixed no 744 291
+set_location JTAG_2/next_TAP_state_srsts_0_a2\[3\] -fixed no 313 300
+set_location ControlDecoder_3/instruction45_RNIS0UI -fixed no 180 303
+set_location ControlDecoder_2/run_number_buffer\[1\] -fixed no 315 307
+set_location ControlDecoder_1/counter_19_ns_1\[5\] -fixed no 551 300
+set_location DACController_0/un1_sclock_counter15_4_0 -fixed no 828 282
+set_location ControlDecoder_0/instruction\[6\] -fixed no 741 295
+set_location DACController_1/index_7_0_a3\[0\] -fixed no 645 294
+set_location ControlDecoder_0/lathed_data_from_hptdc_0_sqmuxa_i_0 -fixed no 746 294
+set_location JTAG_2/un1_data_sent_to_hptdc_i_a2_0\[0\] -fixed no 319 300
+set_location ControlDecoder_0/threshold_buffer\[0\] -fixed no 771 289
+set_location ControlDecoder_2/counter_19_i_3\[2\] -fixed no 270 303
+set_location JTAG_2/tms_pad_o_6_i_0_1 -fixed no 314 297
+set_location DACController_0/temp_14_i_m2\[13\] -fixed no 831 279
+set_location JTAG_3/ir_loop_RNO -fixed no 239 291
+set_location DACController_1/index_1_sqmuxa_1_0_a3 -fixed no 670 294
+set_location ControlDecoder_3/run_number\[0\] -fixed no 211 304
+set_location ControlDecoder_3/counter\[4\] -fixed no 186 301
+set_location ControlDecoder_1/ccu25_data_temp_ldmx\[4\] -fixed no 582 297
+set_location ControlDecoder_0/counter_19_i_a2_4\[4\] -fixed no 722 300
+set_location ControlDecoder_0/run_number_buffer\[3\] -fixed no 741 289
+set_location ControlDecoder_0/counter_19_i_a2_2_0\[1\] -fixed no 730 297
+set_location ControlDecoder_0/counter_19_i_m2\[5\] -fixed no 727 303
+set_location ControlDecoder_2/counter_19_1_i_a3_3\[6\] -fixed no 269 303
+set_location ControlDecoder_0/m78_m2_e_0 -fixed no 744 297
+set_location ControlDecoder_3/run_number\[5\] -fixed no 209 304
+set_location ControlDecoder_0/ccu25_data_temp\[4\] -fixed no 752 298
+set_location ControlDecoder_1/threshold_voltage\[9\] -fixed no 650 298
+set_location ControlDecoder_0/jtag_instruction_1\[1\] -fixed no 747 295
+set_location JTAG_2/TAP_state_RNO\[0\] -fixed no 312 300
+set_location ControlDecoder_0/send_data_to_hptdc -fixed no 732 289
+set_location DACController_0/sclock_counter_s_1595 -fixed no 1104 282
+set_location DACController_0/temp_7_cry_1 -fixed no 816 285
+set_location ControlDecoder_1/counter_RNIR67A\[0\] -fixed no 540 297
+set_location DACController_1/un3_sclockv_0_I_1 -fixed no 660 294
+set_location DACController_1/sclock_counter_s_1596 -fixed no 756 294
+set_location DACController_0/un3_sclockv_0_I_1 -fixed no 816 282
+set_location DACController_1/temp_7_cry_1 -fixed no 660 297
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB0 -fixed no 362 309
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB1 -fixed no 362 306
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB10 -fixed no 362 291
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB11 -fixed no 1094 291
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB12 -fixed no 1094 288
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB13 -fixed no 1094 285
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB14 -fixed no 1094 282
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB15 -fixed no 1094 279
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB16 -fixed no 1094 276
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB17 -fixed no 1094 168
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB2 -fixed no 362 303
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB3 -fixed no 1094 303
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB4 -fixed no 362 300
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB5 -fixed no 1094 300
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB6 -fixed no 362 297
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB7 -fixed no 1094 297
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB8 -fixed no 362 294
+set_location clk_ibuf_RNIVTI2/U0_RGB1_RGB9 -fixed no 1094 294
+set_location ControlDecoder_1/counter_RNIR67A\[0\]_CC_0 -fixed no 540 299
+set_location DACController_0/sclock_counter_s_1595_CC_0 -fixed no 1104 284
+set_location DACController_0/sclock_counter_s_1595_CC_1 -fixed no 1116 284
+set_location DACController_0/temp_7_cry_1_CC_0 -fixed no 816 287
+set_location DACController_0/un3_sclockv_0_I_1_CC_0 -fixed no 816 284
+set_location DACController_1/sclock_counter_s_1596_CC_0 -fixed no 756 296
+set_location DACController_1/sclock_counter_s_1596_CC_1 -fixed no 768 296
+set_location DACController_1/temp_7_cry_1_CC_0 -fixed no 660 299
+set_location DACController_1/un3_sclockv_0_I_1_CC_0 -fixed no 660 296

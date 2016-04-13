@@ -1,0 +1,56 @@
+***** Place and Route Configurations *****
+Timing-driven            : ON
+Power-driven             : OFF
+High-effort              : OFF
+Repair min-delay         : OFF
+Incremental              : OFF
+Inter-clock optimization : OFF
+TDPR scenario            : Primary
+
+
+Running the I/O Bank and Globals Assigner.
+Info:  I/O Bank and Globals Assigner identified 105 fixed I/O macros, 17 unfixed I/O macros
+
+I/O Bank and Globals Assigner completed successfully.
+Total time spent in I/O Bank and Globals Assigner: 0 seconds
+
+Placer V4.0 - 11.7.0 
+Design: TDR                             Started: Wed Apr 13 14:18:44 2016
+
+Initializing Timing-Driven Placement ...
+Placing design...
+End of placement.
+Pre-Placement Runtime        : 2 seconds
+Placement Runtime            : 7 seconds
+
+Placer completed successfully.
+
+Design: TDR                             
+Finished: Wed Apr 13 14:19:12 2016
+Total CPU Time:     00:00:27            Total Elapsed Time: 00:00:28
+Total Memory Usage: 669.4 Mbytes
+                        o - o - o - o - o - o
+
+
+Router 
+Design: D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\ctpps-firmware\designer\TDR\TDRStarted: Wed Apr 13 14:19:22 2016
+
+
+Router completed successfully.
+
+Design: D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\ctpps-firmware\designer\TDR\TDR
+Finished: Wed Apr 13 14:20:26 2016
+Total CPU Time:     00:00:59            Total Elapsed Time: 00:01:04
+Total Memory Usage: 4713.3 Mbytes
+                        o - o - o - o - o - o
+
+Resource Usage
++---------------+------+--------+------------+
+| Type          | Used | Total  | Percentage |
++---------------+------+--------+------------+
+| 4LUT          | 997  | 146124 | 0.68       |
+| DFF           | 539  | 146124 | 0.37       |
+| I/O Register  | 0    | 1716   | 0.00       |
+| Logic Element | 1118 | 146124 | 0.77       |
++---------------+------+--------+------------+
+

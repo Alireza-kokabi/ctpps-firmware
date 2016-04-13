@@ -6,11 +6,11 @@ KEY ProjectID "0"
 KEY HDLTechnology "VERILOG"
 KEY UseConstraintFlowTechnology "FALSE"
 KEY VendorTechnology_Family "SmartFusion2"
-KEY VendorTechnology_Die "PA4M6000"
-KEY VendorTechnology_Package "fcs325"
+KEY VendorTechnology_Die "PA4M12000_N"
+KEY VendorTechnology_Package "fc1152"
 KEY VendorTechnology_Speed "STD"
 KEY VendorTechnology_DieVoltage "1.2"
-KEY VendorTechnology_PART_RANGE "IND"
+KEY VendorTechnology_PART_RANGE "COM"
 KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE "100_MS"
 KEY VendorTechnology_IO_DEFT_STD "LVCMOS33"
 KEY VendorTechnology_OPCONR ""
@@ -20,15 +20,15 @@ KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
 KEY VendorTechnology_RESTRICTPROBEPINS "1"
 KEY VendorTechnology_RESTRICTSPIPINS "0"
 KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE "0"
-KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA4M6000"
-KEY VendorTechnology_TEMPR "IND"
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "PA4M12000_N"
+KEY VendorTechnology_TEMPR "COM"
 KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
 KEY VendorTechnology_VCCI_1.2_VOLTR "COM"
 KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
-KEY VendorTechnology_VOLTR "IND"
+KEY VendorTechnology_VOLTR "COM"
 KEY ProjectLocation "D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\ctpps-firmware"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
@@ -63,7 +63,7 @@ IS_INCLUDED="TRUE"
 ENDFILE
 VALUE "<project>\component\work\Core_sb\Core_sb.cxf,actgen_cxf"
 STATE="utd"
-TIME="1459753973"
+TIME="1459847626"
 SIZE="1201"
 ENDFILE
 VALUE "<project>\component\work\MSS\Core_sb_MSS_TMP.cxf,actgen_cxf"
@@ -73,8 +73,15 @@ SIZE="21328"
 ENDFILE
 VALUE "<project>\component\work\TDR\TDR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1459761744"
-SIZE="20172"
+TIME="1460548303"
+SIZE="19646"
+ENDFILE
+VALUE "<project>\component\work\TDR\TDR.v,hdl"
+STATE="utd"
+TIME="1460548302"
+SIZE="50306"
+PARENT="<project>\component\work\TDR\TDR.cxf"
+IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\TDR_sb\TDR_sb.cxf,actgen_cxf"
 STATE="utd"
@@ -83,8 +90,13 @@ SIZE="3930"
 ENDFILE
 VALUE "<project>\constraint\fp\TDR.fp.pdc,fp_pdc"
 STATE="utd"
-TIME="1457003898"
+TIME="1460549828"
 SIZE="338"
+ENDFILE
+VALUE "<project>\constraint\io\TDR.io.pdc,io_pdc"
+STATE="utd"
+TIME="1460549828"
+SIZE="15696"
 ENDFILE
 VALUE "<project>\constraint\io\TDR.pdc,io_pdc"
 STATE="utd"
@@ -103,7 +115,7 @@ SIZE="209"
 ENDFILE
 VALUE "<project>\hdl\Adder.v,hdl"
 STATE="utd"
-TIME="1459761695"
+TIME="1460548230"
 SIZE="9644"
 ENDFILE
 VALUE "<project>\hdl\BiasController.v,hdl"
@@ -138,13 +150,13 @@ SIZE="4626"
 ENDFILE
 VALUE "<project>\hdl\FIFO.v,hdl"
 STATE="utd"
-TIME="1459761640"
+TIME="1460548206"
 SIZE="5545"
 ENDFILE
 VALUE "<project>\hdl\I2C.v,hdl"
 STATE="utd"
-TIME="1423554218"
-SIZE="5498"
+TIME="1459865904"
+SIZE="3326"
 ENDFILE
 VALUE "<project>\hdl\JTAG.v,hdl"
 STATE="utd"
@@ -176,12 +188,6 @@ STATE="utd"
 TIME="1446400504"
 SIZE="2774"
 ENDFILE
-VALUE "<project>\simulation\subsystem.bfm,sim"
-STATE="utd"
-TIME="1457094243"
-SIZE="787"
-PARENT="<project>\component\work\TDR\TDR.cxf"
-ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
 TIME="1446400526"
@@ -192,25 +198,56 @@ STATE="utd"
 TIME="1428422622"
 SIZE="159"
 ENDFILE
+VALUE "<project>\synthesis\TDR.edn,syn_edn"
+STATE="utd"
+TIME="1460548327"
+SIZE="1061072"
+ENDFILE
 VALUE "<project>\synthesis\TDR.so,so"
 STATE="utd"
 TIME="1457094302"
 SIZE="236"
 ENDFILE
+VALUE "<project>\synthesis\TDR.v,syn_hdl"
+STATE="utd"
+TIME="1460548335"
+SIZE="404615"
+ENDFILE
 VALUE "<project>\synthesis\TDR_sdc.sdc,syn_sdc"
-STATE="ood"
+STATE="utd"
 TIME="1457094302"
 SIZE="1182"
 ENDFILE
 VALUE "<project>\synthesis\TDR_syn.prj,prj"
 STATE="utd"
-TIME="1459753973"
-SIZE="5531"
+TIME="1459847627"
+SIZE="5643"
 ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
+LIST "TDR::work"
+FILE "<project>\component\work\TDR\TDR.v,hdl"
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\TDR.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\TDR\TDR_pinrpt_name.rpt,log"
+VALUE "<project>\designer\TDR\TDR_pinrpt_number.rpt,log"
+VALUE "<project>\designer\TDR\TDR_bankrpt.rpt,log"
+VALUE "<project>\designer\TDR\TDR_ioff.xml,log"
+ENDLIST
+ENDLIST
 ENDLIST
 LIST AssociatedStimulus
 ENDLIST
@@ -281,8 +318,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="D:\Microsemi\Libero_SoC_v11.7\Synplify\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -315,6 +352,18 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "TDR::work"
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\TDR.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -328,8 +377,14 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Compile:TDR_compile.xml
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;TDR;0
+HDL;synthesis\TDR.srr;0
+HDL;hdl\Adder.v;0
+HDL;hdl\FIFO.v;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "Adder::work","hdl\Adder.v","FALSE","FALSE"
@@ -348,7 +403,7 @@ LIST "DACController::work","hdl\DACController.vhd","FALSE","FALSE"
 ENDLIST
 LIST "FIFO::work","hdl\FIFO.v","FALSE","FALSE"
 ENDLIST
-LIST "I2C::work","hdl\I2C.v","FALSE","FALSE"
+LIST "I2CslaveWith8bitsIO::work","hdl\I2C.v","FALSE","FALSE"
 ENDLIST
 LIST "JTAG::work","hdl\JTAG.v","FALSE","FALSE"
 ENDLIST
@@ -433,11 +488,10 @@ LIST "SerialSynchronizer::work","hdl\SerialSynchronizer.v","FALSE","FALSE"
 ENDLIST
 LIST "SerialTransmitter::work","hdl\SerialTransmitter.v","FALSE","FALSE"
 ENDLIST
-LIST "TDR::work","component\work\TDR\TDR.cxf","TRUE","FALSE"
+LIST "TDR::work","component\work\TDR\TDR.v","TRUE","FALSE"
 SUBBLOCK "Adder::work","hdl\Adder.v","FALSE","FALSE"
 SUBBLOCK "BunchCounter::work","hdl\BunchCounter.v","FALSE","FALSE"
 SUBBLOCK "ControlDecoder::work","hdl\ControlDecoder.v","FALSE","FALSE"
-SUBBLOCK "Core_sb::work","component\work\Core_sb\Core_sb.cxf","TRUE","FALSE"
 SUBBLOCK "DACController::work","hdl\DACController.vhd","FALSE","FALSE"
 SUBBLOCK "FIFO::work","hdl\FIFO.v","FALSE","FALSE"
 SUBBLOCK "JTAG::work","hdl\JTAG.v","FALSE","FALSE"
@@ -448,6 +502,7 @@ LIST ActiveTestBenchList
 ENDLIST
 LIST IOTabList
 VALUE "constraint\io\TDR.pdc"
+VALUE "constraint\io\TDR.io.pdc"
 ENDLIST
 LIST FPTabList
 VALUE "constraint\fp\TDR.fp.pdc"

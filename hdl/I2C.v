@@ -1,167 +1,95 @@
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// Company: <Name>
-//
-// File: UART.v
-// File history:
-//      <Revision number>: <Date>: <Comments>
-//      <Revision number>: <Date>: <Comments>
-//      <Revision number>: <Date>: <Comments>
-//
-// Description: 
-//
-// <Description here>
-//
-// Targeted device: <Family::IGLOO2> <Die::M2GL025T> <Package::484 FBGA>
-// Author: <Name>
-//
-/////////////////////////////////////////////////////////////////////////////////////////////////// 
+// Example of I2C slave
 
-module I2C(
-    reset          ,
-    txclk          ,
-    ld_tx_data     ,
-    tx_data        ,
-    tx_enable      ,
-    tx_out         ,
-    tx_empty       ,
-    rxclk          ,
-    uld_rx_data    ,
-    rx_data        ,
-    rx_enable      ,
-    rx_in          ,
-    rx_empty
-    );
-    // Port declarations
-    input           reset          ;
-    input           txclk          ;
-    input           ld_tx_data     ;
-    input  [800:0]  tx_data        ;
-    input           tx_enable      ;
-    output          tx_out         ;
-    output          tx_empty       ;
-    input           rxclk          ;
-    input           uld_rx_data    ;
-    output [800:0]  rx_data        ;
-    input           rx_enable      ;
-    input           rx_in          ;
-    output          rx_empty       ;
-   
-    // Internal Variables 
-    reg [700:0]  tx_reg         ;
-    reg          tx_empty       ;
-    reg          tx_over_run    ;
-    reg [3:0]    tx_cnt         ;
-    reg          tx_out         ;
-    reg [800:0]  rx_reg         ;
-    reg [800:0]  rx_data        ;
-    reg [3:0]    rx_sample_cnt  ;
-    reg [3:0]    rx_cnt         ;  
-    reg          rx_frame_err   ;
-    reg          rx_over_run    ;
-    reg          rx_empty       ;
-    reg          rx_d1          ;
-    reg          rx_d2          ;
-    reg          rx_busy        ;
-    
-    // UART RX Logic
-    always @ (posedge rxclk or posedge reset)
-        if (reset) begin
-            rx_reg        <= 0; 
-            rx_data       <= 0;
-            rx_sample_cnt <= 0;
-            rx_cnt        <= 0;
-            rx_frame_err  <= 0;
-            rx_over_run   <= 0;
-            rx_empty      <= 1;
-            rx_d1         <= 1;
-            rx_d2         <= 1;
-            rx_busy       <= 0;
-        end else begin
-        // Synchronize the asynch signal
-            rx_d1 <= rx_in;
-            rx_d2 <= rx_d1;
-        // Uload the rx data
-        if (uld_rx_data) begin
-            rx_data  <= rx_reg;
-            rx_empty <= 1;
-        end
-        // Receive data only when rx is enabled
-        if (rx_enable) begin
-        // Check if just received start of frame
-            if ( ! rx_busy &&  ! rx_d2) begin
-                rx_busy       <= 1;
-                rx_sample_cnt <= 1;
-                rx_cnt        <= 0;
-            end
-         // Start of frame detected, Proceed with rest of data
-            if (rx_busy) begin
-                rx_sample_cnt <= rx_sample_cnt + 1;
-                // Logic to sample at middle of data
-                if (rx_sample_cnt == 7) begin
-                    if ((rx_d2 == 1) && (rx_cnt == 0)) begin
-                        rx_busy <= 0;
-                    end else begin
-                        rx_cnt <= rx_cnt + 1;   
-                    // Start storing the rx data
-                        if (rx_cnt > 0 && rx_cnt < 9) begin
-                            rx_reg[rx_cnt - 1] <= rx_d2;
-                        end
-                        if (rx_cnt == 9) begin
-                            rx_busy <= 0;
-                            // Check if End of frame received correctly
-                            if (rx_d2 == 0) begin
-                                rx_frame_err <= 1;
-                            end else begin
-                                rx_empty     <= 0;
-                                rx_frame_err <= 0;
-                                // Check if last rx data was not unloaded,
-                                rx_over_run  <= (rx_empty) ? 0 : 1;
-                            end
-                        end
-                    end
-                end 
-            end 
-        end
-        if ( ! rx_enable) begin
-            rx_busy <= 0;
-        end
+// 8-bits IO extender controlled from I2C
+// (c) 2005, 2008 fpga4fun.com, KNJN LLC
+
+// Please define one of these before starting synthesis
+//`define Xilinx
+//`define Altera
+
+
+module I2CslaveWith8bitsIO(sda, scl, IOout);
+inout sda;
+input scl;
+output [7:0] IOout;
+
+// The 7-bits address that we want for our I2C slave
+parameter I2C_ADR = 7'h27;
+
+//////////////////////////
+// I2C start and stop conditions detection logic
+// That's the "black magic" part of this design...
+// We use two wires with a combinatorial loop to detect the start and stop conditions
+//  ... making sure these two wires don't get optimized away
+`ifdef Xilinx
+    BUF mybuf(.O(sda_shadow), .I((~scl | start_or_stop) ? sda : sda_shadow));
+    BUF SOS_BUF(.O(start_or_stop), .I(~scl ? 1'b0 : (sda ^ sda_shadow))); 
+`else
+    wire sda_shadow = (~scl | start_or_stop) ? sda : sda_shadow /* synthesis keep = 1 */;
+    wire start_or_stop = ~scl ? 1'b0 : (sda ^ sda_shadow) /* synthesis keep = 1 */;
+`endif
+reg incycle;  always @(negedge scl or posedge start_or_stop) if(start_or_stop) incycle <= 1'b0; else if(~sda) incycle <= 1'b1;
+
+//////////////////////////
+// Now we are ready to count the I2C bits coming in
+reg [3:0] bitcnt;  // counts the I2C bits from 7 downto 0, plus an ACK bit
+wire bit_DATA = ~bitcnt[3];  // the DATA bits are the first 8 bits sent
+wire bit_ACK = bitcnt[3];  // the ACK bit is the 9th bit sent
+reg data_phase;
+
+always @(negedge scl or negedge incycle)
+if(~incycle)
+begin
+    bitcnt <= 4'h7;  // the bit 7 is received first
+    data_phase <= 1'b0;
+end
+else
+begin
+    if(bit_ACK)
+    begin
+    	bitcnt <= 4'h7;
+    	data_phase <= 1'b1;
     end
-  
-    // UART TX Logic
-    always @ (posedge txclk or posedge reset)
-        if (reset) begin
-            tx_reg        <= 0;
-            tx_empty      <= 1;
-            tx_over_run   <= 0;
-            tx_out        <= 1;
-            tx_cnt        <= 0;
-        end else begin
-            if (ld_tx_data) begin
-                if ( ! tx_empty) begin
-                    tx_over_run <= 0;
-                end else begin
-                    tx_reg   <= tx_data;
-                    tx_empty <= 0;
-                end
-            end
-            if (tx_enable &&  ! tx_empty) begin
-                tx_cnt <= tx_cnt + 1;
-                if (tx_cnt == 0) begin
-                    tx_out <= 0;
-                end
-                if (tx_cnt > 0 && tx_cnt < 9) begin
-                    tx_out <= tx_reg[tx_cnt -1];
-                end
-                if (tx_cnt == 9) begin
-                    tx_out <= 1;
-                    tx_cnt <= 0;
-                    tx_empty <= 1;
-                end
-            end
-            if ( ! tx_enable) begin
-                tx_cnt <= 0;
-            end
-        end
+    else
+    	bitcnt <= bitcnt - 4'h1;
+end
 
+// and detect if the I2C address matches our own
+wire adr_phase = ~data_phase;
+reg adr_match, op_read, got_ACK;
+reg sdar;  always @(posedge scl) sdar<=sda;  // sample SDA on posedge since the I2C spec specifies as low as 0µs hold-time on negedge
+reg [7:0] mem;
+wire op_write = ~op_read;
+
+always @(negedge scl or negedge incycle)
+if(~incycle)
+begin
+    got_ACK <= 1'b0;
+    adr_match <= 1'b1;
+    op_read <= 1'b0;
+end
+else
+begin
+    if(adr_phase & bitcnt==7 & sdar!=I2C_ADR[6]) adr_match<=1'b0;
+    if(adr_phase & bitcnt==6 & sdar!=I2C_ADR[5]) adr_match<=1'b0;
+    if(adr_phase & bitcnt==5 & sdar!=I2C_ADR[4]) adr_match<=1'b0;
+    if(adr_phase & bitcnt==4 & sdar!=I2C_ADR[3]) adr_match<=1'b0;
+    if(adr_phase & bitcnt==3 & sdar!=I2C_ADR[2]) adr_match<=1'b0;
+    if(adr_phase & bitcnt==2 & sdar!=I2C_ADR[1]) adr_match<=1'b0;
+    if(adr_phase & bitcnt==1 & sdar!=I2C_ADR[0]) adr_match<=1'b0;
+    if(adr_phase & bitcnt==0) op_read <= sdar;
+    if(bit_ACK) got_ACK <= ~sdar;  // we monitor the ACK to be able to free the bus when the master doesn't ACK during a read operation
+
+    if(adr_match & bit_DATA & data_phase & op_write) mem[bitcnt] <= sdar;  // memory write
+end
+
+// and drive the SDA line when necessary.
+wire mem_bit_low = ~mem[bitcnt[2:0]];
+wire sda_assert_low = adr_match & bit_DATA & data_phase & op_read & mem_bit_low & got_ACK;
+wire sda_assert_ACK = adr_match & bit_ACK & (adr_phase | op_write);
+wire sda_low = sda_assert_low | sda_assert_ACK;
+assign sda = sda_low ? 1'b0 : 1'bz;
+
+assign IOout = mem;
 endmodule
 

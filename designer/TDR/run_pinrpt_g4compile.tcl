@@ -1,6 +1,6 @@
 DESIGN=TDR
-DESDIR=D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\Final2\designer\TDR
-TARGET_DIR=D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\Final2\designer\TDR
+DESDIR=D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\ctpps-firmware\designer\TDR
+TARGET_DIR=D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\ctpps-firmware\designer\TDR
 FAM=SmartFusion2
 DIE=PA4M12000_N
 PACKAGE=fc1152

@@ -81,11 +81,11 @@ set_compile_info \
 set_compile_info \
     -category {"Source Files"} \
     -name {"Source"} \
-    -value {"D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\Final2\synthesis\TDR.edn"}
+    -value {"D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\ctpps-firmware\synthesis\TDR.edn"}
 set_compile_info \
     -category {"Source Files"} \
     -name {"Source"} \
-    -value {"D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\Final2\constraint\fp\TDR.fp.pdc"}
+    -value {"D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\ctpps-firmware\constraint\fp\TDR.fp.pdc"}
 set_compile_info \
     -category {"Options"} \
     -name {"Merge User SDC file(s) with Existing Timing Constraints"} \
@@ -107,10 +107,10 @@ set_compile_info \
     -name {"Limit the number of high fanout nets to display to"} \
     -value {"10"}
 compile \
-    -desdir {D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\Final2\designer\TDR} \
+    -desdir {D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\ctpps-firmware\designer\TDR} \
     -design TDR \
     -fam SmartFusion2 \
     -die PA4M12000_N \
     -pkg fc1152 \
-    -pdc_file {D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\Final2\constraint\fp\TDR.fp.pdc} \
+    -pdc_file {D:\DropAli\Dropbox\Documents\Projects\Firmware\Source\ctpps-firmware\constraint\fp\TDR.fp.pdc} \
     -merge_pdc 0
